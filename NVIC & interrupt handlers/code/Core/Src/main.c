@@ -84,7 +84,19 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
+  NVIC_SetPriorityGrouping(5);
+  uint32_t priorityGroup = NVIC_GetPriorityGrouping();
 
+  NVIC_SetPriority(WWDG_IRQn, NVIC_EncodePriority(priorityGroup, 1, 2));
+  NVIC_EnableIRQ(WWDG_IRQn);
+
+  NVIC_SetPriority(PVD_IRQn, NVIC_EncodePriority(priorityGroup, 1, 0));
+  NVIC_EnableIRQ(PVD_IRQn);
+
+  NVIC_SetPriority(TAMPER_IRQn, NVIC_EncodePriority(priorityGroup, 1, 1));
+  NVIC_EnableIRQ(TAMPER_IRQn);
+
+  NVIC->ISPR[0] = 0b111;
   /* USER CODE END 2 */
 
   /* Infinite loop */
