@@ -104,7 +104,7 @@ int main(void)
 
   uint32_t returnCode;
 
-  returnCode = SysTick_Config(SystemCoreClock / 1000 );      /* Configure SysTick to generate an interrupt every second */
+  returnCode = SysTick_Config(SystemCoreClock / 1000 );      /* Configure SysTick to generate an interrupt every millisecond */
 
   if (returnCode != 0)  {                               /* Check return code for errors */
     // Error Handling
