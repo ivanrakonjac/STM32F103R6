@@ -748,9 +748,9 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 build/system_stm32f1xx.o
  .text.SystemCoreClockUpdate
                 0x0000000000000000       0x94 build/system_stm32f1xx.o
- .text          0x0000000000000000       0x14 build/startup_stm32f103x6.o
- .data          0x0000000000000000        0x0 build/startup_stm32f103x6.o
- .bss           0x0000000000000000        0x0 build/startup_stm32f103x6.o
+ .text          0x0000000000000000       0x14 build/startup_stm32f103x6_init.o
+ .data          0x0000000000000000        0x0 build/startup_stm32f103x6_init.o
+ .bss           0x0000000000000000        0x0 build/startup_stm32f103x6_init.o
  .text          0x0000000000000000        0x0 c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
  .data          0x0000000000000000        0x0 c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
  .bss           0x0000000000000000        0x0 c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
@@ -822,7 +822,7 @@ LOAD build/stm32f1xx_hal_flash.o
 LOAD build/stm32f1xx_hal_flash_ex.o
 LOAD build/stm32f1xx_hal_exti.o
 LOAD build/system_stm32f1xx.o
-LOAD build/startup_stm32f103x6.o
+LOAD build/startup_stm32f103x6_init.o
 LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a
 LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a
@@ -843,7 +843,7 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
 .isr_vector     0x0000000008000000      0x10c
                 0x0000000008000000                . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x0000000008000000      0x10c build/startup_stm32f103x6.o
+ .isr_vector    0x0000000008000000      0x10c build/startup_stm32f103x6_init.o
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
@@ -978,10 +978,10 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
                 0x0000000008000ca8                SystemInit
  *fill*         0x0000000008000caa        0x2 
  .text.Reset_Handler
-                0x0000000008000cac       0x48 build/startup_stm32f103x6.o
+                0x0000000008000cac       0x48 build/startup_stm32f103x6_init.o
                 0x0000000008000cac                Reset_Handler
  .text.Default_Handler
-                0x0000000008000cf4        0x2 build/startup_stm32f103x6.o
+                0x0000000008000cf4        0x2 build/startup_stm32f103x6_init.o
                 0x0000000008000cf4                RTC_Alarm_IRQHandler
                 0x0000000008000cf4                EXTI2_IRQHandler
                 0x0000000008000cf4                TIM1_CC_IRQHandler
@@ -1184,7 +1184,7 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .ARM.attributes
                 0x00000000000001df       0x2d build/system_stm32f1xx.o
  .ARM.attributes
-                0x000000000000020c       0x21 build/startup_stm32f103x6.o
+                0x000000000000020c       0x21 build/startup_stm32f103x6_init.o
  .ARM.attributes
                 0x000000000000022d       0x2d c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
  .ARM.attributes
@@ -1208,7 +1208,7 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .debug_info    0x0000000000008509      0xb67 build/stm32f1xx_hal_rcc.o
  .debug_info    0x0000000000009070      0xed9 build/stm32f1xx_hal_cortex.o
  .debug_info    0x0000000000009f49      0x2f7 build/system_stm32f1xx.o
- .debug_info    0x000000000000a240       0x22 build/startup_stm32f103x6.o
+ .debug_info    0x000000000000a240       0x22 build/startup_stm32f103x6_init.o
 
 .debug_abbrev   0x0000000000000000     0x160c
  .debug_abbrev  0x0000000000000000      0x20f build/main.o
@@ -1221,7 +1221,7 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .debug_abbrev  0x0000000000000e7b      0x2ad build/stm32f1xx_hal_rcc.o
  .debug_abbrev  0x0000000000001128      0x37f build/stm32f1xx_hal_cortex.o
  .debug_abbrev  0x00000000000014a7      0x153 build/system_stm32f1xx.o
- .debug_abbrev  0x00000000000015fa       0x12 build/startup_stm32f103x6.o
+ .debug_abbrev  0x00000000000015fa       0x12 build/startup_stm32f103x6_init.o
 
 .debug_loc      0x0000000000000000     0x864d
  .debug_loc     0x0000000000000000       0xbb build/main.o
@@ -1257,7 +1257,7 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .debug_aranges
                 0x0000000000000828       0x28 build/system_stm32f1xx.o
  .debug_aranges
-                0x0000000000000850       0x28 build/startup_stm32f103x6.o
+                0x0000000000000850       0x28 build/startup_stm32f103x6_init.o
 
 .debug_ranges   0x0000000000000000      0x850
  .debug_ranges  0x0000000000000000       0x28 build/main.o
@@ -1270,9 +1270,9 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .debug_ranges  0x0000000000000698       0xa0 build/stm32f1xx_hal_rcc.o
  .debug_ranges  0x0000000000000738       0xe0 build/stm32f1xx_hal_cortex.o
  .debug_ranges  0x0000000000000818       0x18 build/system_stm32f1xx.o
- .debug_ranges  0x0000000000000830       0x20 build/startup_stm32f103x6.o
+ .debug_ranges  0x0000000000000830       0x20 build/startup_stm32f103x6_init.o
 
-.debug_line     0x0000000000000000     0x8852
+.debug_line     0x0000000000000000     0x8860
  .debug_line    0x0000000000000000      0x302 build/main.o
  .debug_line    0x0000000000000302      0x2fd build/stm32f1xx_it.o
  .debug_line    0x00000000000005ff      0x1db build/stm32f1xx_hal_msp.o
@@ -1283,9 +1283,9 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
  .debug_line    0x00000000000072a3      0xc3b build/stm32f1xx_hal_rcc.o
  .debug_line    0x0000000000007ede      0x674 build/stm32f1xx_hal_cortex.o
  .debug_line    0x0000000000008552      0x28e build/system_stm32f1xx.o
- .debug_line    0x00000000000087e0       0x72 build/startup_stm32f103x6.o
+ .debug_line    0x00000000000087e0       0x80 build/startup_stm32f103x6_init.o
 
-.debug_str      0x0000000000000000     0x2a3c
+.debug_str      0x0000000000000000     0x2a4a
  .debug_str     0x0000000000000000      0x823 build/main.o
                                         0x8dd (size before relaxing)
  .debug_str     0x0000000000000823       0xd4 build/stm32f1xx_it.o
@@ -1306,8 +1306,8 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
                                         0x93a (size before relaxing)
  .debug_str     0x00000000000029c9       0x4f build/system_stm32f1xx.o
                                         0x2db (size before relaxing)
- .debug_str     0x0000000000002a18       0x24 build/startup_stm32f103x6.o
-                                         0x5b (size before relaxing)
+ .debug_str     0x0000000000002a18       0x32 build/startup_stm32f103x6_init.o
+                                         0x69 (size before relaxing)
 
 .comment        0x0000000000000000       0x43
  .comment       0x0000000000000000       0x43 build/main.o
@@ -1339,32 +1339,32 @@ LOAD c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm
 Cross Reference Table
 
 Symbol                                            File
-ADC1_2_IRQHandler                                 build/startup_stm32f103x6.o
+ADC1_2_IRQHandler                                 build/startup_stm32f103x6_init.o
 AHBPrescTable                                     build/system_stm32f1xx.o
                                                   build/stm32f1xx_hal_rcc.o
 APBPrescTable                                     build/system_stm32f1xx.o
                                                   build/stm32f1xx_hal_rcc.o
 BusFault_Handler                                  build/stm32f1xx_it.o
-CAN1_RX1_IRQHandler                               build/startup_stm32f103x6.o
-CAN1_SCE_IRQHandler                               build/startup_stm32f103x6.o
-DMA1_Channel1_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel2_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel3_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel4_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel5_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel6_IRQHandler                          build/startup_stm32f103x6.o
-DMA1_Channel7_IRQHandler                          build/startup_stm32f103x6.o
+CAN1_RX1_IRQHandler                               build/startup_stm32f103x6_init.o
+CAN1_SCE_IRQHandler                               build/startup_stm32f103x6_init.o
+DMA1_Channel1_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel2_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel3_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel4_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel5_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel6_IRQHandler                          build/startup_stm32f103x6_init.o
+DMA1_Channel7_IRQHandler                          build/startup_stm32f103x6_init.o
 DebugMon_Handler                                  build/stm32f1xx_it.o
-Default_Handler                                   build/startup_stm32f103x6.o
-EXTI0_IRQHandler                                  build/startup_stm32f103x6.o
-EXTI15_10_IRQHandler                              build/startup_stm32f103x6.o
-EXTI1_IRQHandler                                  build/startup_stm32f103x6.o
-EXTI2_IRQHandler                                  build/startup_stm32f103x6.o
-EXTI3_IRQHandler                                  build/startup_stm32f103x6.o
-EXTI4_IRQHandler                                  build/startup_stm32f103x6.o
-EXTI9_5_IRQHandler                                build/startup_stm32f103x6.o
+Default_Handler                                   build/startup_stm32f103x6_init.o
+EXTI0_IRQHandler                                  build/startup_stm32f103x6_init.o
+EXTI15_10_IRQHandler                              build/startup_stm32f103x6_init.o
+EXTI1_IRQHandler                                  build/startup_stm32f103x6_init.o
+EXTI2_IRQHandler                                  build/startup_stm32f103x6_init.o
+EXTI3_IRQHandler                                  build/startup_stm32f103x6_init.o
+EXTI4_IRQHandler                                  build/startup_stm32f103x6_init.o
+EXTI9_5_IRQHandler                                build/startup_stm32f103x6_init.o
 Error_Handler                                     build/main.o
-FLASH_IRQHandler                                  build/startup_stm32f103x6.o
+FLASH_IRQHandler                                  build/startup_stm32f103x6_init.o
 FLASH_PageErase                                   build/stm32f1xx_hal_flash_ex.o
                                                   build/stm32f1xx_hal_flash.o
 FLASH_WaitForLastOperation                        build/stm32f1xx_hal_flash.o
@@ -1655,17 +1655,17 @@ HAL_TIM_SlaveConfigSynchro_IT                     build/stm32f1xx_hal_tim.o
 HAL_TIM_TriggerCallback                           build/stm32f1xx_hal_tim.o
 HAL_TIM_TriggerHalfCpltCallback                   build/stm32f1xx_hal_tim.o
 HardFault_Handler                                 build/stm32f1xx_it.o
-I2C1_ER_IRQHandler                                build/startup_stm32f103x6.o
-I2C1_EV_IRQHandler                                build/startup_stm32f103x6.o
+I2C1_ER_IRQHandler                                build/startup_stm32f103x6_init.o
+I2C1_EV_IRQHandler                                build/startup_stm32f103x6_init.o
 MemManage_Handler                                 build/stm32f1xx_it.o
 NMI_Handler                                       build/stm32f1xx_it.o
-PVD_IRQHandler                                    build/startup_stm32f103x6.o
+PVD_IRQHandler                                    build/startup_stm32f103x6_init.o
 PendSV_Handler                                    build/stm32f1xx_it.o
-RCC_IRQHandler                                    build/startup_stm32f103x6.o
-RTC_Alarm_IRQHandler                              build/startup_stm32f103x6.o
-RTC_IRQHandler                                    build/startup_stm32f103x6.o
-Reset_Handler                                     build/startup_stm32f103x6.o
-SPI1_IRQHandler                                   build/startup_stm32f103x6.o
+RCC_IRQHandler                                    build/startup_stm32f103x6_init.o
+RTC_Alarm_IRQHandler                              build/startup_stm32f103x6_init.o
+RTC_IRQHandler                                    build/startup_stm32f103x6_init.o
+Reset_Handler                                     build/startup_stm32f103x6_init.o
+SPI1_IRQHandler                                   build/startup_stm32f103x6_init.o
 SVC_Handler                                       build/stm32f1xx_it.o
 SysTick_Handler                                   build/stm32f1xx_it.o
 SystemClock_Config                                build/main.o
@@ -1674,14 +1674,14 @@ SystemCoreClock                                   build/system_stm32f1xx.o
                                                   build/stm32f1xx_hal.o
 SystemCoreClockUpdate                             build/system_stm32f1xx.o
 SystemInit                                        build/system_stm32f1xx.o
-                                                  build/startup_stm32f103x6.o
-TAMPER_IRQHandler                                 build/startup_stm32f103x6.o
-TIM1_BRK_IRQHandler                               build/startup_stm32f103x6.o
-TIM1_CC_IRQHandler                                build/startup_stm32f103x6.o
-TIM1_TRG_COM_IRQHandler                           build/startup_stm32f103x6.o
+                                                  build/startup_stm32f103x6_init.o
+TAMPER_IRQHandler                                 build/startup_stm32f103x6_init.o
+TIM1_BRK_IRQHandler                               build/startup_stm32f103x6_init.o
+TIM1_CC_IRQHandler                                build/startup_stm32f103x6_init.o
+TIM1_TRG_COM_IRQHandler                           build/startup_stm32f103x6_init.o
 TIM1_UP_IRQHandler                                build/stm32f1xx_it.o
-TIM2_IRQHandler                                   build/startup_stm32f103x6.o
-TIM3_IRQHandler                                   build/startup_stm32f103x6.o
+TIM2_IRQHandler                                   build/startup_stm32f103x6_init.o
+TIM3_IRQHandler                                   build/startup_stm32f103x6_init.o
 TIMEx_DMACommutationCplt                          build/stm32f1xx_hal_tim_ex.o
                                                   build/stm32f1xx_hal_tim.o
 TIMEx_DMACommutationHalfCplt                      build/stm32f1xx_hal_tim_ex.o
@@ -1703,13 +1703,13 @@ TIM_OC2_SetConfig                                 build/stm32f1xx_hal_tim.o
                                                   build/stm32f1xx_hal_tim_ex.o
 TIM_TI1_SetConfig                                 build/stm32f1xx_hal_tim.o
                                                   build/stm32f1xx_hal_tim_ex.o
-USART1_IRQHandler                                 build/startup_stm32f103x6.o
-USART2_IRQHandler                                 build/startup_stm32f103x6.o
-USBWakeUp_IRQHandler                              build/startup_stm32f103x6.o
-USB_HP_CAN1_TX_IRQHandler                         build/startup_stm32f103x6.o
-USB_LP_CAN1_RX0_IRQHandler                        build/startup_stm32f103x6.o
+USART1_IRQHandler                                 build/startup_stm32f103x6_init.o
+USART2_IRQHandler                                 build/startup_stm32f103x6_init.o
+USBWakeUp_IRQHandler                              build/startup_stm32f103x6_init.o
+USB_HP_CAN1_TX_IRQHandler                         build/startup_stm32f103x6_init.o
+USB_LP_CAN1_RX0_IRQHandler                        build/startup_stm32f103x6_init.o
 UsageFault_Handler                                build/stm32f1xx_it.o
-WWDG_IRQHandler                                   build/startup_stm32f103x6.o
+WWDG_IRQHandler                                   build/startup_stm32f103x6_init.o
 __bss_end__                                       c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __bss_start__                                     c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __call_exitprocs                                  c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
@@ -1719,7 +1719,7 @@ __init_array_end                                  c:/users/ika/desktop/gnu mcu/a
 __init_array_start                                c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __libc_fini_array                                 c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __libc_init_array                                 c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
-                                                  build/startup_stm32f103x6.o
+                                                  build/startup_stm32f103x6_init.o
                                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 __preinit_array_end                               c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 __preinit_array_start                             c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
@@ -1728,9 +1728,9 @@ __sf_fake_stderr                                  c:/users/ika/desktop/gnu mcu/a
 __sf_fake_stdin                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-impure.o)
 __sf_fake_stdout                                  c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-impure.o)
 __stack                                           c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
-_ebss                                             build/startup_stm32f103x6.o
-_edata                                            build/startup_stm32f103x6.o
-_estack                                           build/startup_stm32f103x6.o
+_ebss                                             build/startup_stm32f103x6_init.o
+_edata                                            build/startup_stm32f103x6_init.o
+_estack                                           build/startup_stm32f103x6_init.o
 _exit                                             c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(_exit.o)
                                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
 _fini                                             c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
@@ -1740,20 +1740,20 @@ _impure_ptr                                       c:/users/ika/desktop/gnu mcu/a
 _init                                             c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
                                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
 _mainCRTStartup                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
-_sbss                                             build/startup_stm32f103x6.o
-_sdata                                            build/startup_stm32f103x6.o
-_sidata                                           build/startup_stm32f103x6.o
+_sbss                                             build/startup_stm32f103x6_init.o
+_sdata                                            build/startup_stm32f103x6_init.o
+_sidata                                           build/startup_stm32f103x6_init.o
 _stack_init                                       c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 _start                                            c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 atexit                                            c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 exit                                              c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-exit.o)
                                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
-g_pfnVectors                                      build/startup_stm32f103x6.o
+g_pfnVectors                                      build/startup_stm32f103x6_init.o
 hardware_init_hook                                c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 htim1                                             build/stm32f1xx_hal_timebase_tim.o
                                                   build/stm32f1xx_it.o
 main                                              build/main.o
-                                                  build/startup_stm32f103x6.o
+                                                  build/startup_stm32f103x6_init.o
                                                   c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 memset                                            c:/users/ika/desktop/gnu mcu/arm-none-eabi-gcc-9.3.1-1.1/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
                                                   build/main.o
