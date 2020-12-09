@@ -1,9 +1,7 @@
-# NVIC & interrupt handlers
+# SysTick timer
 
-Konfigurisati sistem i NVIC periferije zgra tako da istovremeno vazi: 
+Konfigurisati sistem i STK (SisTick timer) periferiju jezgra,
 
-(1) zahtevi za obradu prekida IRQ0, IRQ1 i IRQ2 jesu omoguceni, 
+tako da generise zahtev za obradu izuzetaka sa periodom od 1ms 
 
-(2) u slučaju istovremenog pristizanja redosled obrade je IRQ1, IRQ2, IRQ0
-
-(3) ne moze doci do ugnjezdavanja kada su u pitanju ova tri prekida
+koji ce biti prihvacen cim stanje sistema i prioriteti izuzetaka to dozvole.

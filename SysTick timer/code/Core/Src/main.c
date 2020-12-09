@@ -84,6 +84,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
+
   NVIC_SetPriorityGrouping(5);
   uint32_t priorityGroup = NVIC_GetPriorityGrouping();
 
@@ -97,6 +98,17 @@ int main(void)
   NVIC_EnableIRQ(TAMPER_IRQn);
 
   NVIC->ISPR[0] = 0b111;
+
+
+
+
+  uint32_t returnCode;
+
+  returnCode = SysTick_Config(SystemCoreClock / 1000 );      /* Configure SysTick to generate an interrupt every second */
+
+  if (returnCode != 0)  {                               /* Check return code for errors */
+    // Error Handling
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
