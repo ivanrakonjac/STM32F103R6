@@ -1,0 +1,1219 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_hal_flash.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.FLASH_Program_HalfWord,"ax",%progbits
+  16              		.align	1
+  17              		.arch armv7-m
+  18              		.syntax unified
+  19              		.thumb
+  20              		.thumb_func
+  21              		.fpu softvfp
+  23              	FLASH_Program_HalfWord:
+  24              	.LVL0:
+  25              	.LFB76:
+  26              		.file 1 "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+   1:../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
+  27              		.loc 1 798 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 800 3 view .LVU1
+  33              		.loc 1 800 20 is_stmt 0 view .LVU2
+  34 0000 044B     		ldr	r3, .L2
+  35 0002 0022     		movs	r2, #0
+  36 0004 DA61     		str	r2, [r3, #28]
+  37              		.loc 1 807 5 is_stmt 1 view .LVU3
+  38 0006 044A     		ldr	r2, .L2+4
+  39 0008 1369     		ldr	r3, [r2, #16]
+  40 000a 43F00103 		orr	r3, r3, #1
+  41 000e 1361     		str	r3, [r2, #16]
+  42              		.loc 1 818 3 view .LVU4
+  43              		.loc 1 818 28 is_stmt 0 view .LVU5
+  44 0010 0180     		strh	r1, [r0]	@ movhi
+  45              		.loc 1 819 1 view .LVU6
+  46 0012 7047     		bx	lr
+  47              	.L3:
+  48              		.align	2
+  49              	.L2:
+  50 0014 00000000 		.word	pFlash
+  51 0018 00200240 		.word	1073881088
+  52              		.cfi_endproc
+  53              	.LFE76:
+  55              		.section	.text.FLASH_SetErrorCode,"ax",%progbits
+  56              		.align	1
+  57              		.syntax unified
+  58              		.thumb
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 2
+
+
+  59              		.thumb_func
+  60              		.fpu softvfp
+  62              	FLASH_SetErrorCode:
+  63              	.LFB78:
+  64              		.loc 1 915 1 is_stmt 1 view -0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              		@ link register save eliminated.
+  69              		.loc 1 916 3 view .LVU8
+  70              	.LVL1:
+  71              		.loc 1 921 3 view .LVU9
+  72              		.loc 1 921 6 is_stmt 0 view .LVU10
+  73 0000 194B     		ldr	r3, .L11
+  74 0002 DB68     		ldr	r3, [r3, #12]
+  75              		.loc 1 921 5 view .LVU11
+  76 0004 13F01003 		ands	r3, r3, #16
+  77 0008 05D0     		beq	.L5
+  78              		.loc 1 924 5 is_stmt 1 view .LVU12
+  79              		.loc 1 924 22 is_stmt 0 view .LVU13
+  80 000a 184A     		ldr	r2, .L11+4
+  81 000c D369     		ldr	r3, [r2, #28]
+  82 000e 43F00203 		orr	r3, r3, #2
+  83 0012 D361     		str	r3, [r2, #28]
+  84              		.loc 1 928 5 is_stmt 1 view .LVU14
+  85              	.LVL2:
+  86              		.loc 1 928 11 is_stmt 0 view .LVU15
+  87 0014 1023     		movs	r3, #16
+  88              	.LVL3:
+  89              	.L5:
+  90              		.loc 1 934 3 is_stmt 1 view .LVU16
+  91              		.loc 1 934 6 is_stmt 0 view .LVU17
+  92 0016 144A     		ldr	r2, .L11
+  93 0018 D268     		ldr	r2, [r2, #12]
+  94              		.loc 1 934 5 view .LVU18
+  95 001a 12F0040F 		tst	r2, #4
+  96 001e 06D0     		beq	.L6
+  97              		.loc 1 937 5 is_stmt 1 view .LVU19
+  98              		.loc 1 937 22 is_stmt 0 view .LVU20
+  99 0020 1249     		ldr	r1, .L11+4
+ 100 0022 CA69     		ldr	r2, [r1, #28]
+ 101 0024 42F00102 		orr	r2, r2, #1
+ 102 0028 CA61     		str	r2, [r1, #28]
+ 103              		.loc 1 941 5 is_stmt 1 view .LVU21
+ 104              		.loc 1 941 11 is_stmt 0 view .LVU22
+ 105 002a 43F00403 		orr	r3, r3, #4
+ 106              	.LVL4:
+ 107              	.L6:
+ 108              		.loc 1 944 3 is_stmt 1 view .LVU23
+ 109              		.loc 1 944 6 is_stmt 0 view .LVU24
+ 110 002e 0E4A     		ldr	r2, .L11
+ 111 0030 D269     		ldr	r2, [r2, #28]
+ 112              		.loc 1 944 5 view .LVU25
+ 113 0032 12F0010F 		tst	r2, #1
+ 114 0036 09D0     		beq	.L7
+ 115              		.loc 1 946 5 is_stmt 1 view .LVU26
+ 116              		.loc 1 946 22 is_stmt 0 view .LVU27
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 3
+
+
+ 117 0038 0C49     		ldr	r1, .L11+4
+ 118 003a CA69     		ldr	r2, [r1, #28]
+ 119 003c 42F00402 		orr	r2, r2, #4
+ 120 0040 CA61     		str	r2, [r1, #28]
+ 121              		.loc 1 947 3 is_stmt 1 view .LVU28
+ 122              		.loc 1 947 3 view .LVU29
+ 123              		.loc 1 947 3 view .LVU30
+ 124 0042 0949     		ldr	r1, .L11
+ 125 0044 CA69     		ldr	r2, [r1, #28]
+ 126 0046 22F00102 		bic	r2, r2, #1
+ 127 004a CA61     		str	r2, [r1, #28]
+ 128              	.L7:
+ 129              		.loc 1 947 3 discriminator 4 view .LVU31
+ 130              		.loc 1 951 3 discriminator 4 view .LVU32
+ 131              		.loc 1 951 3 discriminator 4 view .LVU33
+ 132 004c 40F20112 		movw	r2, #257
+ 133 0050 9342     		cmp	r3, r2
+ 134 0052 02D0     		beq	.L10
+ 135              		.loc 1 951 3 discriminator 2 view .LVU34
+ 136 0054 044A     		ldr	r2, .L11
+ 137 0056 D360     		str	r3, [r2, #12]
+ 138              		.loc 1 951 3 discriminator 2 view .LVU35
+ 139              		.loc 1 952 1 is_stmt 0 discriminator 2 view .LVU36
+ 140 0058 7047     		bx	lr
+ 141              	.L10:
+ 142              		.loc 1 951 3 is_stmt 1 discriminator 1 view .LVU37
+ 143 005a 034A     		ldr	r2, .L11
+ 144 005c D369     		ldr	r3, [r2, #28]
+ 145              	.LVL5:
+ 146              		.loc 1 951 3 is_stmt 0 discriminator 1 view .LVU38
+ 147 005e 23F00103 		bic	r3, r3, #1
+ 148 0062 D361     		str	r3, [r2, #28]
+ 149 0064 7047     		bx	lr
+ 150              	.L12:
+ 151 0066 00BF     		.align	2
+ 152              	.L11:
+ 153 0068 00200240 		.word	1073881088
+ 154 006c 00000000 		.word	pFlash
+ 155              		.cfi_endproc
+ 156              	.LFE78:
+ 158              		.section	.text.HAL_FLASH_Program_IT,"ax",%progbits
+ 159              		.align	1
+ 160              		.global	HAL_FLASH_Program_IT
+ 161              		.syntax unified
+ 162              		.thumb
+ 163              		.thumb_func
+ 164              		.fpu softvfp
+ 166              	HAL_FLASH_Program_IT:
+ 167              	.LVL6:
+ 168              	.LFB66:
+ 169              		.loc 1 268 1 is_stmt 1 view -0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 0
+ 172              		@ frame_needed = 0, uses_anonymous_args = 0
+ 173              		.loc 1 268 1 is_stmt 0 view .LVU40
+ 174 0000 70B5     		push	{r4, r5, r6, lr}
+ 175              	.LCFI0:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 4
+
+
+ 176              		.cfi_def_cfa_offset 16
+ 177              		.cfi_offset 4, -16
+ 178              		.cfi_offset 5, -12
+ 179              		.cfi_offset 6, -8
+ 180              		.cfi_offset 14, -4
+ 181 0002 1D46     		mov	r5, r3
+ 182              		.loc 1 269 3 is_stmt 1 view .LVU41
+ 183              	.LVL7:
+ 184              		.loc 1 272 3 view .LVU42
+ 185              		.loc 1 272 3 view .LVU43
+ 186 0004 164B     		ldr	r3, .L22
+ 187 0006 1B7E     		ldrb	r3, [r3, #24]	@ zero_extendqisi2
+ 188 0008 012B     		cmp	r3, #1
+ 189 000a 26D0     		beq	.L18
+ 190 000c 0646     		mov	r6, r0
+ 191 000e 0846     		mov	r0, r1
+ 192              	.LVL8:
+ 193              		.loc 1 272 3 is_stmt 0 view .LVU44
+ 194 0010 1446     		mov	r4, r2
+ 195              		.loc 1 272 3 is_stmt 1 discriminator 2 view .LVU45
+ 196 0012 134B     		ldr	r3, .L22
+ 197 0014 0122     		movs	r2, #1
+ 198              	.LVL9:
+ 199              		.loc 1 272 3 is_stmt 0 discriminator 2 view .LVU46
+ 200 0016 1A76     		strb	r2, [r3, #24]
+ 201              		.loc 1 272 3 is_stmt 1 discriminator 2 view .LVU47
+ 202              		.loc 1 275 3 discriminator 2 view .LVU48
+ 203              		.loc 1 276 3 discriminator 2 view .LVU49
+ 204              		.loc 1 297 3 discriminator 2 view .LVU50
+ 205 0018 1249     		ldr	r1, .L22+4
+ 206              	.LVL10:
+ 207              		.loc 1 297 3 is_stmt 0 discriminator 2 view .LVU51
+ 208 001a 0A69     		ldr	r2, [r1, #16]
+ 209 001c 42F4A052 		orr	r2, r2, #5120
+ 210 0020 0A61     		str	r2, [r1, #16]
+ 211              		.loc 1 300 3 is_stmt 1 discriminator 2 view .LVU52
+ 212              		.loc 1 300 18 is_stmt 0 discriminator 2 view .LVU53
+ 213 0022 9860     		str	r0, [r3, #8]
+ 214              		.loc 1 301 3 is_stmt 1 discriminator 2 view .LVU54
+ 215              		.loc 1 301 15 is_stmt 0 discriminator 2 view .LVU55
+ 216 0024 C3E90445 		strd	r4, [r3, #16]
+ 217              		.loc 1 303 3 is_stmt 1 discriminator 2 view .LVU56
+ 218              		.loc 1 303 5 is_stmt 0 discriminator 2 view .LVU57
+ 219 0028 012E     		cmp	r6, #1
+ 220 002a 0BD0     		beq	.L20
+ 221              		.loc 1 309 8 is_stmt 1 view .LVU58
+ 222              		.loc 1 309 10 is_stmt 0 view .LVU59
+ 223 002c 022E     		cmp	r6, #2
+ 224 002e 0ED0     		beq	.L21
+ 225              		.loc 1 317 5 is_stmt 1 view .LVU60
+ 226              		.loc 1 317 29 is_stmt 0 view .LVU61
+ 227 0030 0B4B     		ldr	r3, .L22
+ 228 0032 0522     		movs	r2, #5
+ 229 0034 1A70     		strb	r2, [r3]
+ 230              		.loc 1 319 5 is_stmt 1 view .LVU62
+ 231              		.loc 1 319 26 is_stmt 0 view .LVU63
+ 232 0036 0422     		movs	r2, #4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 5
+
+
+ 233 0038 5A60     		str	r2, [r3, #4]
+ 234              	.L16:
+ 235              		.loc 1 323 3 is_stmt 1 view .LVU64
+ 236 003a A1B2     		uxth	r1, r4
+ 237 003c FFF7FEFF 		bl	FLASH_Program_HalfWord
+ 238              	.LVL11:
+ 239              		.loc 1 325 3 view .LVU65
+ 240              		.loc 1 325 10 is_stmt 0 view .LVU66
+ 241 0040 0020     		movs	r0, #0
+ 242              	.LVL12:
+ 243              	.L14:
+ 244              		.loc 1 326 1 view .LVU67
+ 245 0042 70BD     		pop	{r4, r5, r6, pc}
+ 246              	.LVL13:
+ 247              	.L20:
+ 248              		.loc 1 305 5 is_stmt 1 view .LVU68
+ 249              		.loc 1 305 29 is_stmt 0 view .LVU69
+ 250 0044 0322     		movs	r2, #3
+ 251 0046 1A70     		strb	r2, [r3]
+ 252              		.loc 1 307 5 is_stmt 1 view .LVU70
+ 253              		.loc 1 307 26 is_stmt 0 view .LVU71
+ 254 0048 0122     		movs	r2, #1
+ 255 004a 5A60     		str	r2, [r3, #4]
+ 256 004c F5E7     		b	.L16
+ 257              	.L21:
+ 258              		.loc 1 311 5 is_stmt 1 view .LVU72
+ 259              		.loc 1 311 29 is_stmt 0 view .LVU73
+ 260 004e 044B     		ldr	r3, .L22
+ 261 0050 0422     		movs	r2, #4
+ 262 0052 1A70     		strb	r2, [r3]
+ 263              		.loc 1 313 5 is_stmt 1 view .LVU74
+ 264              		.loc 1 313 26 is_stmt 0 view .LVU75
+ 265 0054 0222     		movs	r2, #2
+ 266 0056 5A60     		str	r2, [r3, #4]
+ 267 0058 EFE7     		b	.L16
+ 268              	.LVL14:
+ 269              	.L18:
+ 270              		.loc 1 272 3 view .LVU76
+ 271 005a 0220     		movs	r0, #2
+ 272              	.LVL15:
+ 273              		.loc 1 272 3 view .LVU77
+ 274 005c F1E7     		b	.L14
+ 275              	.L23:
+ 276 005e 00BF     		.align	2
+ 277              	.L22:
+ 278 0060 00000000 		.word	pFlash
+ 279 0064 00200240 		.word	1073881088
+ 280              		.cfi_endproc
+ 281              	.LFE66:
+ 283              		.section	.text.HAL_FLASH_EndOfOperationCallback,"ax",%progbits
+ 284              		.align	1
+ 285              		.weak	HAL_FLASH_EndOfOperationCallback
+ 286              		.syntax unified
+ 287              		.thumb
+ 288              		.thumb_func
+ 289              		.fpu softvfp
+ 291              	HAL_FLASH_EndOfOperationCallback:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 6
+
+
+ 292              	.LVL16:
+ 293              	.LFB68:
+ 294              		.loc 1 607 1 is_stmt 1 view -0
+ 295              		.cfi_startproc
+ 296              		@ args = 0, pretend = 0, frame = 0
+ 297              		@ frame_needed = 0, uses_anonymous_args = 0
+ 298              		@ link register save eliminated.
+ 299              		.loc 1 609 3 view .LVU79
+ 300              		.loc 1 614 1 is_stmt 0 view .LVU80
+ 301 0000 7047     		bx	lr
+ 302              		.cfi_endproc
+ 303              	.LFE68:
+ 305              		.section	.text.HAL_FLASH_OperationErrorCallback,"ax",%progbits
+ 306              		.align	1
+ 307              		.weak	HAL_FLASH_OperationErrorCallback
+ 308              		.syntax unified
+ 309              		.thumb
+ 310              		.thumb_func
+ 311              		.fpu softvfp
+ 313              	HAL_FLASH_OperationErrorCallback:
+ 314              	.LVL17:
+ 315              	.LFB69:
+ 316              		.loc 1 625 1 is_stmt 1 view -0
+ 317              		.cfi_startproc
+ 318              		@ args = 0, pretend = 0, frame = 0
+ 319              		@ frame_needed = 0, uses_anonymous_args = 0
+ 320              		@ link register save eliminated.
+ 321              		.loc 1 627 3 view .LVU82
+ 322              		.loc 1 632 1 is_stmt 0 view .LVU83
+ 323 0000 7047     		bx	lr
+ 324              		.cfi_endproc
+ 325              	.LFE69:
+ 327              		.section	.text.HAL_FLASH_IRQHandler,"ax",%progbits
+ 328              		.align	1
+ 329              		.global	HAL_FLASH_IRQHandler
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu softvfp
+ 335              	HAL_FLASH_IRQHandler:
+ 336              	.LFB67:
+ 337              		.loc 1 333 1 is_stmt 1 view -0
+ 338              		.cfi_startproc
+ 339              		@ args = 0, pretend = 0, frame = 0
+ 340              		@ frame_needed = 0, uses_anonymous_args = 0
+ 341 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 342              	.LCFI1:
+ 343              		.cfi_def_cfa_offset 24
+ 344              		.cfi_offset 3, -24
+ 345              		.cfi_offset 4, -20
+ 346              		.cfi_offset 5, -16
+ 347              		.cfi_offset 6, -12
+ 348              		.cfi_offset 7, -8
+ 349              		.cfi_offset 14, -4
+ 350              		.loc 1 334 3 view .LVU85
+ 351              	.LVL18:
+ 352              		.loc 1 341 3 view .LVU86
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 7
+
+
+ 353              		.loc 1 341 6 is_stmt 0 view .LVU87
+ 354 0002 524B     		ldr	r3, .L44
+ 355 0004 DB68     		ldr	r3, [r3, #12]
+ 356              		.loc 1 341 5 view .LVU88
+ 357 0006 13F0100F 		tst	r3, #16
+ 358 000a 04D1     		bne	.L27
+ 359              		.loc 1 341 48 discriminator 1 view .LVU89
+ 360 000c 4F4B     		ldr	r3, .L44
+ 361 000e DB68     		ldr	r3, [r3, #12]
+ 362              		.loc 1 341 46 discriminator 1 view .LVU90
+ 363 0010 13F0040F 		tst	r3, #4
+ 364 0014 0BD0     		beq	.L28
+ 365              	.L27:
+ 366              		.loc 1 345 5 is_stmt 1 view .LVU91
+ 367              		.loc 1 345 16 is_stmt 0 view .LVU92
+ 368 0016 4E4C     		ldr	r4, .L44+4
+ 369 0018 A568     		ldr	r5, [r4, #8]
+ 370              	.LVL19:
+ 371              		.loc 1 347 5 is_stmt 1 view .LVU93
+ 372              		.loc 1 347 20 is_stmt 0 view .LVU94
+ 373 001a 4FF0FF33 		mov	r3, #-1
+ 374 001e A360     		str	r3, [r4, #8]
+ 375              		.loc 1 350 5 is_stmt 1 view .LVU95
+ 376 0020 FFF7FEFF 		bl	FLASH_SetErrorCode
+ 377              	.LVL20:
+ 378              		.loc 1 353 5 view .LVU96
+ 379 0024 2846     		mov	r0, r5
+ 380 0026 FFF7FEFF 		bl	HAL_FLASH_OperationErrorCallback
+ 381              	.LVL21:
+ 382              		.loc 1 356 5 view .LVU97
+ 383              		.loc 1 356 29 is_stmt 0 view .LVU98
+ 384 002a 0023     		movs	r3, #0
+ 385 002c 2370     		strb	r3, [r4]
+ 386              	.LVL22:
+ 387              	.L28:
+ 388              		.loc 1 366 3 is_stmt 1 view .LVU99
+ 389              		.loc 1 366 6 is_stmt 0 view .LVU100
+ 390 002e 474B     		ldr	r3, .L44
+ 391 0030 DB68     		ldr	r3, [r3, #12]
+ 392              		.loc 1 366 5 view .LVU101
+ 393 0032 13F0200F 		tst	r3, #32
+ 394 0036 2BD0     		beq	.L29
+ 395              		.loc 1 369 5 is_stmt 1 discriminator 2 view .LVU102
+ 396              		.loc 1 369 5 discriminator 2 view .LVU103
+ 397              		.loc 1 369 5 discriminator 2 view .LVU104
+ 398 0038 444B     		ldr	r3, .L44
+ 399 003a 2022     		movs	r2, #32
+ 400 003c DA60     		str	r2, [r3, #12]
+ 401              		.loc 1 369 5 discriminator 2 view .LVU105
+ 402              		.loc 1 373 5 discriminator 2 view .LVU106
+ 403              		.loc 1 373 14 is_stmt 0 discriminator 2 view .LVU107
+ 404 003e 444B     		ldr	r3, .L44+4
+ 405 0040 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 406              		.loc 1 373 7 discriminator 2 view .LVU108
+ 407 0042 2BB3     		cbz	r3, .L29
+ 408              		.loc 1 375 7 is_stmt 1 view .LVU109
+ 409              		.loc 1 375 16 is_stmt 0 view .LVU110
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 8
+
+
+ 410 0044 424B     		ldr	r3, .L44+4
+ 411 0046 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 412 0048 DBB2     		uxtb	r3, r3
+ 413              		.loc 1 375 9 view .LVU111
+ 414 004a 012B     		cmp	r3, #1
+ 415 004c 30D0     		beq	.L39
+ 416              		.loc 1 406 12 is_stmt 1 view .LVU112
+ 417              		.loc 1 406 21 is_stmt 0 view .LVU113
+ 418 004e 404B     		ldr	r3, .L44+4
+ 419 0050 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 420 0052 DBB2     		uxtb	r3, r3
+ 421              		.loc 1 406 14 view .LVU114
+ 422 0054 022B     		cmp	r3, #2
+ 423 0056 4AD0     		beq	.L40
+ 424              		.loc 1 429 9 is_stmt 1 view .LVU115
+ 425              		.loc 1 429 15 is_stmt 0 view .LVU116
+ 426 0058 3D4B     		ldr	r3, .L44+4
+ 427 005a 5A68     		ldr	r2, [r3, #4]
+ 428              		.loc 1 429 29 view .LVU117
+ 429 005c 013A     		subs	r2, r2, #1
+ 430 005e 5A60     		str	r2, [r3, #4]
+ 431              		.loc 1 432 9 is_stmt 1 view .LVU118
+ 432              		.loc 1 432 18 is_stmt 0 view .LVU119
+ 433 0060 5B68     		ldr	r3, [r3, #4]
+ 434              		.loc 1 432 11 view .LVU120
+ 435 0062 002B     		cmp	r3, #0
+ 436 0064 4FD1     		bne	.L41
+ 437              		.loc 1 451 11 is_stmt 1 view .LVU121
+ 438              		.loc 1 451 21 is_stmt 0 view .LVU122
+ 439 0066 3A4B     		ldr	r3, .L44+4
+ 440 0068 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 441 006a DBB2     		uxtb	r3, r3
+ 442              		.loc 1 451 14 view .LVU123
+ 443 006c 032B     		cmp	r3, #3
+ 444 006e 62D0     		beq	.L42
+ 445              		.loc 1 455 16 is_stmt 1 view .LVU124
+ 446              		.loc 1 455 26 is_stmt 0 view .LVU125
+ 447 0070 374B     		ldr	r3, .L44+4
+ 448 0072 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 449 0074 DBB2     		uxtb	r3, r3
+ 450              		.loc 1 455 19 view .LVU126
+ 451 0076 042B     		cmp	r3, #4
+ 452 0078 62D0     		beq	.L43
+ 453              		.loc 1 461 13 is_stmt 1 view .LVU127
+ 454              		.loc 1 461 52 is_stmt 0 view .LVU128
+ 455 007a 354B     		ldr	r3, .L44+4
+ 456 007c 9868     		ldr	r0, [r3, #8]
+ 457              		.loc 1 461 13 view .LVU129
+ 458 007e 0638     		subs	r0, r0, #6
+ 459 0080 FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 460              	.LVL23:
+ 461              	.L35:
+ 462              		.loc 1 465 11 is_stmt 1 view .LVU130
+ 463              		.loc 1 465 26 is_stmt 0 view .LVU131
+ 464 0084 324B     		ldr	r3, .L44+4
+ 465 0086 4FF0FF32 		mov	r2, #-1
+ 466 008a 9A60     		str	r2, [r3, #8]
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 9
+
+
+ 467              		.loc 1 466 11 is_stmt 1 view .LVU132
+ 468              		.loc 1 466 35 is_stmt 0 view .LVU133
+ 469 008c 0022     		movs	r2, #0
+ 470 008e 1A70     		strb	r2, [r3]
+ 471              	.L29:
+ 472              		.loc 1 575 3 is_stmt 1 view .LVU134
+ 473              		.loc 1 575 12 is_stmt 0 view .LVU135
+ 474 0090 2F4B     		ldr	r3, .L44+4
+ 475 0092 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 476              		.loc 1 575 5 view .LVU136
+ 477 0094 5BB9     		cbnz	r3, .L26
+ 478              		.loc 1 586 5 is_stmt 1 view .LVU137
+ 479 0096 2D4B     		ldr	r3, .L44
+ 480 0098 1A69     		ldr	r2, [r3, #16]
+ 481 009a 22F00702 		bic	r2, r2, #7
+ 482 009e 1A61     		str	r2, [r3, #16]
+ 483              		.loc 1 589 5 view .LVU138
+ 484 00a0 1A69     		ldr	r2, [r3, #16]
+ 485 00a2 22F4A052 		bic	r2, r2, #5120
+ 486 00a6 1A61     		str	r2, [r3, #16]
+ 487              		.loc 1 593 5 view .LVU139
+ 488              		.loc 1 593 5 view .LVU140
+ 489 00a8 294B     		ldr	r3, .L44+4
+ 490 00aa 0022     		movs	r2, #0
+ 491 00ac 1A76     		strb	r2, [r3, #24]
+ 492              		.loc 1 593 5 view .LVU141
+ 493              	.L26:
+ 494              		.loc 1 595 1 is_stmt 0 view .LVU142
+ 495 00ae F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 496              	.L39:
+ 497              		.loc 1 378 9 is_stmt 1 view .LVU143
+ 498              		.loc 1 378 15 is_stmt 0 view .LVU144
+ 499 00b0 274B     		ldr	r3, .L44+4
+ 500 00b2 5A68     		ldr	r2, [r3, #4]
+ 501              		.loc 1 378 29 view .LVU145
+ 502 00b4 013A     		subs	r2, r2, #1
+ 503 00b6 5A60     		str	r2, [r3, #4]
+ 504              		.loc 1 381 9 is_stmt 1 view .LVU146
+ 505              		.loc 1 381 18 is_stmt 0 view .LVU147
+ 506 00b8 5B68     		ldr	r3, [r3, #4]
+ 507              		.loc 1 381 11 view .LVU148
+ 508 00ba 7BB1     		cbz	r3, .L31
+ 509              		.loc 1 383 11 is_stmt 1 view .LVU149
+ 510              		.loc 1 383 22 is_stmt 0 view .LVU150
+ 511 00bc 244C     		ldr	r4, .L44+4
+ 512 00be A068     		ldr	r0, [r4, #8]
+ 513              	.LVL24:
+ 514              		.loc 1 385 11 is_stmt 1 view .LVU151
+ 515 00c0 FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 516              	.LVL25:
+ 517              		.loc 1 388 11 view .LVU152
+ 518              		.loc 1 388 30 is_stmt 0 view .LVU153
+ 519 00c4 A068     		ldr	r0, [r4, #8]
+ 520              		.loc 1 388 22 view .LVU154
+ 521 00c6 00F58060 		add	r0, r0, #1024
+ 522              	.LVL26:
+ 523              		.loc 1 389 11 is_stmt 1 view .LVU155
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 10
+
+
+ 524              		.loc 1 389 26 is_stmt 0 view .LVU156
+ 525 00ca A060     		str	r0, [r4, #8]
+ 526              		.loc 1 392 11 is_stmt 1 view .LVU157
+ 527 00cc 1F4A     		ldr	r2, .L44
+ 528 00ce 1369     		ldr	r3, [r2, #16]
+ 529 00d0 23F00203 		bic	r3, r3, #2
+ 530 00d4 1361     		str	r3, [r2, #16]
+ 531              		.loc 1 394 11 view .LVU158
+ 532 00d6 FFF7FEFF 		bl	FLASH_PageErase
+ 533              	.LVL27:
+ 534              		.loc 1 394 11 is_stmt 0 view .LVU159
+ 535 00da D9E7     		b	.L29
+ 536              	.L31:
+ 537              		.loc 1 400 11 is_stmt 1 view .LVU160
+ 538              	.LVL28:
+ 539              		.loc 1 400 26 is_stmt 0 view .LVU161
+ 540 00dc 1C4B     		ldr	r3, .L44+4
+ 541 00de 4FF0FF30 		mov	r0, #-1
+ 542 00e2 9860     		str	r0, [r3, #8]
+ 543              		.loc 1 401 11 is_stmt 1 view .LVU162
+ 544              		.loc 1 401 35 is_stmt 0 view .LVU163
+ 545 00e4 0022     		movs	r2, #0
+ 546 00e6 1A70     		strb	r2, [r3]
+ 547              		.loc 1 403 11 is_stmt 1 view .LVU164
+ 548 00e8 FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 549              	.LVL29:
+ 550 00ec D0E7     		b	.L29
+ 551              	.LVL30:
+ 552              	.L40:
+ 553              		.loc 1 409 9 view .LVU165
+ 554 00ee 174A     		ldr	r2, .L44
+ 555 00f0 1369     		ldr	r3, [r2, #16]
+ 556 00f2 23F00403 		bic	r3, r3, #4
+ 557 00f6 1361     		str	r3, [r2, #16]
+ 558              		.loc 1 418 11 view .LVU166
+ 559 00f8 0020     		movs	r0, #0
+ 560 00fa FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 561              	.LVL31:
+ 562              		.loc 1 421 11 view .LVU167
+ 563              		.loc 1 421 35 is_stmt 0 view .LVU168
+ 564 00fe 144B     		ldr	r3, .L44+4
+ 565 0100 0022     		movs	r2, #0
+ 566 0102 1A70     		strb	r2, [r3]
+ 567 0104 C4E7     		b	.L29
+ 568              	.L41:
+ 569              		.loc 1 435 11 is_stmt 1 view .LVU169
+ 570              		.loc 1 435 26 is_stmt 0 view .LVU170
+ 571 0106 124B     		ldr	r3, .L44+4
+ 572 0108 9A68     		ldr	r2, [r3, #8]
+ 573 010a 0232     		adds	r2, r2, #2
+ 574 010c 9A60     		str	r2, [r3, #8]
+ 575              		.loc 1 436 11 is_stmt 1 view .LVU171
+ 576              		.loc 1 436 22 is_stmt 0 view .LVU172
+ 577 010e 9868     		ldr	r0, [r3, #8]
+ 578              	.LVL32:
+ 579              		.loc 1 439 11 is_stmt 1 view .LVU173
+ 580              		.loc 1 439 32 is_stmt 0 view .LVU174
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 11
+
+
+ 581 0110 D3E90467 		ldrd	r6, [r3, #16]
+ 582              		.loc 1 439 38 view .LVU175
+ 583 0114 340C     		lsrs	r4, r6, #16
+ 584 0116 44EA0744 		orr	r4, r4, r7, lsl #16
+ 585 011a 3D0C     		lsrs	r5, r7, #16
+ 586              		.loc 1 439 23 view .LVU176
+ 587 011c C3E90445 		strd	r4, [r3, #16]
+ 588              		.loc 1 442 11 is_stmt 1 view .LVU177
+ 589 0120 0A49     		ldr	r1, .L44
+ 590 0122 0A69     		ldr	r2, [r1, #16]
+ 591 0124 22F00102 		bic	r2, r2, #1
+ 592 0128 0A61     		str	r2, [r1, #16]
+ 593              		.loc 1 445 11 view .LVU178
+ 594              		.loc 1 445 62 is_stmt 0 view .LVU179
+ 595 012a D3E90423 		ldrd	r2, [r3, #16]
+ 596              		.loc 1 445 11 view .LVU180
+ 597 012e 91B2     		uxth	r1, r2
+ 598 0130 FFF7FEFF 		bl	FLASH_Program_HalfWord
+ 599              	.LVL33:
+ 600              		.loc 1 445 11 view .LVU181
+ 601 0134 ACE7     		b	.L29
+ 602              	.L42:
+ 603              		.loc 1 453 13 is_stmt 1 view .LVU182
+ 604 0136 064B     		ldr	r3, .L44+4
+ 605 0138 9868     		ldr	r0, [r3, #8]
+ 606 013a FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 607              	.LVL34:
+ 608 013e A1E7     		b	.L35
+ 609              	.L43:
+ 610              		.loc 1 457 13 view .LVU183
+ 611              		.loc 1 457 52 is_stmt 0 view .LVU184
+ 612 0140 034B     		ldr	r3, .L44+4
+ 613 0142 9868     		ldr	r0, [r3, #8]
+ 614              		.loc 1 457 13 view .LVU185
+ 615 0144 0238     		subs	r0, r0, #2
+ 616 0146 FFF7FEFF 		bl	HAL_FLASH_EndOfOperationCallback
+ 617              	.LVL35:
+ 618 014a 9BE7     		b	.L35
+ 619              	.L45:
+ 620              		.align	2
+ 621              	.L44:
+ 622 014c 00200240 		.word	1073881088
+ 623 0150 00000000 		.word	pFlash
+ 624              		.cfi_endproc
+ 625              	.LFE67:
+ 627              		.section	.text.HAL_FLASH_Unlock,"ax",%progbits
+ 628              		.align	1
+ 629              		.global	HAL_FLASH_Unlock
+ 630              		.syntax unified
+ 631              		.thumb
+ 632              		.thumb_func
+ 633              		.fpu softvfp
+ 635              	HAL_FLASH_Unlock:
+ 636              	.LFB70:
+ 637              		.loc 1 658 1 is_stmt 1 view -0
+ 638              		.cfi_startproc
+ 639              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 12
+
+
+ 640              		@ frame_needed = 0, uses_anonymous_args = 0
+ 641              		@ link register save eliminated.
+ 642              		.loc 1 659 3 view .LVU187
+ 643              	.LVL36:
+ 644              		.loc 1 661 3 view .LVU188
+ 645              		.loc 1 661 6 is_stmt 0 view .LVU189
+ 646 0000 0A4B     		ldr	r3, .L50
+ 647 0002 1B69     		ldr	r3, [r3, #16]
+ 648              		.loc 1 661 5 view .LVU190
+ 649 0004 13F0800F 		tst	r3, #128
+ 650 0008 0BD0     		beq	.L48
+ 651              		.loc 1 664 5 is_stmt 1 view .LVU191
+ 652 000a 084B     		ldr	r3, .L50
+ 653 000c 084A     		ldr	r2, .L50+4
+ 654 000e 5A60     		str	r2, [r3, #4]
+ 655              		.loc 1 665 5 view .LVU192
+ 656 0010 02F18832 		add	r2, r2, #-2004318072
+ 657 0014 5A60     		str	r2, [r3, #4]
+ 658              		.loc 1 668 5 view .LVU193
+ 659              		.loc 1 668 8 is_stmt 0 view .LVU194
+ 660 0016 1B69     		ldr	r3, [r3, #16]
+ 661              		.loc 1 668 7 view .LVU195
+ 662 0018 13F0800F 		tst	r3, #128
+ 663 001c 03D1     		bne	.L49
+ 664              		.loc 1 659 21 view .LVU196
+ 665 001e 0020     		movs	r0, #0
+ 666 0020 7047     		bx	lr
+ 667              	.L48:
+ 668 0022 0020     		movs	r0, #0
+ 669 0024 7047     		bx	lr
+ 670              	.L49:
+ 671              		.loc 1 670 14 view .LVU197
+ 672 0026 0120     		movs	r0, #1
+ 673              	.LVL37:
+ 674              		.loc 1 688 3 is_stmt 1 view .LVU198
+ 675              		.loc 1 689 1 is_stmt 0 view .LVU199
+ 676 0028 7047     		bx	lr
+ 677              	.L51:
+ 678 002a 00BF     		.align	2
+ 679              	.L50:
+ 680 002c 00200240 		.word	1073881088
+ 681 0030 23016745 		.word	1164378403
+ 682              		.cfi_endproc
+ 683              	.LFE70:
+ 685              		.section	.text.HAL_FLASH_Lock,"ax",%progbits
+ 686              		.align	1
+ 687              		.global	HAL_FLASH_Lock
+ 688              		.syntax unified
+ 689              		.thumb
+ 690              		.thumb_func
+ 691              		.fpu softvfp
+ 693              	HAL_FLASH_Lock:
+ 694              	.LFB71:
+ 695              		.loc 1 696 1 is_stmt 1 view -0
+ 696              		.cfi_startproc
+ 697              		@ args = 0, pretend = 0, frame = 0
+ 698              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 13
+
+
+ 699              		@ link register save eliminated.
+ 700              		.loc 1 698 3 view .LVU201
+ 701 0000 034A     		ldr	r2, .L53
+ 702 0002 1369     		ldr	r3, [r2, #16]
+ 703 0004 43F08003 		orr	r3, r3, #128
+ 704 0008 1361     		str	r3, [r2, #16]
+ 705              		.loc 1 705 3 view .LVU202
+ 706              		.loc 1 706 1 is_stmt 0 view .LVU203
+ 707 000a 0020     		movs	r0, #0
+ 708 000c 7047     		bx	lr
+ 709              	.L54:
+ 710 000e 00BF     		.align	2
+ 711              	.L53:
+ 712 0010 00200240 		.word	1073881088
+ 713              		.cfi_endproc
+ 714              	.LFE71:
+ 716              		.section	.text.HAL_FLASH_OB_Unlock,"ax",%progbits
+ 717              		.align	1
+ 718              		.global	HAL_FLASH_OB_Unlock
+ 719              		.syntax unified
+ 720              		.thumb
+ 721              		.thumb_func
+ 722              		.fpu softvfp
+ 724              	HAL_FLASH_OB_Unlock:
+ 725              	.LFB72:
+ 726              		.loc 1 713 1 is_stmt 1 view -0
+ 727              		.cfi_startproc
+ 728              		@ args = 0, pretend = 0, frame = 0
+ 729              		@ frame_needed = 0, uses_anonymous_args = 0
+ 730              		@ link register save eliminated.
+ 731              		.loc 1 714 3 view .LVU205
+ 732              		.loc 1 714 7 is_stmt 0 view .LVU206
+ 733 0000 074B     		ldr	r3, .L58
+ 734 0002 1B69     		ldr	r3, [r3, #16]
+ 735              		.loc 1 714 6 view .LVU207
+ 736 0004 13F4007F 		tst	r3, #512
+ 737 0008 07D1     		bne	.L57
+ 738              		.loc 1 717 5 is_stmt 1 view .LVU208
+ 739 000a 054B     		ldr	r3, .L58
+ 740 000c 054A     		ldr	r2, .L58+4
+ 741 000e 9A60     		str	r2, [r3, #8]
+ 742              		.loc 1 718 5 view .LVU209
+ 743 0010 02F18832 		add	r2, r2, #-2004318072
+ 744 0014 9A60     		str	r2, [r3, #8]
+ 745              		.loc 1 725 3 view .LVU210
+ 746              		.loc 1 725 10 is_stmt 0 view .LVU211
+ 747 0016 0020     		movs	r0, #0
+ 748 0018 7047     		bx	lr
+ 749              	.L57:
+ 750              		.loc 1 722 12 view .LVU212
+ 751 001a 0120     		movs	r0, #1
+ 752              		.loc 1 726 1 view .LVU213
+ 753 001c 7047     		bx	lr
+ 754              	.L59:
+ 755 001e 00BF     		.align	2
+ 756              	.L58:
+ 757 0020 00200240 		.word	1073881088
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 14
+
+
+ 758 0024 23016745 		.word	1164378403
+ 759              		.cfi_endproc
+ 760              	.LFE72:
+ 762              		.section	.text.HAL_FLASH_OB_Lock,"ax",%progbits
+ 763              		.align	1
+ 764              		.global	HAL_FLASH_OB_Lock
+ 765              		.syntax unified
+ 766              		.thumb
+ 767              		.thumb_func
+ 768              		.fpu softvfp
+ 770              	HAL_FLASH_OB_Lock:
+ 771              	.LFB73:
+ 772              		.loc 1 733 1 is_stmt 1 view -0
+ 773              		.cfi_startproc
+ 774              		@ args = 0, pretend = 0, frame = 0
+ 775              		@ frame_needed = 0, uses_anonymous_args = 0
+ 776              		@ link register save eliminated.
+ 777              		.loc 1 735 3 view .LVU215
+ 778 0000 034A     		ldr	r2, .L61
+ 779 0002 1369     		ldr	r3, [r2, #16]
+ 780 0004 23F40073 		bic	r3, r3, #512
+ 781 0008 1361     		str	r3, [r2, #16]
+ 782              		.loc 1 737 3 view .LVU216
+ 783              		.loc 1 738 1 is_stmt 0 view .LVU217
+ 784 000a 0020     		movs	r0, #0
+ 785 000c 7047     		bx	lr
+ 786              	.L62:
+ 787 000e 00BF     		.align	2
+ 788              	.L61:
+ 789 0010 00200240 		.word	1073881088
+ 790              		.cfi_endproc
+ 791              	.LFE73:
+ 793              		.section	.text.HAL_FLASH_OB_Launch,"ax",%progbits
+ 794              		.align	1
+ 795              		.global	HAL_FLASH_OB_Launch
+ 796              		.syntax unified
+ 797              		.thumb
+ 798              		.thumb_func
+ 799              		.fpu softvfp
+ 801              	HAL_FLASH_OB_Launch:
+ 802              	.LFB74:
+ 803              		.loc 1 746 1 is_stmt 1 view -0
+ 804              		.cfi_startproc
+ 805              		@ args = 0, pretend = 0, frame = 0
+ 806              		@ frame_needed = 0, uses_anonymous_args = 0
+ 807 0000 08B5     		push	{r3, lr}
+ 808              	.LCFI2:
+ 809              		.cfi_def_cfa_offset 8
+ 810              		.cfi_offset 3, -8
+ 811              		.cfi_offset 14, -4
+ 812              		.loc 1 748 3 view .LVU219
+ 813 0002 FFF7FEFF 		bl	HAL_NVIC_SystemReset
+ 814              	.LVL38:
+ 815              		.loc 1 749 1 is_stmt 0 view .LVU220
+ 816 0006 08BD     		pop	{r3, pc}
+ 817              		.cfi_endproc
+ 818              	.LFE74:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 15
+
+
+ 820              		.section	.text.HAL_FLASH_GetError,"ax",%progbits
+ 821              		.align	1
+ 822              		.global	HAL_FLASH_GetError
+ 823              		.syntax unified
+ 824              		.thumb
+ 825              		.thumb_func
+ 826              		.fpu softvfp
+ 828              	HAL_FLASH_GetError:
+ 829              	.LFB75:
+ 830              		.loc 1 775 1 is_stmt 1 view -0
+ 831              		.cfi_startproc
+ 832              		@ args = 0, pretend = 0, frame = 0
+ 833              		@ frame_needed = 0, uses_anonymous_args = 0
+ 834              		@ link register save eliminated.
+ 835              		.loc 1 776 4 view .LVU222
+ 836              		.loc 1 776 17 is_stmt 0 view .LVU223
+ 837 0000 014B     		ldr	r3, .L66
+ 838 0002 D869     		ldr	r0, [r3, #28]
+ 839              		.loc 1 777 1 view .LVU224
+ 840 0004 7047     		bx	lr
+ 841              	.L67:
+ 842 0006 00BF     		.align	2
+ 843              	.L66:
+ 844 0008 00000000 		.word	pFlash
+ 845              		.cfi_endproc
+ 846              	.LFE75:
+ 848              		.section	.text.FLASH_WaitForLastOperation,"ax",%progbits
+ 849              		.align	1
+ 850              		.global	FLASH_WaitForLastOperation
+ 851              		.syntax unified
+ 852              		.thumb
+ 853              		.thumb_func
+ 854              		.fpu softvfp
+ 856              	FLASH_WaitForLastOperation:
+ 857              	.LVL39:
+ 858              	.LFB77:
+ 859              		.loc 1 827 1 is_stmt 1 view -0
+ 860              		.cfi_startproc
+ 861              		@ args = 0, pretend = 0, frame = 0
+ 862              		@ frame_needed = 0, uses_anonymous_args = 0
+ 863              		.loc 1 827 1 is_stmt 0 view .LVU226
+ 864 0000 38B5     		push	{r3, r4, r5, lr}
+ 865              	.LCFI3:
+ 866              		.cfi_def_cfa_offset 16
+ 867              		.cfi_offset 3, -16
+ 868              		.cfi_offset 4, -12
+ 869              		.cfi_offset 5, -8
+ 870              		.cfi_offset 14, -4
+ 871 0002 0446     		mov	r4, r0
+ 872              		.loc 1 832 3 is_stmt 1 view .LVU227
+ 873              		.loc 1 832 24 is_stmt 0 view .LVU228
+ 874 0004 FFF7FEFF 		bl	HAL_GetTick
+ 875              	.LVL40:
+ 876              		.loc 1 832 24 view .LVU229
+ 877 0008 0546     		mov	r5, r0
+ 878              	.LVL41:
+ 879              		.loc 1 834 3 is_stmt 1 view .LVU230
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 16
+
+
+ 880              	.L70:
+ 881              		.loc 1 834 8 view .LVU231
+ 882              		.loc 1 834 9 is_stmt 0 view .LVU232
+ 883 000a 164B     		ldr	r3, .L79
+ 884 000c DB68     		ldr	r3, [r3, #12]
+ 885              		.loc 1 834 8 view .LVU233
+ 886 000e 13F0010F 		tst	r3, #1
+ 887 0012 0AD0     		beq	.L78
+ 888              		.loc 1 836 5 is_stmt 1 view .LVU234
+ 889              		.loc 1 836 8 is_stmt 0 view .LVU235
+ 890 0014 B4F1FF3F 		cmp	r4, #-1
+ 891 0018 F7D0     		beq	.L70
+ 892              		.loc 1 838 7 is_stmt 1 view .LVU236
+ 893              		.loc 1 838 9 is_stmt 0 view .LVU237
+ 894 001a 24B1     		cbz	r4, .L71
+ 895              		.loc 1 838 31 discriminator 1 view .LVU238
+ 896 001c FFF7FEFF 		bl	HAL_GetTick
+ 897              	.LVL42:
+ 898              		.loc 1 838 44 discriminator 1 view .LVU239
+ 899 0020 401B     		subs	r0, r0, r5
+ 900              		.loc 1 838 26 discriminator 1 view .LVU240
+ 901 0022 A042     		cmp	r0, r4
+ 902 0024 F1D9     		bls	.L70
+ 903              	.L71:
+ 904              		.loc 1 840 9 is_stmt 1 view .LVU241
+ 905              		.loc 1 840 16 is_stmt 0 view .LVU242
+ 906 0026 0320     		movs	r0, #3
+ 907 0028 1BE0     		b	.L72
+ 908              	.L78:
+ 909              		.loc 1 846 3 is_stmt 1 view .LVU243
+ 910              		.loc 1 846 7 is_stmt 0 view .LVU244
+ 911 002a 0E4B     		ldr	r3, .L79
+ 912 002c DB68     		ldr	r3, [r3, #12]
+ 913              		.loc 1 846 6 view .LVU245
+ 914 002e 13F0200F 		tst	r3, #32
+ 915 0032 02D0     		beq	.L74
+ 916              		.loc 1 849 5 is_stmt 1 discriminator 2 view .LVU246
+ 917              		.loc 1 849 5 discriminator 2 view .LVU247
+ 918              		.loc 1 849 5 discriminator 2 view .LVU248
+ 919 0034 0B4B     		ldr	r3, .L79
+ 920 0036 2022     		movs	r2, #32
+ 921 0038 DA60     		str	r2, [r3, #12]
+ 922              	.L74:
+ 923              		.loc 1 849 5 discriminator 4 view .LVU249
+ 924              		.loc 1 852 3 discriminator 4 view .LVU250
+ 925              		.loc 1 852 6 is_stmt 0 discriminator 4 view .LVU251
+ 926 003a 0A4B     		ldr	r3, .L79
+ 927 003c DB68     		ldr	r3, [r3, #12]
+ 928              		.loc 1 852 5 discriminator 4 view .LVU252
+ 929 003e 13F0100F 		tst	r3, #16
+ 930 0042 0BD1     		bne	.L75
+ 931              		.loc 1 853 6 discriminator 1 view .LVU253
+ 932 0044 074B     		ldr	r3, .L79
+ 933 0046 DB69     		ldr	r3, [r3, #28]
+ 934              		.loc 1 852 47 discriminator 1 view .LVU254
+ 935 0048 13F0010F 		tst	r3, #1
+ 936 004c 06D1     		bne	.L75
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 17
+
+
+ 937              		.loc 1 854 6 view .LVU255
+ 938 004e 054B     		ldr	r3, .L79
+ 939 0050 DB68     		ldr	r3, [r3, #12]
+ 940              		.loc 1 853 47 view .LVU256
+ 941 0052 13F0040F 		tst	r3, #4
+ 942 0056 01D1     		bne	.L75
+ 943              		.loc 1 862 10 view .LVU257
+ 944 0058 0020     		movs	r0, #0
+ 945 005a 02E0     		b	.L72
+ 946              	.L75:
+ 947              		.loc 1 857 5 is_stmt 1 view .LVU258
+ 948 005c FFF7FEFF 		bl	FLASH_SetErrorCode
+ 949              	.LVL43:
+ 950              		.loc 1 858 5 view .LVU259
+ 951              		.loc 1 858 12 is_stmt 0 view .LVU260
+ 952 0060 0120     		movs	r0, #1
+ 953              	.L72:
+ 954              		.loc 1 863 1 view .LVU261
+ 955 0062 38BD     		pop	{r3, r4, r5, pc}
+ 956              	.LVL44:
+ 957              	.L80:
+ 958              		.loc 1 863 1 view .LVU262
+ 959              		.align	2
+ 960              	.L79:
+ 961 0064 00200240 		.word	1073881088
+ 962              		.cfi_endproc
+ 963              	.LFE77:
+ 965              		.section	.text.HAL_FLASH_Program,"ax",%progbits
+ 966              		.align	1
+ 967              		.global	HAL_FLASH_Program
+ 968              		.syntax unified
+ 969              		.thumb
+ 970              		.thumb_func
+ 971              		.fpu softvfp
+ 973              	HAL_FLASH_Program:
+ 974              	.LVL45:
+ 975              	.LFB65:
+ 976              		.loc 1 169 1 is_stmt 1 view -0
+ 977              		.cfi_startproc
+ 978              		@ args = 0, pretend = 0, frame = 0
+ 979              		@ frame_needed = 0, uses_anonymous_args = 0
+ 980              		.loc 1 169 1 is_stmt 0 view .LVU264
+ 981 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+ 982              	.LCFI4:
+ 983              		.cfi_def_cfa_offset 32
+ 984              		.cfi_offset 3, -32
+ 985              		.cfi_offset 4, -28
+ 986              		.cfi_offset 5, -24
+ 987              		.cfi_offset 6, -20
+ 988              		.cfi_offset 7, -16
+ 989              		.cfi_offset 8, -12
+ 990              		.cfi_offset 9, -8
+ 991              		.cfi_offset 14, -4
+ 992 0004 1E46     		mov	r6, r3
+ 993              		.loc 1 170 3 is_stmt 1 view .LVU265
+ 994              	.LVL46:
+ 995              		.loc 1 171 3 view .LVU266
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 18
+
+
+ 996              		.loc 1 172 3 view .LVU267
+ 997              		.loc 1 175 3 view .LVU268
+ 998              		.loc 1 175 3 view .LVU269
+ 999 0006 234B     		ldr	r3, .L92
+ 1000 0008 1B7E     		ldrb	r3, [r3, #24]	@ zero_extendqisi2
+ 1001 000a 012B     		cmp	r3, #1
+ 1002 000c 40D0     		beq	.L87
+ 1003 000e 0446     		mov	r4, r0
+ 1004 0010 0F46     		mov	r7, r1
+ 1005 0012 9046     		mov	r8, r2
+ 1006              		.loc 1 175 3 discriminator 2 view .LVU270
+ 1007 0014 1F4B     		ldr	r3, .L92
+ 1008 0016 0122     		movs	r2, #1
+ 1009              	.LVL47:
+ 1010              		.loc 1 175 3 is_stmt 0 discriminator 2 view .LVU271
+ 1011 0018 1A76     		strb	r2, [r3, #24]
+ 1012              		.loc 1 175 3 is_stmt 1 discriminator 2 view .LVU272
+ 1013              		.loc 1 178 3 discriminator 2 view .LVU273
+ 1014              		.loc 1 179 3 discriminator 2 view .LVU274
+ 1015              		.loc 1 186 5 discriminator 2 view .LVU275
+ 1016              		.loc 1 186 14 is_stmt 0 discriminator 2 view .LVU276
+ 1017 001a 4CF25030 		movw	r0, #50000
+ 1018              	.LVL48:
+ 1019              		.loc 1 186 14 discriminator 2 view .LVU277
+ 1020 001e FFF7FEFF 		bl	FLASH_WaitForLastOperation
+ 1021              	.LVL49:
+ 1022              		.loc 1 196 3 is_stmt 1 discriminator 2 view .LVU278
+ 1023              		.loc 1 196 5 is_stmt 0 discriminator 2 view .LVU279
+ 1024 0022 0346     		mov	r3, r0
+ 1025 0024 70BB     		cbnz	r0, .L83
+ 1026              		.loc 1 198 5 is_stmt 1 view .LVU280
+ 1027              		.loc 1 198 7 is_stmt 0 view .LVU281
+ 1028 0026 012C     		cmp	r4, #1
+ 1029 0028 29D0     		beq	.L88
+ 1030              		.loc 1 203 10 is_stmt 1 view .LVU282
+ 1031              		.loc 1 203 12 is_stmt 0 view .LVU283
+ 1032 002a 022C     		cmp	r4, #2
+ 1033 002c 24D0     		beq	.L91
+ 1034              		.loc 1 211 20 view .LVU284
+ 1035 002e 4FF00409 		mov	r9, #4
+ 1036              	.L84:
+ 1037              	.LVL50:
+ 1038              		.loc 1 214 5 is_stmt 1 view .LVU285
+ 1039              		.loc 1 214 16 is_stmt 0 view .LVU286
+ 1040 0032 1C46     		mov	r4, r3
+ 1041              	.LVL51:
+ 1042              	.L85:
+ 1043              		.loc 1 214 22 is_stmt 1 discriminator 1 view .LVU287
+ 1044              		.loc 1 214 5 is_stmt 0 discriminator 1 view .LVU288
+ 1045 0034 4C45     		cmp	r4, r9
+ 1046 0036 25D2     		bcs	.L83
+ 1047              		.loc 1 216 7 is_stmt 1 view .LVU289
+ 1048              		.loc 1 216 77 is_stmt 0 view .LVU290
+ 1049 0038 2101     		lsls	r1, r4, #4
+ 1050              		.loc 1 216 70 view .LVU291
+ 1051 003a C1F12002 		rsb	r2, r1, #32
+ 1052 003e A1F12003 		sub	r3, r1, #32
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 19
+
+
+ 1053              	.LVL52:
+ 1054              		.loc 1 216 70 view .LVU292
+ 1055 0042 28FA01F1 		lsr	r1, r8, r1
+ 1056 0046 06FA02F2 		lsl	r2, r6, r2
+ 1057 004a 1143     		orrs	r1, r1, r2
+ 1058 004c 26FA03F3 		lsr	r3, r6, r3
+ 1059 0050 1943     		orrs	r1, r1, r3
+ 1060              		.loc 1 216 7 view .LVU293
+ 1061 0052 89B2     		uxth	r1, r1
+ 1062 0054 07EB4400 		add	r0, r7, r4, lsl #1
+ 1063 0058 FFF7FEFF 		bl	FLASH_Program_HalfWord
+ 1064              	.LVL53:
+ 1065              		.loc 1 223 9 is_stmt 1 view .LVU294
+ 1066              		.loc 1 223 18 is_stmt 0 view .LVU295
+ 1067 005c 4CF25030 		movw	r0, #50000
+ 1068 0060 FFF7FEFF 		bl	FLASH_WaitForLastOperation
+ 1069              	.LVL54:
+ 1070              		.loc 1 226 9 is_stmt 1 view .LVU296
+ 1071 0064 0C4B     		ldr	r3, .L92+4
+ 1072 0066 1D69     		ldr	r5, [r3, #16]
+ 1073 0068 25F00105 		bic	r5, r5, #1
+ 1074 006c 1D61     		str	r5, [r3, #16]
+ 1075              		.loc 1 239 7 view .LVU297
+ 1076              		.loc 1 239 10 is_stmt 0 view .LVU298
+ 1077 006e 0346     		mov	r3, r0
+ 1078 0070 40B9     		cbnz	r0, .L83
+ 1079              		.loc 1 214 44 is_stmt 1 discriminator 2 view .LVU299
+ 1080              		.loc 1 214 49 is_stmt 0 discriminator 2 view .LVU300
+ 1081 0072 0134     		adds	r4, r4, #1
+ 1082              	.LVL55:
+ 1083              		.loc 1 214 49 discriminator 2 view .LVU301
+ 1084 0074 E4B2     		uxtb	r4, r4
+ 1085              	.LVL56:
+ 1086              		.loc 1 214 49 discriminator 2 view .LVU302
+ 1087 0076 DDE7     		b	.L85
+ 1088              	.LVL57:
+ 1089              	.L91:
+ 1090              		.loc 1 206 20 view .LVU303
+ 1091 0078 4FF00209 		mov	r9, #2
+ 1092 007c D9E7     		b	.L84
+ 1093              	.L88:
+ 1094              		.loc 1 201 20 view .LVU304
+ 1095 007e 4FF00109 		mov	r9, #1
+ 1096 0082 D6E7     		b	.L84
+ 1097              	.LVL58:
+ 1098              	.L83:
+ 1099              		.loc 1 247 3 is_stmt 1 view .LVU305
+ 1100              		.loc 1 247 3 view .LVU306
+ 1101 0084 034A     		ldr	r2, .L92
+ 1102 0086 0021     		movs	r1, #0
+ 1103 0088 1176     		strb	r1, [r2, #24]
+ 1104              		.loc 1 247 3 view .LVU307
+ 1105              		.loc 1 249 3 view .LVU308
+ 1106              	.LVL59:
+ 1107              	.L82:
+ 1108              		.loc 1 250 1 is_stmt 0 view .LVU309
+ 1109 008a 1846     		mov	r0, r3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 20
+
+
+ 1110 008c BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 1111              	.LVL60:
+ 1112              	.L87:
+ 1113              		.loc 1 175 3 view .LVU310
+ 1114 0090 0223     		movs	r3, #2
+ 1115 0092 FAE7     		b	.L82
+ 1116              	.L93:
+ 1117              		.align	2
+ 1118              	.L92:
+ 1119 0094 00000000 		.word	pFlash
+ 1120 0098 00200240 		.word	1073881088
+ 1121              		.cfi_endproc
+ 1122              	.LFE65:
+ 1124              		.comm	pFlash,32,8
+ 1125              		.text
+ 1126              	.Letext0:
+ 1127              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 1128              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 1129              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 1130              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 1131              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 1132              		.file 7 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ 1133              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 1134              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h"
+ 1135              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 1136              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s 			page 21
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_hal_flash.c
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:16     .text.FLASH_Program_HalfWord:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:23     .text.FLASH_Program_HalfWord:0000000000000000 FLASH_Program_HalfWord
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:50     .text.FLASH_Program_HalfWord:0000000000000014 $d
+                            *COM*:0000000000000020 pFlash
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:56     .text.FLASH_SetErrorCode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:62     .text.FLASH_SetErrorCode:0000000000000000 FLASH_SetErrorCode
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:153    .text.FLASH_SetErrorCode:0000000000000068 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:159    .text.HAL_FLASH_Program_IT:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:166    .text.HAL_FLASH_Program_IT:0000000000000000 HAL_FLASH_Program_IT
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:278    .text.HAL_FLASH_Program_IT:0000000000000060 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:284    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:291    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 HAL_FLASH_EndOfOperationCallback
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:306    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:313    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 HAL_FLASH_OperationErrorCallback
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:328    .text.HAL_FLASH_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:335    .text.HAL_FLASH_IRQHandler:0000000000000000 HAL_FLASH_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:622    .text.HAL_FLASH_IRQHandler:000000000000014c $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:628    .text.HAL_FLASH_Unlock:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:635    .text.HAL_FLASH_Unlock:0000000000000000 HAL_FLASH_Unlock
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:680    .text.HAL_FLASH_Unlock:000000000000002c $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:686    .text.HAL_FLASH_Lock:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:693    .text.HAL_FLASH_Lock:0000000000000000 HAL_FLASH_Lock
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:712    .text.HAL_FLASH_Lock:0000000000000010 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:717    .text.HAL_FLASH_OB_Unlock:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:724    .text.HAL_FLASH_OB_Unlock:0000000000000000 HAL_FLASH_OB_Unlock
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:757    .text.HAL_FLASH_OB_Unlock:0000000000000020 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:763    .text.HAL_FLASH_OB_Lock:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:770    .text.HAL_FLASH_OB_Lock:0000000000000000 HAL_FLASH_OB_Lock
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:789    .text.HAL_FLASH_OB_Lock:0000000000000010 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:794    .text.HAL_FLASH_OB_Launch:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:801    .text.HAL_FLASH_OB_Launch:0000000000000000 HAL_FLASH_OB_Launch
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:821    .text.HAL_FLASH_GetError:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:828    .text.HAL_FLASH_GetError:0000000000000000 HAL_FLASH_GetError
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:844    .text.HAL_FLASH_GetError:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:849    .text.FLASH_WaitForLastOperation:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:856    .text.FLASH_WaitForLastOperation:0000000000000000 FLASH_WaitForLastOperation
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:961    .text.FLASH_WaitForLastOperation:0000000000000064 $d
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:966    .text.HAL_FLASH_Program:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:973    .text.HAL_FLASH_Program:0000000000000000 HAL_FLASH_Program
+C:\Users\Ika\AppData\Local\Temp\ccEbrjYz.s:1119   .text.HAL_FLASH_Program:0000000000000094 $d
+
+UNDEFINED SYMBOLS
+FLASH_PageErase
+HAL_NVIC_SystemReset
+HAL_GetTick
