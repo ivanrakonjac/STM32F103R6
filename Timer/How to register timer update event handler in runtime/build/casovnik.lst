@@ -1,0 +1,248 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"casovnik.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.timer1Callback,"ax",%progbits
+  16              		.align	1
+  17              		.global	timer1Callback
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	timer1Callback:
+  25              	.LFB66:
+  26              		.file 1 "../Core/Src/casovnik.c"
+   1:../Core/Src/casovnik.c **** 
+  27              		.loc 1 34 22 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  36              		.loc 1 35 2 view .LVU1
+  37 0002 0221     		movs	r1, #2
+  38 0004 0148     		ldr	r0, .L3
+  39 0006 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+  40              	.LVL0:
+  41              		.loc 1 36 1 is_stmt 0 view .LVU2
+  42 000a 08BD     		pop	{r3, pc}
+  43              	.L4:
+  44              		.align	2
+  45              	.L3:
+  46 000c 000C0140 		.word	1073810432
+  47              		.cfi_endproc
+  48              	.LFE66:
+  50              		.section	.text.casovnik,"ax",%progbits
+  51              		.align	1
+  52              		.global	casovnik
+  53              		.syntax unified
+  54              		.thumb
+  55              		.thumb_func
+  56              		.fpu softvfp
+  58              	casovnik:
+  59              	.LFB65:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s 			page 2
+
+
+  60              		.loc 1 14 16 is_stmt 1 view -0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64 0000 10B5     		push	{r4, lr}
+  65              	.LCFI1:
+  66              		.cfi_def_cfa_offset 8
+  67              		.cfi_offset 4, -8
+  68              		.cfi_offset 14, -4
+  69              		.loc 1 15 2 view .LVU4
+  70 0002 134B     		ldr	r3, .L11
+  71 0004 1868     		ldr	r0, [r3]
+  72 0006 FFF7FEFF 		bl	HAL_TIM_Base_Start
+  73              	.LVL1:
+  74              		.loc 1 17 2 view .LVU5
+  75              	.LBB2:
+  76              		.loc 1 17 6 view .LVU6
+  77              		.loc 1 17 10 is_stmt 0 view .LVU7
+  78 000a 0024     		movs	r4, #0
+  79              		.loc 1 17 2 view .LVU8
+  80 000c 08E0     		b	.L6
+  81              	.LVL2:
+  82              	.L10:
+  83              		.loc 1 21 5 is_stmt 1 discriminator 2 view .LVU9
+  84              		.loc 1 21 14 is_stmt 0 discriminator 2 view .LVU10
+  85 000e 114B     		ldr	r3, .L11+4
+  86 0010 6FF00102 		mvn	r2, #1
+  87 0014 1A61     		str	r2, [r3, #16]
+  88              		.loc 1 23 5 is_stmt 1 discriminator 2 view .LVU11
+  89 0016 0121     		movs	r1, #1
+  90 0018 0F48     		ldr	r0, .L11+8
+  91 001a FFF7FEFF 		bl	HAL_GPIO_TogglePin
+  92              	.LVL3:
+  93              		.loc 1 17 20 discriminator 2 view .LVU12
+  94              		.loc 1 17 21 is_stmt 0 discriminator 2 view .LVU13
+  95 001e 0134     		adds	r4, r4, #1
+  96              	.LVL4:
+  97              	.L6:
+  98              		.loc 1 17 15 is_stmt 1 discriminator 1 view .LVU14
+  99              		.loc 1 17 2 is_stmt 0 discriminator 1 view .LVU15
+ 100 0020 042C     		cmp	r4, #4
+ 101 0022 07DC     		bgt	.L9
+ 102              	.L7:
+ 103              		.loc 1 20 5 is_stmt 1 discriminator 1 view .LVU16
+ 104              		.loc 1 18 10 discriminator 1 view .LVU17
+ 105              		.loc 1 18 31 is_stmt 0 discriminator 1 view .LVU18
+ 106 0024 0A4B     		ldr	r3, .L11
+ 107 0026 1B68     		ldr	r3, [r3]
+ 108 0028 1B68     		ldr	r3, [r3]
+ 109              		.loc 1 18 41 discriminator 1 view .LVU19
+ 110 002a 1B69     		ldr	r3, [r3, #16]
+ 111              		.loc 1 18 10 discriminator 1 view .LVU20
+ 112 002c 13F0010F 		tst	r3, #1
+ 113 0030 F8D0     		beq	.L7
+ 114 0032 ECE7     		b	.L10
+ 115              	.L9:
+ 116              	.LBE2:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s 			page 3
+
+
+ 117              		.loc 1 26 2 is_stmt 1 view .LVU21
+ 118 0034 064C     		ldr	r4, .L11
+ 119              	.LVL5:
+ 120              		.loc 1 26 2 is_stmt 0 view .LVU22
+ 121 0036 2068     		ldr	r0, [r4]
+ 122 0038 FFF7FEFF 		bl	HAL_TIM_Base_Stop
+ 123              	.LVL6:
+ 124              		.loc 1 29 2 is_stmt 1 view .LVU23
+ 125 003c 074A     		ldr	r2, .L11+12
+ 126 003e 0E21     		movs	r1, #14
+ 127 0040 2068     		ldr	r0, [r4]
+ 128 0042 FFF7FEFF 		bl	HAL_TIM_RegisterCallback
+ 129              	.LVL7:
+ 130              		.loc 1 30 2 view .LVU24
+ 131 0046 2068     		ldr	r0, [r4]
+ 132 0048 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+ 133              	.LVL8:
+ 134              		.loc 1 32 1 is_stmt 0 view .LVU25
+ 135 004c 10BD     		pop	{r4, pc}
+ 136              	.L12:
+ 137 004e 00BF     		.align	2
+ 138              	.L11:
+ 139 0050 00000000 		.word	.LANCHOR0
+ 140 0054 002C0140 		.word	1073818624
+ 141 0058 000C0140 		.word	1073810432
+ 142 005c 00000000 		.word	timer1Callback
+ 143              		.cfi_endproc
+ 144              	.LFE65:
+ 146              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+ 147              		.align	1
+ 148              		.global	HAL_TIM_PeriodElapsedCallback
+ 149              		.syntax unified
+ 150              		.thumb
+ 151              		.thumb_func
+ 152              		.fpu softvfp
+ 154              	HAL_TIM_PeriodElapsedCallback:
+ 155              	.LVL9:
+ 156              	.LFB67:
+ 157              		.loc 1 38 60 is_stmt 1 view -0
+ 158              		.cfi_startproc
+ 159              		@ args = 0, pretend = 0, frame = 0
+ 160              		@ frame_needed = 0, uses_anonymous_args = 0
+ 161              		.loc 1 38 60 is_stmt 0 view .LVU27
+ 162 0000 08B5     		push	{r3, lr}
+ 163              	.LCFI2:
+ 164              		.cfi_def_cfa_offset 8
+ 165              		.cfi_offset 3, -8
+ 166              		.cfi_offset 14, -4
+ 167              		.loc 1 40 2 is_stmt 1 view .LVU28
+ 168              		.loc 1 40 9 is_stmt 0 view .LVU29
+ 169 0002 0268     		ldr	r2, [r0]
+ 170              		.loc 1 40 28 view .LVU30
+ 171 0004 044B     		ldr	r3, .L17
+ 172 0006 1B68     		ldr	r3, [r3]
+ 173              		.loc 1 40 4 view .LVU31
+ 174 0008 9A42     		cmp	r2, r3
+ 175 000a 00D0     		beq	.L16
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s 			page 4
+
+
+ 176              	.LVL10:
+ 177              	.L13:
+ 178              		.loc 1 43 1 view .LVU32
+ 179 000c 08BD     		pop	{r3, pc}
+ 180              	.LVL11:
+ 181              	.L16:
+ 182              		.loc 1 41 3 is_stmt 1 view .LVU33
+ 183 000e 0221     		movs	r1, #2
+ 184 0010 0248     		ldr	r0, .L17+4
+ 185              	.LVL12:
+ 186              		.loc 1 41 3 is_stmt 0 view .LVU34
+ 187 0012 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 188              	.LVL13:
+ 189              		.loc 1 43 1 view .LVU35
+ 190 0016 F9E7     		b	.L13
+ 191              	.L18:
+ 192              		.align	2
+ 193              	.L17:
+ 194 0018 00000000 		.word	htim1
+ 195 001c 000C0140 		.word	1073810432
+ 196              		.cfi_endproc
+ 197              	.LFE67:
+ 199              		.global	casovnik_tim_handle
+ 200              		.section	.data.casovnik_tim_handle,"aw"
+ 201              		.align	2
+ 202              		.set	.LANCHOR0,. + 0
+ 205              	casovnik_tim_handle:
+ 206 0000 00000000 		.word	htim1
+ 207              		.text
+ 208              	.Letext0:
+ 209              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 210              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 211              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 212              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 213              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 214              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 215              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 216              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 217              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 218              		.file 11 "../Core/Inc/tim.h"
+ 219              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 casovnik.c
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:16     .text.timer1Callback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:24     .text.timer1Callback:0000000000000000 timer1Callback
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:46     .text.timer1Callback:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:51     .text.casovnik:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:58     .text.casovnik:0000000000000000 casovnik
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:139    .text.casovnik:0000000000000050 $d
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:147    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:154    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:194    .text.HAL_TIM_PeriodElapsedCallback:0000000000000018 $d
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:205    .data.casovnik_tim_handle:0000000000000000 casovnik_tim_handle
+C:\Users\Ika\AppData\Local\Temp\ccrrzzEb.s:201    .data.casovnik_tim_handle:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_TogglePin
+HAL_TIM_Base_Start
+HAL_TIM_Base_Stop
+HAL_TIM_RegisterCallback
+HAL_TIM_Base_Start_IT
+htim1
