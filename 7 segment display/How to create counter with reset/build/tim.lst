@@ -1,0 +1,522 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"tim.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.MX_TIM1_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	MX_TIM1_Init
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	MX_TIM1_Init:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/tim.c"
+   1:../Core/Src/tim.c **** 
+  27              		.loc 1 32 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 24
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 00B5     		push	{lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 4
+  34              		.cfi_offset 14, -4
+  35 0002 87B0     		sub	sp, sp, #28
+  36              	.LCFI1:
+  37              		.cfi_def_cfa_offset 32
+  38              		.loc 1 33 3 view .LVU1
+  39              		.loc 1 33 26 is_stmt 0 view .LVU2
+  40 0004 0023     		movs	r3, #0
+  41 0006 0293     		str	r3, [sp, #8]
+  42 0008 0393     		str	r3, [sp, #12]
+  43 000a 0493     		str	r3, [sp, #16]
+  44 000c 0593     		str	r3, [sp, #20]
+  45              		.loc 1 34 3 is_stmt 1 view .LVU3
+  46              		.loc 1 34 27 is_stmt 0 view .LVU4
+  47 000e 0093     		str	r3, [sp]
+  48 0010 0193     		str	r3, [sp, #4]
+  49              		.loc 1 36 3 is_stmt 1 view .LVU5
+  50              		.loc 1 36 18 is_stmt 0 view .LVU6
+  51 0012 1548     		ldr	r0, .L9
+  52 0014 154A     		ldr	r2, .L9+4
+  53 0016 0260     		str	r2, [r0]
+  54              		.loc 1 37 3 is_stmt 1 view .LVU7
+  55              		.loc 1 37 24 is_stmt 0 view .LVU8
+  56 0018 40F2E732 		movw	r2, #999
+  57 001c 4260     		str	r2, [r0, #4]
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 2
+
+
+  58              		.loc 1 38 3 is_stmt 1 view .LVU9
+  59              		.loc 1 38 26 is_stmt 0 view .LVU10
+  60 001e 8360     		str	r3, [r0, #8]
+  61              		.loc 1 39 3 is_stmt 1 view .LVU11
+  62              		.loc 1 39 21 is_stmt 0 view .LVU12
+  63 0020 4F22     		movs	r2, #79
+  64 0022 C260     		str	r2, [r0, #12]
+  65              		.loc 1 40 3 is_stmt 1 view .LVU13
+  66              		.loc 1 40 28 is_stmt 0 view .LVU14
+  67 0024 0361     		str	r3, [r0, #16]
+  68              		.loc 1 41 3 is_stmt 1 view .LVU15
+  69              		.loc 1 41 32 is_stmt 0 view .LVU16
+  70 0026 4361     		str	r3, [r0, #20]
+  71              		.loc 1 42 3 is_stmt 1 view .LVU17
+  72              		.loc 1 42 32 is_stmt 0 view .LVU18
+  73 0028 8361     		str	r3, [r0, #24]
+  74              		.loc 1 43 3 is_stmt 1 view .LVU19
+  75              		.loc 1 43 7 is_stmt 0 view .LVU20
+  76 002a FFF7FEFF 		bl	HAL_TIM_Base_Init
+  77              	.LVL0:
+  78              		.loc 1 43 6 view .LVU21
+  79 002e 90B9     		cbnz	r0, .L6
+  80              	.L2:
+  81              		.loc 1 47 3 is_stmt 1 view .LVU22
+  82              		.loc 1 47 34 is_stmt 0 view .LVU23
+  83 0030 4FF48053 		mov	r3, #4096
+  84 0034 0293     		str	r3, [sp, #8]
+  85              		.loc 1 48 3 is_stmt 1 view .LVU24
+  86              		.loc 1 48 7 is_stmt 0 view .LVU25
+  87 0036 02A9     		add	r1, sp, #8
+  88 0038 0B48     		ldr	r0, .L9
+  89 003a FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+  90              	.LVL1:
+  91              		.loc 1 48 6 view .LVU26
+  92 003e 68B9     		cbnz	r0, .L7
+  93              	.L3:
+  94              		.loc 1 52 3 is_stmt 1 view .LVU27
+  95              		.loc 1 52 37 is_stmt 0 view .LVU28
+  96 0040 0023     		movs	r3, #0
+  97 0042 0093     		str	r3, [sp]
+  98              		.loc 1 53 3 is_stmt 1 view .LVU29
+  99              		.loc 1 53 33 is_stmt 0 view .LVU30
+ 100 0044 0193     		str	r3, [sp, #4]
+ 101              		.loc 1 54 3 is_stmt 1 view .LVU31
+ 102              		.loc 1 54 7 is_stmt 0 view .LVU32
+ 103 0046 6946     		mov	r1, sp
+ 104 0048 0748     		ldr	r0, .L9
+ 105 004a FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+ 106              	.LVL2:
+ 107              		.loc 1 54 6 view .LVU33
+ 108 004e 40B9     		cbnz	r0, .L8
+ 109              	.L1:
+ 110              		.loc 1 59 1 view .LVU34
+ 111 0050 07B0     		add	sp, sp, #28
+ 112              	.LCFI2:
+ 113              		.cfi_remember_state
+ 114              		.cfi_def_cfa_offset 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 3
+
+
+ 115              		@ sp needed
+ 116 0052 5DF804FB 		ldr	pc, [sp], #4
+ 117              	.L6:
+ 118              	.LCFI3:
+ 119              		.cfi_restore_state
+ 120              		.loc 1 45 5 is_stmt 1 view .LVU35
+ 121 0056 FFF7FEFF 		bl	Error_Handler
+ 122              	.LVL3:
+ 123 005a E9E7     		b	.L2
+ 124              	.L7:
+ 125              		.loc 1 50 5 view .LVU36
+ 126 005c FFF7FEFF 		bl	Error_Handler
+ 127              	.LVL4:
+ 128 0060 EEE7     		b	.L3
+ 129              	.L8:
+ 130              		.loc 1 56 5 view .LVU37
+ 131 0062 FFF7FEFF 		bl	Error_Handler
+ 132              	.LVL5:
+ 133              		.loc 1 59 1 is_stmt 0 view .LVU38
+ 134 0066 F3E7     		b	.L1
+ 135              	.L10:
+ 136              		.align	2
+ 137              	.L9:
+ 138 0068 00000000 		.word	htim1
+ 139 006c 002C0140 		.word	1073818624
+ 140              		.cfi_endproc
+ 141              	.LFE65:
+ 143              		.section	.text.MX_TIM3_Init,"ax",%progbits
+ 144              		.align	1
+ 145              		.global	MX_TIM3_Init
+ 146              		.syntax unified
+ 147              		.thumb
+ 148              		.thumb_func
+ 149              		.fpu softvfp
+ 151              	MX_TIM3_Init:
+ 152              	.LFB66:
+ 153              		.loc 1 62 1 is_stmt 1 view -0
+ 154              		.cfi_startproc
+ 155              		@ args = 0, pretend = 0, frame = 24
+ 156              		@ frame_needed = 0, uses_anonymous_args = 0
+ 157 0000 00B5     		push	{lr}
+ 158              	.LCFI4:
+ 159              		.cfi_def_cfa_offset 4
+ 160              		.cfi_offset 14, -4
+ 161 0002 87B0     		sub	sp, sp, #28
+ 162              	.LCFI5:
+ 163              		.cfi_def_cfa_offset 32
+ 164              		.loc 1 63 3 view .LVU40
+ 165              		.loc 1 63 26 is_stmt 0 view .LVU41
+ 166 0004 0023     		movs	r3, #0
+ 167 0006 0293     		str	r3, [sp, #8]
+ 168 0008 0393     		str	r3, [sp, #12]
+ 169 000a 0493     		str	r3, [sp, #16]
+ 170 000c 0593     		str	r3, [sp, #20]
+ 171              		.loc 1 64 3 is_stmt 1 view .LVU42
+ 172              		.loc 1 64 27 is_stmt 0 view .LVU43
+ 173 000e 0093     		str	r3, [sp]
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 4
+
+
+ 174 0010 0193     		str	r3, [sp, #4]
+ 175              		.loc 1 66 3 is_stmt 1 view .LVU44
+ 176              		.loc 1 66 18 is_stmt 0 view .LVU45
+ 177 0012 1548     		ldr	r0, .L19
+ 178 0014 154A     		ldr	r2, .L19+4
+ 179 0016 0260     		str	r2, [r0]
+ 180              		.loc 1 67 3 is_stmt 1 view .LVU46
+ 181              		.loc 1 67 24 is_stmt 0 view .LVU47
+ 182 0018 40F2E732 		movw	r2, #999
+ 183 001c 4260     		str	r2, [r0, #4]
+ 184              		.loc 1 68 3 is_stmt 1 view .LVU48
+ 185              		.loc 1 68 26 is_stmt 0 view .LVU49
+ 186 001e 8360     		str	r3, [r0, #8]
+ 187              		.loc 1 69 3 is_stmt 1 view .LVU50
+ 188              		.loc 1 69 21 is_stmt 0 view .LVU51
+ 189 0020 40F69F72 		movw	r2, #3999
+ 190 0024 C260     		str	r2, [r0, #12]
+ 191              		.loc 1 70 3 is_stmt 1 view .LVU52
+ 192              		.loc 1 70 28 is_stmt 0 view .LVU53
+ 193 0026 0361     		str	r3, [r0, #16]
+ 194              		.loc 1 71 3 is_stmt 1 view .LVU54
+ 195              		.loc 1 71 32 is_stmt 0 view .LVU55
+ 196 0028 8361     		str	r3, [r0, #24]
+ 197              		.loc 1 72 3 is_stmt 1 view .LVU56
+ 198              		.loc 1 72 7 is_stmt 0 view .LVU57
+ 199 002a FFF7FEFF 		bl	HAL_TIM_Base_Init
+ 200              	.LVL6:
+ 201              		.loc 1 72 6 view .LVU58
+ 202 002e 90B9     		cbnz	r0, .L16
+ 203              	.L12:
+ 204              		.loc 1 76 3 is_stmt 1 view .LVU59
+ 205              		.loc 1 76 34 is_stmt 0 view .LVU60
+ 206 0030 4FF48053 		mov	r3, #4096
+ 207 0034 0293     		str	r3, [sp, #8]
+ 208              		.loc 1 77 3 is_stmt 1 view .LVU61
+ 209              		.loc 1 77 7 is_stmt 0 view .LVU62
+ 210 0036 02A9     		add	r1, sp, #8
+ 211 0038 0B48     		ldr	r0, .L19
+ 212 003a FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+ 213              	.LVL7:
+ 214              		.loc 1 77 6 view .LVU63
+ 215 003e 68B9     		cbnz	r0, .L17
+ 216              	.L13:
+ 217              		.loc 1 81 3 is_stmt 1 view .LVU64
+ 218              		.loc 1 81 37 is_stmt 0 view .LVU65
+ 219 0040 0023     		movs	r3, #0
+ 220 0042 0093     		str	r3, [sp]
+ 221              		.loc 1 82 3 is_stmt 1 view .LVU66
+ 222              		.loc 1 82 33 is_stmt 0 view .LVU67
+ 223 0044 0193     		str	r3, [sp, #4]
+ 224              		.loc 1 83 3 is_stmt 1 view .LVU68
+ 225              		.loc 1 83 7 is_stmt 0 view .LVU69
+ 226 0046 6946     		mov	r1, sp
+ 227 0048 0748     		ldr	r0, .L19
+ 228 004a FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+ 229              	.LVL8:
+ 230              		.loc 1 83 6 view .LVU70
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 5
+
+
+ 231 004e 40B9     		cbnz	r0, .L18
+ 232              	.L11:
+ 233              		.loc 1 88 1 view .LVU71
+ 234 0050 07B0     		add	sp, sp, #28
+ 235              	.LCFI6:
+ 236              		.cfi_remember_state
+ 237              		.cfi_def_cfa_offset 4
+ 238              		@ sp needed
+ 239 0052 5DF804FB 		ldr	pc, [sp], #4
+ 240              	.L16:
+ 241              	.LCFI7:
+ 242              		.cfi_restore_state
+ 243              		.loc 1 74 5 is_stmt 1 view .LVU72
+ 244 0056 FFF7FEFF 		bl	Error_Handler
+ 245              	.LVL9:
+ 246 005a E9E7     		b	.L12
+ 247              	.L17:
+ 248              		.loc 1 79 5 view .LVU73
+ 249 005c FFF7FEFF 		bl	Error_Handler
+ 250              	.LVL10:
+ 251 0060 EEE7     		b	.L13
+ 252              	.L18:
+ 253              		.loc 1 85 5 view .LVU74
+ 254 0062 FFF7FEFF 		bl	Error_Handler
+ 255              	.LVL11:
+ 256              		.loc 1 88 1 is_stmt 0 view .LVU75
+ 257 0066 F3E7     		b	.L11
+ 258              	.L20:
+ 259              		.align	2
+ 260              	.L19:
+ 261 0068 00000000 		.word	htim3
+ 262 006c 00040040 		.word	1073742848
+ 263              		.cfi_endproc
+ 264              	.LFE66:
+ 266              		.section	.text.HAL_TIM_Base_MspInit,"ax",%progbits
+ 267              		.align	1
+ 268              		.global	HAL_TIM_Base_MspInit
+ 269              		.syntax unified
+ 270              		.thumb
+ 271              		.thumb_func
+ 272              		.fpu softvfp
+ 274              	HAL_TIM_Base_MspInit:
+ 275              	.LVL12:
+ 276              	.LFB67:
+ 277              		.loc 1 91 1 is_stmt 1 view -0
+ 278              		.cfi_startproc
+ 279              		@ args = 0, pretend = 0, frame = 8
+ 280              		@ frame_needed = 0, uses_anonymous_args = 0
+ 281              		.loc 1 91 1 is_stmt 0 view .LVU77
+ 282 0000 00B5     		push	{lr}
+ 283              	.LCFI8:
+ 284              		.cfi_def_cfa_offset 4
+ 285              		.cfi_offset 14, -4
+ 286 0002 83B0     		sub	sp, sp, #12
+ 287              	.LCFI9:
+ 288              		.cfi_def_cfa_offset 16
+ 289              		.loc 1 93 3 is_stmt 1 view .LVU78
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 6
+
+
+ 290              		.loc 1 93 20 is_stmt 0 view .LVU79
+ 291 0004 0368     		ldr	r3, [r0]
+ 292              		.loc 1 93 5 view .LVU80
+ 293 0006 174A     		ldr	r2, .L27
+ 294 0008 9342     		cmp	r3, r2
+ 295 000a 05D0     		beq	.L25
+ 296              		.loc 1 108 8 is_stmt 1 view .LVU81
+ 297              		.loc 1 108 10 is_stmt 0 view .LVU82
+ 298 000c 164A     		ldr	r2, .L27+4
+ 299 000e 9342     		cmp	r3, r2
+ 300 0010 15D0     		beq	.L26
+ 301              	.LVL13:
+ 302              	.L21:
+ 303              		.loc 1 123 1 view .LVU83
+ 304 0012 03B0     		add	sp, sp, #12
+ 305              	.LCFI10:
+ 306              		.cfi_remember_state
+ 307              		.cfi_def_cfa_offset 4
+ 308              		@ sp needed
+ 309 0014 5DF804FB 		ldr	pc, [sp], #4
+ 310              	.LVL14:
+ 311              	.L25:
+ 312              	.LCFI11:
+ 313              		.cfi_restore_state
+ 314              		.loc 1 99 5 is_stmt 1 view .LVU84
+ 315              	.LBB2:
+ 316              		.loc 1 99 5 view .LVU85
+ 317              		.loc 1 99 5 view .LVU86
+ 318 0018 144B     		ldr	r3, .L27+8
+ 319 001a 9A69     		ldr	r2, [r3, #24]
+ 320 001c 42F40062 		orr	r2, r2, #2048
+ 321 0020 9A61     		str	r2, [r3, #24]
+ 322              		.loc 1 99 5 view .LVU87
+ 323 0022 9B69     		ldr	r3, [r3, #24]
+ 324 0024 03F40063 		and	r3, r3, #2048
+ 325 0028 0093     		str	r3, [sp]
+ 326              		.loc 1 99 5 view .LVU88
+ 327 002a 009B     		ldr	r3, [sp]
+ 328              	.LBE2:
+ 329              		.loc 1 99 5 view .LVU89
+ 330              		.loc 1 102 5 view .LVU90
+ 331 002c 0022     		movs	r2, #0
+ 332 002e 1146     		mov	r1, r2
+ 333 0030 1920     		movs	r0, #25
+ 334              	.LVL15:
+ 335              		.loc 1 102 5 is_stmt 0 view .LVU91
+ 336 0032 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 337              	.LVL16:
+ 338              		.loc 1 103 5 is_stmt 1 view .LVU92
+ 339 0036 1920     		movs	r0, #25
+ 340 0038 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 341              	.LVL17:
+ 342 003c E9E7     		b	.L21
+ 343              	.LVL18:
+ 344              	.L26:
+ 345              		.loc 1 114 5 view .LVU93
+ 346              	.LBB3:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 7
+
+
+ 347              		.loc 1 114 5 view .LVU94
+ 348              		.loc 1 114 5 view .LVU95
+ 349 003e 0B4B     		ldr	r3, .L27+8
+ 350 0040 DA69     		ldr	r2, [r3, #28]
+ 351 0042 42F00202 		orr	r2, r2, #2
+ 352 0046 DA61     		str	r2, [r3, #28]
+ 353              		.loc 1 114 5 view .LVU96
+ 354 0048 DB69     		ldr	r3, [r3, #28]
+ 355 004a 03F00203 		and	r3, r3, #2
+ 356 004e 0193     		str	r3, [sp, #4]
+ 357              		.loc 1 114 5 view .LVU97
+ 358 0050 019B     		ldr	r3, [sp, #4]
+ 359              	.LBE3:
+ 360              		.loc 1 114 5 view .LVU98
+ 361              		.loc 1 117 5 view .LVU99
+ 362 0052 0022     		movs	r2, #0
+ 363 0054 1146     		mov	r1, r2
+ 364 0056 1D20     		movs	r0, #29
+ 365              	.LVL19:
+ 366              		.loc 1 117 5 is_stmt 0 view .LVU100
+ 367 0058 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 368              	.LVL20:
+ 369              		.loc 1 118 5 is_stmt 1 view .LVU101
+ 370 005c 1D20     		movs	r0, #29
+ 371 005e FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 372              	.LVL21:
+ 373              		.loc 1 123 1 is_stmt 0 view .LVU102
+ 374 0062 D6E7     		b	.L21
+ 375              	.L28:
+ 376              		.align	2
+ 377              	.L27:
+ 378 0064 002C0140 		.word	1073818624
+ 379 0068 00040040 		.word	1073742848
+ 380 006c 00100240 		.word	1073876992
+ 381              		.cfi_endproc
+ 382              	.LFE67:
+ 384              		.section	.text.HAL_TIM_Base_MspDeInit,"ax",%progbits
+ 385              		.align	1
+ 386              		.global	HAL_TIM_Base_MspDeInit
+ 387              		.syntax unified
+ 388              		.thumb
+ 389              		.thumb_func
+ 390              		.fpu softvfp
+ 392              	HAL_TIM_Base_MspDeInit:
+ 393              	.LVL22:
+ 394              	.LFB68:
+ 395              		.loc 1 126 1 is_stmt 1 view -0
+ 396              		.cfi_startproc
+ 397              		@ args = 0, pretend = 0, frame = 0
+ 398              		@ frame_needed = 0, uses_anonymous_args = 0
+ 399              		.loc 1 126 1 is_stmt 0 view .LVU104
+ 400 0000 08B5     		push	{r3, lr}
+ 401              	.LCFI12:
+ 402              		.cfi_def_cfa_offset 8
+ 403              		.cfi_offset 3, -8
+ 404              		.cfi_offset 14, -4
+ 405              		.loc 1 128 3 is_stmt 1 view .LVU105
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 8
+
+
+ 406              		.loc 1 128 20 is_stmt 0 view .LVU106
+ 407 0002 0368     		ldr	r3, [r0]
+ 408              		.loc 1 128 5 view .LVU107
+ 409 0004 0D4A     		ldr	r2, .L35
+ 410 0006 9342     		cmp	r3, r2
+ 411 0008 03D0     		beq	.L33
+ 412              		.loc 1 142 8 is_stmt 1 view .LVU108
+ 413              		.loc 1 142 10 is_stmt 0 view .LVU109
+ 414 000a 0D4A     		ldr	r2, .L35+4
+ 415 000c 9342     		cmp	r3, r2
+ 416 000e 0AD0     		beq	.L34
+ 417              	.LVL23:
+ 418              	.L29:
+ 419              		.loc 1 156 1 view .LVU110
+ 420 0010 08BD     		pop	{r3, pc}
+ 421              	.LVL24:
+ 422              	.L33:
+ 423              		.loc 1 134 5 is_stmt 1 view .LVU111
+ 424 0012 02F56442 		add	r2, r2, #58368
+ 425 0016 9369     		ldr	r3, [r2, #24]
+ 426 0018 23F40063 		bic	r3, r3, #2048
+ 427 001c 9361     		str	r3, [r2, #24]
+ 428              		.loc 1 137 5 view .LVU112
+ 429 001e 1920     		movs	r0, #25
+ 430              	.LVL25:
+ 431              		.loc 1 137 5 is_stmt 0 view .LVU113
+ 432 0020 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 433              	.LVL26:
+ 434 0024 F4E7     		b	.L29
+ 435              	.LVL27:
+ 436              	.L34:
+ 437              		.loc 1 148 5 is_stmt 1 view .LVU114
+ 438 0026 02F50332 		add	r2, r2, #134144
+ 439 002a D369     		ldr	r3, [r2, #28]
+ 440 002c 23F00203 		bic	r3, r3, #2
+ 441 0030 D361     		str	r3, [r2, #28]
+ 442              		.loc 1 151 5 view .LVU115
+ 443 0032 1D20     		movs	r0, #29
+ 444              	.LVL28:
+ 445              		.loc 1 151 5 is_stmt 0 view .LVU116
+ 446 0034 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 447              	.LVL29:
+ 448              		.loc 1 156 1 view .LVU117
+ 449 0038 EAE7     		b	.L29
+ 450              	.L36:
+ 451 003a 00BF     		.align	2
+ 452              	.L35:
+ 453 003c 002C0140 		.word	1073818624
+ 454 0040 00040040 		.word	1073742848
+ 455              		.cfi_endproc
+ 456              	.LFE68:
+ 458              		.comm	htim3,180,4
+ 459              		.comm	htim1,180,4
+ 460              		.text
+ 461              	.Letext0:
+ 462              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 463              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 9
+
+
+ 464              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 465              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 466              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 467              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 468              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 469              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 470              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 471              		.file 11 "../Core/Inc/tim.h"
+ 472              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ 473              		.file 13 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
+ 474              		.file 14 "../Core/Inc/main.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 tim.c
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:16     .text.MX_TIM1_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:24     .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:138    .text.MX_TIM1_Init:0000000000000068 $d
+                            *COM*:00000000000000b4 htim1
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:144    .text.MX_TIM3_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:151    .text.MX_TIM3_Init:0000000000000000 MX_TIM3_Init
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:261    .text.MX_TIM3_Init:0000000000000068 $d
+                            *COM*:00000000000000b4 htim3
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:267    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:274    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:378    .text.HAL_TIM_Base_MspInit:0000000000000064 $d
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:385    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:392    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+C:\Users\Ika\AppData\Local\Temp\ccFlu7JS.s:453    .text.HAL_TIM_Base_MspDeInit:000000000000003c $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_Base_Init
+HAL_TIM_ConfigClockSource
+HAL_TIMEx_MasterConfigSynchronization
+Error_Handler
+HAL_NVIC_SetPriority
+HAL_NVIC_EnableIRQ
+HAL_NVIC_DisableIRQ
