@@ -1,0 +1,323 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_it.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.NMI_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	NMI_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	NMI_Handler:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/stm32f1xx_it.c"
+   1:../Core/Src/stm32f1xx_it.c **** 
+  27              		.loc 1 72 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 79 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE65:
+  37              		.section	.text.HardFault_Handler,"ax",%progbits
+  38              		.align	1
+  39              		.global	HardFault_Handler
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	HardFault_Handler:
+  46              	.LFB66:
+  47              		.loc 1 85 1 view -0
+  48              		.cfi_startproc
+  49              		@ Volatile: function does not return.
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		@ link register save eliminated.
+  53              	.L3:
+  54              		.loc 1 89 3 discriminator 1 view .LVU3
+  55              		.loc 1 93 3 discriminator 1 view .LVU4
+  56              		.loc 1 89 9 discriminator 1 view .LVU5
+  57 0000 FEE7     		b	.L3
+  58              		.cfi_endproc
+  59              	.LFE66:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 2
+
+
+  61              		.section	.text.MemManage_Handler,"ax",%progbits
+  62              		.align	1
+  63              		.global	MemManage_Handler
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  67              		.fpu softvfp
+  69              	MemManage_Handler:
+  70              	.LFB67:
+  71              		.loc 1 100 1 view -0
+  72              		.cfi_startproc
+  73              		@ Volatile: function does not return.
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              		@ link register save eliminated.
+  77              	.L5:
+  78              		.loc 1 104 3 discriminator 1 view .LVU7
+  79              		.loc 1 108 3 discriminator 1 view .LVU8
+  80              		.loc 1 104 9 discriminator 1 view .LVU9
+  81 0000 FEE7     		b	.L5
+  82              		.cfi_endproc
+  83              	.LFE67:
+  85              		.section	.text.BusFault_Handler,"ax",%progbits
+  86              		.align	1
+  87              		.global	BusFault_Handler
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  91              		.fpu softvfp
+  93              	BusFault_Handler:
+  94              	.LFB68:
+  95              		.loc 1 115 1 view -0
+  96              		.cfi_startproc
+  97              		@ Volatile: function does not return.
+  98              		@ args = 0, pretend = 0, frame = 0
+  99              		@ frame_needed = 0, uses_anonymous_args = 0
+ 100              		@ link register save eliminated.
+ 101              	.L7:
+ 102              		.loc 1 119 3 discriminator 1 view .LVU11
+ 103              		.loc 1 123 3 discriminator 1 view .LVU12
+ 104              		.loc 1 119 9 discriminator 1 view .LVU13
+ 105 0000 FEE7     		b	.L7
+ 106              		.cfi_endproc
+ 107              	.LFE68:
+ 109              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 110              		.align	1
+ 111              		.global	UsageFault_Handler
+ 112              		.syntax unified
+ 113              		.thumb
+ 114              		.thumb_func
+ 115              		.fpu softvfp
+ 117              	UsageFault_Handler:
+ 118              	.LFB69:
+ 119              		.loc 1 130 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ Volatile: function does not return.
+ 122              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 3
+
+
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125              	.L9:
+ 126              		.loc 1 134 3 discriminator 1 view .LVU15
+ 127              		.loc 1 138 3 discriminator 1 view .LVU16
+ 128              		.loc 1 134 9 discriminator 1 view .LVU17
+ 129 0000 FEE7     		b	.L9
+ 130              		.cfi_endproc
+ 131              	.LFE69:
+ 133              		.section	.text.SVC_Handler,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	SVC_Handler
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.fpu softvfp
+ 141              	SVC_Handler:
+ 142              	.LFB70:
+ 143              		.loc 1 145 1 view -0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		@ link register save eliminated.
+ 148              		.loc 1 152 1 view .LVU19
+ 149 0000 7047     		bx	lr
+ 150              		.cfi_endproc
+ 151              	.LFE70:
+ 153              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 154              		.align	1
+ 155              		.global	DebugMon_Handler
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.fpu softvfp
+ 161              	DebugMon_Handler:
+ 162              	.LFB71:
+ 163              		.loc 1 158 1 view -0
+ 164              		.cfi_startproc
+ 165              		@ args = 0, pretend = 0, frame = 0
+ 166              		@ frame_needed = 0, uses_anonymous_args = 0
+ 167              		@ link register save eliminated.
+ 168              		.loc 1 165 1 view .LVU21
+ 169 0000 7047     		bx	lr
+ 170              		.cfi_endproc
+ 171              	.LFE71:
+ 173              		.section	.text.PendSV_Handler,"ax",%progbits
+ 174              		.align	1
+ 175              		.global	PendSV_Handler
+ 176              		.syntax unified
+ 177              		.thumb
+ 178              		.thumb_func
+ 179              		.fpu softvfp
+ 181              	PendSV_Handler:
+ 182              	.LFB72:
+ 183              		.loc 1 171 1 view -0
+ 184              		.cfi_startproc
+ 185              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 4
+
+
+ 186              		@ frame_needed = 0, uses_anonymous_args = 0
+ 187              		@ link register save eliminated.
+ 188              		.loc 1 178 1 view .LVU23
+ 189 0000 7047     		bx	lr
+ 190              		.cfi_endproc
+ 191              	.LFE72:
+ 193              		.section	.text.SysTick_Handler,"ax",%progbits
+ 194              		.align	1
+ 195              		.global	SysTick_Handler
+ 196              		.syntax unified
+ 197              		.thumb
+ 198              		.thumb_func
+ 199              		.fpu softvfp
+ 201              	SysTick_Handler:
+ 202              	.LFB73:
+ 203              		.loc 1 184 1 view -0
+ 204              		.cfi_startproc
+ 205              		@ args = 0, pretend = 0, frame = 0
+ 206              		@ frame_needed = 0, uses_anonymous_args = 0
+ 207 0000 08B5     		push	{r3, lr}
+ 208              	.LCFI0:
+ 209              		.cfi_def_cfa_offset 8
+ 210              		.cfi_offset 3, -8
+ 211              		.cfi_offset 14, -4
+ 212              		.loc 1 188 3 view .LVU25
+ 213 0002 FFF7FEFF 		bl	HAL_IncTick
+ 214              	.LVL0:
+ 215              		.loc 1 192 1 is_stmt 0 view .LVU26
+ 216 0006 08BD     		pop	{r3, pc}
+ 217              		.cfi_endproc
+ 218              	.LFE73:
+ 220              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 221              		.align	1
+ 222              		.global	TIM1_UP_IRQHandler
+ 223              		.syntax unified
+ 224              		.thumb
+ 225              		.thumb_func
+ 226              		.fpu softvfp
+ 228              	TIM1_UP_IRQHandler:
+ 229              	.LFB74:
+ 230              		.loc 1 205 1 is_stmt 1 view -0
+ 231              		.cfi_startproc
+ 232              		@ args = 0, pretend = 0, frame = 0
+ 233              		@ frame_needed = 0, uses_anonymous_args = 0
+ 234 0000 08B5     		push	{r3, lr}
+ 235              	.LCFI1:
+ 236              		.cfi_def_cfa_offset 8
+ 237              		.cfi_offset 3, -8
+ 238              		.cfi_offset 14, -4
+ 239              		.loc 1 209 3 view .LVU28
+ 240 0002 0248     		ldr	r0, .L17
+ 241 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 242              	.LVL1:
+ 243              		.loc 1 213 1 is_stmt 0 view .LVU29
+ 244 0008 08BD     		pop	{r3, pc}
+ 245              	.L18:
+ 246 000a 00BF     		.align	2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 5
+
+
+ 247              	.L17:
+ 248 000c 00000000 		.word	htim1
+ 249              		.cfi_endproc
+ 250              	.LFE74:
+ 252              		.section	.text.TIM3_IRQHandler,"ax",%progbits
+ 253              		.align	1
+ 254              		.global	TIM3_IRQHandler
+ 255              		.syntax unified
+ 256              		.thumb
+ 257              		.thumb_func
+ 258              		.fpu softvfp
+ 260              	TIM3_IRQHandler:
+ 261              	.LFB75:
+ 262              		.loc 1 219 1 is_stmt 1 view -0
+ 263              		.cfi_startproc
+ 264              		@ args = 0, pretend = 0, frame = 0
+ 265              		@ frame_needed = 0, uses_anonymous_args = 0
+ 266 0000 08B5     		push	{r3, lr}
+ 267              	.LCFI2:
+ 268              		.cfi_def_cfa_offset 8
+ 269              		.cfi_offset 3, -8
+ 270              		.cfi_offset 14, -4
+ 271              		.loc 1 223 3 view .LVU31
+ 272 0002 0248     		ldr	r0, .L21
+ 273 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 274              	.LVL2:
+ 275              		.loc 1 227 1 is_stmt 0 view .LVU32
+ 276 0008 08BD     		pop	{r3, pc}
+ 277              	.L22:
+ 278 000a 00BF     		.align	2
+ 279              	.L21:
+ 280 000c 00000000 		.word	htim3
+ 281              		.cfi_endproc
+ 282              	.LFE75:
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 287              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 288              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 289              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 290              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 291              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 292              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 293              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 294              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:38     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:62     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:86     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:110    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:134    .text.SVC_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:154    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:174    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:194    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:221    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:228    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:248    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:253    .text.TIM3_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:260    .text.TIM3_IRQHandler:0000000000000000 TIM3_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccYOAasV.s:280    .text.TIM3_IRQHandler:000000000000000c $d
+
+UNDEFINED SYMBOLS
+HAL_IncTick
+HAL_TIM_IRQHandler
+htim1
+htim3
