@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
   55              		.cfi_endproc
   56              	.LFE71:
   58              		.section	.text.FLASH_OB_GetWRP,"ax",%progbits
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 2
 
 
   59              		.align	1
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  116 000e A520     		movs	r0, #165
  117              		.loc 1 1051 3 is_stmt 1 view .LVU21
  118              		.loc 1 1052 1 is_stmt 0 view .LVU22
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 3
 
 
  119 0010 7047     		bx	lr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  177 0002 0546     		mov	r5, r0
  178              		.loc 1 888 3 is_stmt 1 view .LVU29
  179              	.LVL4:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 4
 
 
  180              		.loc 1 891 3 view .LVU30
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  234 0048 1880     		strh	r0, [r3]	@ movhi
  235              		.loc 1 919 7 is_stmt 1 view .LVU50
  236              		.loc 1 919 16 is_stmt 0 view .LVU51
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 5
 
 
  237 004a 4CF25030 		movw	r0, #50000
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  293              	.LVL16:
  294              		.loc 1 973 3 is_stmt 1 view .LVU64
  295              		.loc 1 974 1 is_stmt 0 view .LVU65
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 6
 
 
  296 000e 38BD     		pop	{r3, r4, r5, pc}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  352              		.cfi_offset 5, -12
  353              		.cfi_offset 6, -8
  354              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 7
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 7
 
 
  355 0002 0546     		mov	r5, r0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  410              		.align	1
  411              		.global	HAL_FLASHEx_OBErase
  412              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 8
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 8
 
 
  413              		.thumb
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  468 002a 2361     		str	r3, [r4, #16]
  469              		.loc 1 418 5 view .LVU109
  470              		.loc 1 418 14 is_stmt 0 view .LVU110
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 9
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 9
 
 
  471 002c 4CF25030 		movw	r0, #50000
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  527              	.LVL37:
  528              		.loc 1 662 20 view .LVU125
  529 0008 20EA0400 		bic	r0, r0, r4
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 10
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 10
 
 
  530              	.LVL38:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  584 0042 064B     		ldr	r3, .L45+8
  585 0044 1889     		ldrh	r0, [r3, #8]
  586              	.LVL45:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 11
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 11
 
 
  587              		.loc 1 711 18 view .LVU147
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  643              		.loc 1 818 12 is_stmt 0 view .LVU162
  644 000c 4CF25030 		movw	r0, #50000
  645              	.LVL52:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 12
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 12
 
 
  646              		.loc 1 818 12 view .LVU163
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  700 004a 4CF25030 		movw	r0, #50000
  701 004e FFF7FEFF 		bl	FLASH_WaitForLastOperation
  702              	.LVL58:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 13
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 13
 
 
  703              		.loc 1 837 18 view .LVU183
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  759              		.loc 1 460 8 view .LVU198
  760 001c 9342     		cmp	r3, r2
  761 001e 07D0     		beq	.L69
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 14
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 14
 
 
  762              		.loc 1 468 7 is_stmt 1 view .LVU199
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  816              		.loc 1 503 5 view .LVU222
  817 004c 13F0080F 		tst	r3, #8
  818 0050 15D1     		bne	.L72
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 15
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 15
 
 
  819              	.L62:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  873              	.L72:
  874              		.loc 1 505 5 is_stmt 1 view .LVU248
  875              		.loc 1 505 14 is_stmt 0 view .LVU249
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 16
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 16
 
 
  876 007e 217E     		ldrb	r1, [r4, #24]	@ zero_extendqisi2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  932              		.cfi_offset 4, -8
  933              		.cfi_offset 14, -4
  934 0002 0446     		mov	r4, r0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 17
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 17
 
 
  935              		.loc 1 529 3 is_stmt 1 view .LVU262
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  991 000a C0F38740 		ubfx	r0, r0, #18, #8
  992              	.LVL82:
  993              		.loc 1 564 3 is_stmt 1 view .LVU282
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 18
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 18
 
 
  994              		.loc 1 565 1 is_stmt 0 view .LVU283
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1050              	.L85:
  1051              		.align	2
  1052              	.L84:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 19
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 19
 
 
  1053 001c 00000000 		.word	pFlash
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1109              		.loc 1 273 11 view .LVU311
  1110 001e FFF7FEFF 		bl	FLASH_WaitForLastOperation
  1111              	.LVL89:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 20
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 20
 
 
  1112              		.loc 1 273 10 view .LVU312
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1166              		.loc 1 216 11 view .LVU334
  1167 0060 FFF7FEFF 		bl	FLASH_WaitForLastOperation
  1168              	.LVL97:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 21
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 21
 
 
  1169              		.loc 1 216 10 view .LVU335
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1223              		.loc 1 165 3 view .LVU350
  1224 0096 0221     		movs	r1, #2
  1225              	.LVL105:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 22
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 22
 
 
  1226              		.loc 1 306 1 view .LVU351
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1282 001a 1369     		ldr	r3, [r2, #16]
  1283 001c 43F4A053 		orr	r3, r3, #5120
  1284 0020 1361     		str	r3, [r2, #16]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 23
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 23
 
 
  1285              		.loc 1 343 3 view .LVU365
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1339 0052 0124     		movs	r4, #1
  1340 0054 F2E7     		b	.L106
  1341              	.L113:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 24
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 24
 
 
  1342 0056 00BF     		.align	2
@@ -1398,58 +1398,58 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 1
  1357              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h"
  1358              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h"
  1359              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s 			page 25
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_hal_flash_ex.c
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:16     .text.FLASH_MassErase:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:23     .text.FLASH_MassErase:0000000000000000 FLASH_MassErase
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:53     .text.FLASH_MassErase:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:59     .text.FLASH_OB_GetWRP:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:65     .text.FLASH_OB_GetWRP:0000000000000000 FLASH_OB_GetWRP
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:81     .text.FLASH_OB_GetWRP:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:86     .text.FLASH_OB_GetRDP:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:92     .text.FLASH_OB_GetRDP:0000000000000000 FLASH_OB_GetRDP
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:123    .text.FLASH_OB_GetRDP:0000000000000014 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:128    .text.FLASH_OB_GetUser:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:134    .text.FLASH_OB_GetUser:0000000000000000 FLASH_OB_GetUser
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:151    .text.FLASH_OB_GetUser:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:156    .text.FLASH_OB_RDP_LevelConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:162    .text.FLASH_OB_RDP_LevelConfig:0000000000000000 FLASH_OB_RDP_LevelConfig
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:248    .text.FLASH_OB_RDP_LevelConfig:000000000000005c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:255    .text.FLASH_OB_UserConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:261    .text.FLASH_OB_UserConfig:0000000000000000 FLASH_OB_UserConfig
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:327    .text.FLASH_OB_UserConfig:000000000000003c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:334    .text.FLASH_OB_ProgramData:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:340    .text.FLASH_OB_ProgramData:0000000000000000 FLASH_OB_ProgramData
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:404    .text.FLASH_OB_ProgramData:0000000000000038 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:410    .text.HAL_FLASHEx_OBErase:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:417    .text.HAL_FLASHEx_OBErase:0000000000000000 HAL_FLASHEx_OBErase
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:494    .text.HAL_FLASHEx_OBErase:0000000000000048 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:500    .text.FLASH_OB_EnableWRP:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:506    .text.FLASH_OB_EnableWRP:0000000000000000 FLASH_OB_EnableWRP
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:600    .text.FLASH_OB_EnableWRP:0000000000000054 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:607    .text.FLASH_OB_DisableWRP:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:613    .text.FLASH_OB_DisableWRP:0000000000000000 FLASH_OB_DisableWRP
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:708    .text.FLASH_OB_DisableWRP:0000000000000054 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:715    .text.HAL_FLASHEx_OBProgram:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:722    .text.HAL_FLASHEx_OBProgram:0000000000000000 HAL_FLASHEx_OBProgram
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:909    .text.HAL_FLASHEx_OBProgram:0000000000000098 $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:914    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:921    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 HAL_FLASHEx_OBGetConfig
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:964    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:971    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 HAL_FLASHEx_OBGetUserData
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1011   .text.HAL_FLASHEx_OBGetUserData:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1017   .text.FLASH_PageErase:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1024   .text.FLASH_PageErase:0000000000000000 FLASH_PageErase
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1053   .text.FLASH_PageErase:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1059   .text.HAL_FLASHEx_Erase:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1066   .text.HAL_FLASHEx_Erase:0000000000000000 HAL_FLASHEx_Erase
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1234   .text.HAL_FLASHEx_Erase:000000000000009c $d
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1240   .text.HAL_FLASHEx_Erase_IT:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1247   .text.HAL_FLASHEx_Erase_IT:0000000000000000 HAL_FLASHEx_Erase_IT
-C:\Users\Ika\AppData\Local\Temp\ccLEInl6.s:1344   .text.HAL_FLASHEx_Erase_IT:0000000000000058 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:16     .text.FLASH_MassErase:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:23     .text.FLASH_MassErase:0000000000000000 FLASH_MassErase
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:53     .text.FLASH_MassErase:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:59     .text.FLASH_OB_GetWRP:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:65     .text.FLASH_OB_GetWRP:0000000000000000 FLASH_OB_GetWRP
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:81     .text.FLASH_OB_GetWRP:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:86     .text.FLASH_OB_GetRDP:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:92     .text.FLASH_OB_GetRDP:0000000000000000 FLASH_OB_GetRDP
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:123    .text.FLASH_OB_GetRDP:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:128    .text.FLASH_OB_GetUser:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:134    .text.FLASH_OB_GetUser:0000000000000000 FLASH_OB_GetUser
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:151    .text.FLASH_OB_GetUser:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:156    .text.FLASH_OB_RDP_LevelConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:162    .text.FLASH_OB_RDP_LevelConfig:0000000000000000 FLASH_OB_RDP_LevelConfig
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:248    .text.FLASH_OB_RDP_LevelConfig:000000000000005c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:255    .text.FLASH_OB_UserConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:261    .text.FLASH_OB_UserConfig:0000000000000000 FLASH_OB_UserConfig
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:327    .text.FLASH_OB_UserConfig:000000000000003c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:334    .text.FLASH_OB_ProgramData:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:340    .text.FLASH_OB_ProgramData:0000000000000000 FLASH_OB_ProgramData
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:404    .text.FLASH_OB_ProgramData:0000000000000038 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:410    .text.HAL_FLASHEx_OBErase:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:417    .text.HAL_FLASHEx_OBErase:0000000000000000 HAL_FLASHEx_OBErase
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:494    .text.HAL_FLASHEx_OBErase:0000000000000048 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:500    .text.FLASH_OB_EnableWRP:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:506    .text.FLASH_OB_EnableWRP:0000000000000000 FLASH_OB_EnableWRP
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:600    .text.FLASH_OB_EnableWRP:0000000000000054 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:607    .text.FLASH_OB_DisableWRP:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:613    .text.FLASH_OB_DisableWRP:0000000000000000 FLASH_OB_DisableWRP
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:708    .text.FLASH_OB_DisableWRP:0000000000000054 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:715    .text.HAL_FLASHEx_OBProgram:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:722    .text.HAL_FLASHEx_OBProgram:0000000000000000 HAL_FLASHEx_OBProgram
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:909    .text.HAL_FLASHEx_OBProgram:0000000000000098 $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:914    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:921    .text.HAL_FLASHEx_OBGetConfig:0000000000000000 HAL_FLASHEx_OBGetConfig
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:964    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:971    .text.HAL_FLASHEx_OBGetUserData:0000000000000000 HAL_FLASHEx_OBGetUserData
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1011   .text.HAL_FLASHEx_OBGetUserData:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1017   .text.FLASH_PageErase:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1024   .text.FLASH_PageErase:0000000000000000 FLASH_PageErase
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1053   .text.FLASH_PageErase:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1059   .text.HAL_FLASHEx_Erase:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1066   .text.HAL_FLASHEx_Erase:0000000000000000 HAL_FLASHEx_Erase
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1234   .text.HAL_FLASHEx_Erase:000000000000009c $d
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1240   .text.HAL_FLASHEx_Erase_IT:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1247   .text.HAL_FLASHEx_Erase_IT:0000000000000000 HAL_FLASHEx_Erase_IT
+C:\Users\Ika\AppData\Local\Temp\ccaCVfaZ.s:1344   .text.HAL_FLASHEx_Erase_IT:0000000000000058 $d
 
 UNDEFINED SYMBOLS
 pFlash
