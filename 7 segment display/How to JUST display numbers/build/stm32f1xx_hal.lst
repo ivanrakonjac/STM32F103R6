@@ -1,0 +1,979 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_hal.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.HAL_MspInit,"ax",%progbits
+  16              		.align	1
+  17              		.weak	HAL_MspInit
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	HAL_MspInit:
+  25              	.LFB67:
+  26              		.file 1 "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+   1:../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c **** 
+  27              		.loc 1 201 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 205 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE67:
+  37              		.section	.text.HAL_MspDeInit,"ax",%progbits
+  38              		.align	1
+  39              		.weak	HAL_MspDeInit
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	HAL_MspDeInit:
+  46              	.LFB68:
+  47              		.loc 1 212 1 view -0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  52              		.loc 1 216 1 view .LVU3
+  53 0000 7047     		bx	lr
+  54              		.cfi_endproc
+  55              	.LFE68:
+  57              		.section	.text.HAL_DeInit,"ax",%progbits
+  58              		.align	1
+  59              		.global	HAL_DeInit
+  60              		.syntax unified
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 2
+
+
+  61              		.thumb
+  62              		.thumb_func
+  63              		.fpu softvfp
+  65              	HAL_DeInit:
+  66              	.LFB66:
+  67              		.loc 1 176 1 view -0
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 0, uses_anonymous_args = 0
+  71 0000 10B5     		push	{r4, lr}
+  72              	.LCFI0:
+  73              		.cfi_def_cfa_offset 8
+  74              		.cfi_offset 4, -8
+  75              		.cfi_offset 14, -4
+  76              		.loc 1 178 3 view .LVU5
+  77 0002 064B     		ldr	r3, .L5
+  78 0004 4FF0FF32 		mov	r2, #-1
+  79 0008 DA60     		str	r2, [r3, #12]
+  80              		.loc 1 179 3 view .LVU6
+  81 000a 0024     		movs	r4, #0
+  82 000c 1C61     		str	r4, [r3, #16]
+  83              		.loc 1 181 3 view .LVU7
+  84 000e DA60     		str	r2, [r3, #12]
+  85              		.loc 1 182 3 view .LVU8
+  86 0010 DC60     		str	r4, [r3, #12]
+  87              		.loc 1 190 3 view .LVU9
+  88 0012 FFF7FEFF 		bl	HAL_MspDeInit
+  89              	.LVL0:
+  90              		.loc 1 193 3 view .LVU10
+  91              		.loc 1 194 1 is_stmt 0 view .LVU11
+  92 0016 2046     		mov	r0, r4
+  93 0018 10BD     		pop	{r4, pc}
+  94              	.L6:
+  95 001a 00BF     		.align	2
+  96              	.L5:
+  97 001c 00100240 		.word	1073876992
+  98              		.cfi_endproc
+  99              	.LFE66:
+ 101              		.section	.text.HAL_InitTick,"ax",%progbits
+ 102              		.align	1
+ 103              		.weak	HAL_InitTick
+ 104              		.syntax unified
+ 105              		.thumb
+ 106              		.thumb_func
+ 107              		.fpu softvfp
+ 109              	HAL_InitTick:
+ 110              	.LVL1:
+ 111              	.LFB69:
+ 112              		.loc 1 235 1 is_stmt 1 view -0
+ 113              		.cfi_startproc
+ 114              		@ args = 0, pretend = 0, frame = 0
+ 115              		@ frame_needed = 0, uses_anonymous_args = 0
+ 116              		.loc 1 235 1 is_stmt 0 view .LVU13
+ 117 0000 10B5     		push	{r4, lr}
+ 118              	.LCFI1:
+ 119              		.cfi_def_cfa_offset 8
+ 120              		.cfi_offset 4, -8
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 3
+
+
+ 121              		.cfi_offset 14, -4
+ 122 0002 0446     		mov	r4, r0
+ 123              		.loc 1 237 3 is_stmt 1 view .LVU14
+ 124              		.loc 1 237 51 is_stmt 0 view .LVU15
+ 125 0004 0E4B     		ldr	r3, .L13
+ 126 0006 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 127              	.LVL2:
+ 128              		.loc 1 237 51 view .LVU16
+ 129 0008 4FF47A73 		mov	r3, #1000
+ 130 000c B3FBF0F3 		udiv	r3, r3, r0
+ 131              		.loc 1 237 7 view .LVU17
+ 132 0010 0C4A     		ldr	r2, .L13+4
+ 133 0012 1068     		ldr	r0, [r2]
+ 134 0014 B0FBF3F0 		udiv	r0, r0, r3
+ 135 0018 FFF7FEFF 		bl	HAL_SYSTICK_Config
+ 136              	.LVL3:
+ 137              		.loc 1 237 6 view .LVU18
+ 138 001c 68B9     		cbnz	r0, .L9
+ 139              		.loc 1 243 3 is_stmt 1 view .LVU19
+ 140              		.loc 1 243 6 is_stmt 0 view .LVU20
+ 141 001e 0F2C     		cmp	r4, #15
+ 142 0020 01D9     		bls	.L12
+ 143              		.loc 1 250 12 view .LVU21
+ 144 0022 0120     		movs	r0, #1
+ 145 0024 0AE0     		b	.L8
+ 146              	.L12:
+ 147              		.loc 1 245 5 is_stmt 1 view .LVU22
+ 148 0026 0022     		movs	r2, #0
+ 149 0028 2146     		mov	r1, r4
+ 150 002a 4FF0FF30 		mov	r0, #-1
+ 151 002e FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 152              	.LVL4:
+ 153              		.loc 1 246 5 view .LVU23
+ 154              		.loc 1 246 16 is_stmt 0 view .LVU24
+ 155 0032 054B     		ldr	r3, .L13+8
+ 156 0034 1C60     		str	r4, [r3]
+ 157              		.loc 1 254 3 is_stmt 1 view .LVU25
+ 158              		.loc 1 254 10 is_stmt 0 view .LVU26
+ 159 0036 0020     		movs	r0, #0
+ 160 0038 00E0     		b	.L8
+ 161              	.L9:
+ 162              		.loc 1 239 12 view .LVU27
+ 163 003a 0120     		movs	r0, #1
+ 164              	.L8:
+ 165              		.loc 1 255 1 view .LVU28
+ 166 003c 10BD     		pop	{r4, pc}
+ 167              	.LVL5:
+ 168              	.L14:
+ 169              		.loc 1 255 1 view .LVU29
+ 170 003e 00BF     		.align	2
+ 171              	.L13:
+ 172 0040 00000000 		.word	.LANCHOR0
+ 173 0044 00000000 		.word	SystemCoreClock
+ 174 0048 00000000 		.word	.LANCHOR1
+ 175              		.cfi_endproc
+ 176              	.LFE69:
+ 178              		.section	.text.HAL_Init,"ax",%progbits
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 4
+
+
+ 179              		.align	1
+ 180              		.global	HAL_Init
+ 181              		.syntax unified
+ 182              		.thumb
+ 183              		.thumb_func
+ 184              		.fpu softvfp
+ 186              	HAL_Init:
+ 187              	.LFB65:
+ 188              		.loc 1 143 1 is_stmt 1 view -0
+ 189              		.cfi_startproc
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192 0000 08B5     		push	{r3, lr}
+ 193              	.LCFI2:
+ 194              		.cfi_def_cfa_offset 8
+ 195              		.cfi_offset 3, -8
+ 196              		.cfi_offset 14, -4
+ 197              		.loc 1 152 3 view .LVU31
+ 198 0002 074A     		ldr	r2, .L17
+ 199 0004 1368     		ldr	r3, [r2]
+ 200 0006 43F01003 		orr	r3, r3, #16
+ 201 000a 1360     		str	r3, [r2]
+ 202              		.loc 1 157 3 view .LVU32
+ 203 000c 0320     		movs	r0, #3
+ 204 000e FFF7FEFF 		bl	HAL_NVIC_SetPriorityGrouping
+ 205              	.LVL6:
+ 206              		.loc 1 160 3 view .LVU33
+ 207 0012 0020     		movs	r0, #0
+ 208 0014 FFF7FEFF 		bl	HAL_InitTick
+ 209              	.LVL7:
+ 210              		.loc 1 163 3 view .LVU34
+ 211 0018 FFF7FEFF 		bl	HAL_MspInit
+ 212              	.LVL8:
+ 213              		.loc 1 166 3 view .LVU35
+ 214              		.loc 1 167 1 is_stmt 0 view .LVU36
+ 215 001c 0020     		movs	r0, #0
+ 216 001e 08BD     		pop	{r3, pc}
+ 217              	.L18:
+ 218              		.align	2
+ 219              	.L17:
+ 220 0020 00200240 		.word	1073881088
+ 221              		.cfi_endproc
+ 222              	.LFE65:
+ 224              		.section	.text.HAL_IncTick,"ax",%progbits
+ 225              		.align	1
+ 226              		.weak	HAL_IncTick
+ 227              		.syntax unified
+ 228              		.thumb
+ 229              		.thumb_func
+ 230              		.fpu softvfp
+ 232              	HAL_IncTick:
+ 233              	.LFB70:
+ 234              		.loc 1 294 1 is_stmt 1 view -0
+ 235              		.cfi_startproc
+ 236              		@ args = 0, pretend = 0, frame = 0
+ 237              		@ frame_needed = 0, uses_anonymous_args = 0
+ 238              		@ link register save eliminated.
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 5
+
+
+ 239              		.loc 1 295 3 view .LVU38
+ 240              		.loc 1 295 10 is_stmt 0 view .LVU39
+ 241 0000 034A     		ldr	r2, .L20
+ 242 0002 1168     		ldr	r1, [r2]
+ 243 0004 034B     		ldr	r3, .L20+4
+ 244 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 245 0008 0B44     		add	r3, r3, r1
+ 246 000a 1360     		str	r3, [r2]
+ 247              		.loc 1 296 1 view .LVU40
+ 248 000c 7047     		bx	lr
+ 249              	.L21:
+ 250 000e 00BF     		.align	2
+ 251              	.L20:
+ 252 0010 00000000 		.word	uwTick
+ 253 0014 00000000 		.word	.LANCHOR0
+ 254              		.cfi_endproc
+ 255              	.LFE70:
+ 257              		.section	.text.HAL_GetTick,"ax",%progbits
+ 258              		.align	1
+ 259              		.weak	HAL_GetTick
+ 260              		.syntax unified
+ 261              		.thumb
+ 262              		.thumb_func
+ 263              		.fpu softvfp
+ 265              	HAL_GetTick:
+ 266              	.LFB71:
+ 267              		.loc 1 305 1 is_stmt 1 view -0
+ 268              		.cfi_startproc
+ 269              		@ args = 0, pretend = 0, frame = 0
+ 270              		@ frame_needed = 0, uses_anonymous_args = 0
+ 271              		@ link register save eliminated.
+ 272              		.loc 1 306 3 view .LVU42
+ 273              		.loc 1 306 10 is_stmt 0 view .LVU43
+ 274 0000 014B     		ldr	r3, .L23
+ 275 0002 1868     		ldr	r0, [r3]
+ 276              		.loc 1 307 1 view .LVU44
+ 277 0004 7047     		bx	lr
+ 278              	.L24:
+ 279 0006 00BF     		.align	2
+ 280              	.L23:
+ 281 0008 00000000 		.word	uwTick
+ 282              		.cfi_endproc
+ 283              	.LFE71:
+ 285              		.section	.text.HAL_GetTickPrio,"ax",%progbits
+ 286              		.align	1
+ 287              		.global	HAL_GetTickPrio
+ 288              		.syntax unified
+ 289              		.thumb
+ 290              		.thumb_func
+ 291              		.fpu softvfp
+ 293              	HAL_GetTickPrio:
+ 294              	.LFB72:
+ 295              		.loc 1 314 1 is_stmt 1 view -0
+ 296              		.cfi_startproc
+ 297              		@ args = 0, pretend = 0, frame = 0
+ 298              		@ frame_needed = 0, uses_anonymous_args = 0
+ 299              		@ link register save eliminated.
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 6
+
+
+ 300              		.loc 1 315 3 view .LVU46
+ 301              		.loc 1 316 1 is_stmt 0 view .LVU47
+ 302 0000 014B     		ldr	r3, .L26
+ 303 0002 1868     		ldr	r0, [r3]
+ 304 0004 7047     		bx	lr
+ 305              	.L27:
+ 306 0006 00BF     		.align	2
+ 307              	.L26:
+ 308 0008 00000000 		.word	.LANCHOR1
+ 309              		.cfi_endproc
+ 310              	.LFE72:
+ 312              		.section	.text.HAL_SetTickFreq,"ax",%progbits
+ 313              		.align	1
+ 314              		.global	HAL_SetTickFreq
+ 315              		.syntax unified
+ 316              		.thumb
+ 317              		.thumb_func
+ 318              		.fpu softvfp
+ 320              	HAL_SetTickFreq:
+ 321              	.LVL9:
+ 322              	.LFB73:
+ 323              		.loc 1 323 1 is_stmt 1 view -0
+ 324              		.cfi_startproc
+ 325              		@ args = 0, pretend = 0, frame = 0
+ 326              		@ frame_needed = 0, uses_anonymous_args = 0
+ 327              		.loc 1 323 1 is_stmt 0 view .LVU49
+ 328 0000 10B5     		push	{r4, lr}
+ 329              	.LCFI3:
+ 330              		.cfi_def_cfa_offset 8
+ 331              		.cfi_offset 4, -8
+ 332              		.cfi_offset 14, -4
+ 333              		.loc 1 324 3 is_stmt 1 view .LVU50
+ 334              	.LVL10:
+ 335              		.loc 1 325 3 view .LVU51
+ 336              		.loc 1 327 3 view .LVU52
+ 337              		.loc 1 329 3 view .LVU53
+ 338              		.loc 1 329 18 is_stmt 0 view .LVU54
+ 339 0002 084B     		ldr	r3, .L33
+ 340 0004 1C78     		ldrb	r4, [r3]	@ zero_extendqisi2
+ 341              		.loc 1 329 6 view .LVU55
+ 342 0006 8442     		cmp	r4, r0
+ 343 0008 01D1     		bne	.L32
+ 344              		.loc 1 324 21 view .LVU56
+ 345 000a 0020     		movs	r0, #0
+ 346              	.LVL11:
+ 347              	.L29:
+ 348              		.loc 1 347 3 is_stmt 1 view .LVU57
+ 349              		.loc 1 348 1 is_stmt 0 view .LVU58
+ 350 000c 10BD     		pop	{r4, pc}
+ 351              	.LVL12:
+ 352              	.L32:
+ 353              		.loc 1 332 5 is_stmt 1 view .LVU59
+ 354              		.loc 1 335 5 view .LVU60
+ 355              		.loc 1 335 16 is_stmt 0 view .LVU61
+ 356 000e 1870     		strb	r0, [r3]
+ 357              		.loc 1 338 5 is_stmt 1 view .LVU62
+ 358              		.loc 1 338 14 is_stmt 0 view .LVU63
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 7
+
+
+ 359 0010 054B     		ldr	r3, .L33+4
+ 360 0012 1868     		ldr	r0, [r3]
+ 361              	.LVL13:
+ 362              		.loc 1 338 14 view .LVU64
+ 363 0014 FFF7FEFF 		bl	HAL_InitTick
+ 364              	.LVL14:
+ 365              		.loc 1 340 5 is_stmt 1 view .LVU65
+ 366              		.loc 1 340 8 is_stmt 0 view .LVU66
+ 367 0018 0028     		cmp	r0, #0
+ 368 001a F7D0     		beq	.L29
+ 369              		.loc 1 343 7 is_stmt 1 view .LVU67
+ 370              		.loc 1 343 18 is_stmt 0 view .LVU68
+ 371 001c 014B     		ldr	r3, .L33
+ 372 001e 1C70     		strb	r4, [r3]
+ 373 0020 F4E7     		b	.L29
+ 374              	.L34:
+ 375 0022 00BF     		.align	2
+ 376              	.L33:
+ 377 0024 00000000 		.word	.LANCHOR0
+ 378 0028 00000000 		.word	.LANCHOR1
+ 379              		.cfi_endproc
+ 380              	.LFE73:
+ 382              		.section	.text.HAL_GetTickFreq,"ax",%progbits
+ 383              		.align	1
+ 384              		.global	HAL_GetTickFreq
+ 385              		.syntax unified
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.fpu softvfp
+ 390              	HAL_GetTickFreq:
+ 391              	.LFB74:
+ 392              		.loc 1 355 1 is_stmt 1 view -0
+ 393              		.cfi_startproc
+ 394              		@ args = 0, pretend = 0, frame = 0
+ 395              		@ frame_needed = 0, uses_anonymous_args = 0
+ 396              		@ link register save eliminated.
+ 397              		.loc 1 356 3 view .LVU70
+ 398              		.loc 1 357 1 is_stmt 0 view .LVU71
+ 399 0000 014B     		ldr	r3, .L36
+ 400 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 401 0004 7047     		bx	lr
+ 402              	.L37:
+ 403 0006 00BF     		.align	2
+ 404              	.L36:
+ 405 0008 00000000 		.word	.LANCHOR0
+ 406              		.cfi_endproc
+ 407              	.LFE74:
+ 409              		.section	.text.HAL_Delay,"ax",%progbits
+ 410              		.align	1
+ 411              		.weak	HAL_Delay
+ 412              		.syntax unified
+ 413              		.thumb
+ 414              		.thumb_func
+ 415              		.fpu softvfp
+ 417              	HAL_Delay:
+ 418              	.LVL15:
+ 419              	.LFB75:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 8
+
+
+ 420              		.loc 1 371 1 is_stmt 1 view -0
+ 421              		.cfi_startproc
+ 422              		@ args = 0, pretend = 0, frame = 0
+ 423              		@ frame_needed = 0, uses_anonymous_args = 0
+ 424              		.loc 1 371 1 is_stmt 0 view .LVU73
+ 425 0000 38B5     		push	{r3, r4, r5, lr}
+ 426              	.LCFI4:
+ 427              		.cfi_def_cfa_offset 16
+ 428              		.cfi_offset 3, -16
+ 429              		.cfi_offset 4, -12
+ 430              		.cfi_offset 5, -8
+ 431              		.cfi_offset 14, -4
+ 432 0002 0446     		mov	r4, r0
+ 433              		.loc 1 372 3 is_stmt 1 view .LVU74
+ 434              		.loc 1 372 24 is_stmt 0 view .LVU75
+ 435 0004 FFF7FEFF 		bl	HAL_GetTick
+ 436              	.LVL16:
+ 437              		.loc 1 372 24 view .LVU76
+ 438 0008 0546     		mov	r5, r0
+ 439              	.LVL17:
+ 440              		.loc 1 373 3 is_stmt 1 view .LVU77
+ 441              		.loc 1 376 3 view .LVU78
+ 442              		.loc 1 376 6 is_stmt 0 view .LVU79
+ 443 000a B4F1FF3F 		cmp	r4, #-1
+ 444 000e 02D0     		beq	.L40
+ 445              		.loc 1 378 5 is_stmt 1 view .LVU80
+ 446              		.loc 1 378 13 is_stmt 0 view .LVU81
+ 447 0010 044B     		ldr	r3, .L42
+ 448 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 449              		.loc 1 378 10 view .LVU82
+ 450 0014 1C44     		add	r4, r4, r3
+ 451              	.LVL18:
+ 452              	.L40:
+ 453              		.loc 1 383 3 is_stmt 1 discriminator 1 view .LVU83
+ 454              		.loc 1 381 9 discriminator 1 view .LVU84
+ 455              		.loc 1 381 11 is_stmt 0 discriminator 1 view .LVU85
+ 456 0016 FFF7FEFF 		bl	HAL_GetTick
+ 457              	.LVL19:
+ 458              		.loc 1 381 25 discriminator 1 view .LVU86
+ 459 001a 401B     		subs	r0, r0, r5
+ 460              		.loc 1 381 9 discriminator 1 view .LVU87
+ 461 001c A042     		cmp	r0, r4
+ 462 001e FAD3     		bcc	.L40
+ 463              		.loc 1 384 1 view .LVU88
+ 464 0020 38BD     		pop	{r3, r4, r5, pc}
+ 465              	.LVL20:
+ 466              	.L43:
+ 467              		.loc 1 384 1 view .LVU89
+ 468 0022 00BF     		.align	2
+ 469              	.L42:
+ 470 0024 00000000 		.word	.LANCHOR0
+ 471              		.cfi_endproc
+ 472              	.LFE75:
+ 474              		.section	.text.HAL_SuspendTick,"ax",%progbits
+ 475              		.align	1
+ 476              		.weak	HAL_SuspendTick
+ 477              		.syntax unified
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 9
+
+
+ 478              		.thumb
+ 479              		.thumb_func
+ 480              		.fpu softvfp
+ 482              	HAL_SuspendTick:
+ 483              	.LFB76:
+ 484              		.loc 1 397 1 is_stmt 1 view -0
+ 485              		.cfi_startproc
+ 486              		@ args = 0, pretend = 0, frame = 0
+ 487              		@ frame_needed = 0, uses_anonymous_args = 0
+ 488              		@ link register save eliminated.
+ 489              		.loc 1 399 3 view .LVU91
+ 490 0000 024A     		ldr	r2, .L45
+ 491 0002 1368     		ldr	r3, [r2]
+ 492 0004 23F00203 		bic	r3, r3, #2
+ 493 0008 1360     		str	r3, [r2]
+ 494              		.loc 1 400 1 is_stmt 0 view .LVU92
+ 495 000a 7047     		bx	lr
+ 496              	.L46:
+ 497              		.align	2
+ 498              	.L45:
+ 499 000c 10E000E0 		.word	-536813552
+ 500              		.cfi_endproc
+ 501              	.LFE76:
+ 503              		.section	.text.HAL_ResumeTick,"ax",%progbits
+ 504              		.align	1
+ 505              		.weak	HAL_ResumeTick
+ 506              		.syntax unified
+ 507              		.thumb
+ 508              		.thumb_func
+ 509              		.fpu softvfp
+ 511              	HAL_ResumeTick:
+ 512              	.LFB77:
+ 513              		.loc 1 413 1 is_stmt 1 view -0
+ 514              		.cfi_startproc
+ 515              		@ args = 0, pretend = 0, frame = 0
+ 516              		@ frame_needed = 0, uses_anonymous_args = 0
+ 517              		@ link register save eliminated.
+ 518              		.loc 1 415 3 view .LVU94
+ 519 0000 024A     		ldr	r2, .L48
+ 520 0002 1368     		ldr	r3, [r2]
+ 521 0004 43F00203 		orr	r3, r3, #2
+ 522 0008 1360     		str	r3, [r2]
+ 523              		.loc 1 416 1 is_stmt 0 view .LVU95
+ 524 000a 7047     		bx	lr
+ 525              	.L49:
+ 526              		.align	2
+ 527              	.L48:
+ 528 000c 10E000E0 		.word	-536813552
+ 529              		.cfi_endproc
+ 530              	.LFE77:
+ 532              		.section	.text.HAL_GetHalVersion,"ax",%progbits
+ 533              		.align	1
+ 534              		.global	HAL_GetHalVersion
+ 535              		.syntax unified
+ 536              		.thumb
+ 537              		.thumb_func
+ 538              		.fpu softvfp
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 10
+
+
+ 540              	HAL_GetHalVersion:
+ 541              	.LFB78:
+ 542              		.loc 1 423 1 is_stmt 1 view -0
+ 543              		.cfi_startproc
+ 544              		@ args = 0, pretend = 0, frame = 0
+ 545              		@ frame_needed = 0, uses_anonymous_args = 0
+ 546              		@ link register save eliminated.
+ 547              		.loc 1 424 3 view .LVU97
+ 548              		.loc 1 425 1 is_stmt 0 view .LVU98
+ 549 0000 0048     		ldr	r0, .L51
+ 550 0002 7047     		bx	lr
+ 551              	.L52:
+ 552              		.align	2
+ 553              	.L51:
+ 554 0004 00070101 		.word	16844544
+ 555              		.cfi_endproc
+ 556              	.LFE78:
+ 558              		.section	.text.HAL_GetREVID,"ax",%progbits
+ 559              		.align	1
+ 560              		.global	HAL_GetREVID
+ 561              		.syntax unified
+ 562              		.thumb
+ 563              		.thumb_func
+ 564              		.fpu softvfp
+ 566              	HAL_GetREVID:
+ 567              	.LFB79:
+ 568              		.loc 1 439 1 is_stmt 1 view -0
+ 569              		.cfi_startproc
+ 570              		@ args = 0, pretend = 0, frame = 0
+ 571              		@ frame_needed = 0, uses_anonymous_args = 0
+ 572              		@ link register save eliminated.
+ 573              		.loc 1 440 3 view .LVU100
+ 574              		.loc 1 440 18 is_stmt 0 view .LVU101
+ 575 0000 014B     		ldr	r3, .L54
+ 576 0002 1868     		ldr	r0, [r3]
+ 577              		.loc 1 441 1 view .LVU102
+ 578 0004 000C     		lsrs	r0, r0, #16
+ 579 0006 7047     		bx	lr
+ 580              	.L55:
+ 581              		.align	2
+ 582              	.L54:
+ 583 0008 002004E0 		.word	-536600576
+ 584              		.cfi_endproc
+ 585              	.LFE79:
+ 587              		.section	.text.HAL_GetDEVID,"ax",%progbits
+ 588              		.align	1
+ 589              		.global	HAL_GetDEVID
+ 590              		.syntax unified
+ 591              		.thumb
+ 592              		.thumb_func
+ 593              		.fpu softvfp
+ 595              	HAL_GetDEVID:
+ 596              	.LFB80:
+ 597              		.loc 1 455 1 is_stmt 1 view -0
+ 598              		.cfi_startproc
+ 599              		@ args = 0, pretend = 0, frame = 0
+ 600              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 11
+
+
+ 601              		@ link register save eliminated.
+ 602              		.loc 1 456 3 view .LVU104
+ 603              		.loc 1 456 18 is_stmt 0 view .LVU105
+ 604 0000 024B     		ldr	r3, .L57
+ 605 0002 1868     		ldr	r0, [r3]
+ 606              		.loc 1 457 1 view .LVU106
+ 607 0004 C0F30B00 		ubfx	r0, r0, #0, #12
+ 608 0008 7047     		bx	lr
+ 609              	.L58:
+ 610 000a 00BF     		.align	2
+ 611              	.L57:
+ 612 000c 002004E0 		.word	-536600576
+ 613              		.cfi_endproc
+ 614              	.LFE80:
+ 616              		.section	.text.HAL_GetUIDw0,"ax",%progbits
+ 617              		.align	1
+ 618              		.global	HAL_GetUIDw0
+ 619              		.syntax unified
+ 620              		.thumb
+ 621              		.thumb_func
+ 622              		.fpu softvfp
+ 624              	HAL_GetUIDw0:
+ 625              	.LFB81:
+ 626              		.loc 1 464 1 is_stmt 1 view -0
+ 627              		.cfi_startproc
+ 628              		@ args = 0, pretend = 0, frame = 0
+ 629              		@ frame_needed = 0, uses_anonymous_args = 0
+ 630              		@ link register save eliminated.
+ 631              		.loc 1 465 4 view .LVU108
+ 632              		.loc 1 466 1 is_stmt 0 view .LVU109
+ 633 0000 014B     		ldr	r3, .L60
+ 634 0002 1868     		ldr	r0, [r3]
+ 635 0004 7047     		bx	lr
+ 636              	.L61:
+ 637 0006 00BF     		.align	2
+ 638              	.L60:
+ 639 0008 E8F7FF1F 		.word	536868840
+ 640              		.cfi_endproc
+ 641              	.LFE81:
+ 643              		.section	.text.HAL_GetUIDw1,"ax",%progbits
+ 644              		.align	1
+ 645              		.global	HAL_GetUIDw1
+ 646              		.syntax unified
+ 647              		.thumb
+ 648              		.thumb_func
+ 649              		.fpu softvfp
+ 651              	HAL_GetUIDw1:
+ 652              	.LFB82:
+ 653              		.loc 1 473 1 is_stmt 1 view -0
+ 654              		.cfi_startproc
+ 655              		@ args = 0, pretend = 0, frame = 0
+ 656              		@ frame_needed = 0, uses_anonymous_args = 0
+ 657              		@ link register save eliminated.
+ 658              		.loc 1 474 4 view .LVU111
+ 659              		.loc 1 475 1 is_stmt 0 view .LVU112
+ 660 0000 014B     		ldr	r3, .L63
+ 661 0002 1868     		ldr	r0, [r3]
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 12
+
+
+ 662 0004 7047     		bx	lr
+ 663              	.L64:
+ 664 0006 00BF     		.align	2
+ 665              	.L63:
+ 666 0008 ECF7FF1F 		.word	536868844
+ 667              		.cfi_endproc
+ 668              	.LFE82:
+ 670              		.section	.text.HAL_GetUIDw2,"ax",%progbits
+ 671              		.align	1
+ 672              		.global	HAL_GetUIDw2
+ 673              		.syntax unified
+ 674              		.thumb
+ 675              		.thumb_func
+ 676              		.fpu softvfp
+ 678              	HAL_GetUIDw2:
+ 679              	.LFB83:
+ 680              		.loc 1 482 1 is_stmt 1 view -0
+ 681              		.cfi_startproc
+ 682              		@ args = 0, pretend = 0, frame = 0
+ 683              		@ frame_needed = 0, uses_anonymous_args = 0
+ 684              		@ link register save eliminated.
+ 685              		.loc 1 483 4 view .LVU114
+ 686              		.loc 1 484 1 is_stmt 0 view .LVU115
+ 687 0000 014B     		ldr	r3, .L66
+ 688 0002 1868     		ldr	r0, [r3]
+ 689 0004 7047     		bx	lr
+ 690              	.L67:
+ 691 0006 00BF     		.align	2
+ 692              	.L66:
+ 693 0008 F0F7FF1F 		.word	536868848
+ 694              		.cfi_endproc
+ 695              	.LFE83:
+ 697              		.section	.text.HAL_DBGMCU_EnableDBGSleepMode,"ax",%progbits
+ 698              		.align	1
+ 699              		.global	HAL_DBGMCU_EnableDBGSleepMode
+ 700              		.syntax unified
+ 701              		.thumb
+ 702              		.thumb_func
+ 703              		.fpu softvfp
+ 705              	HAL_DBGMCU_EnableDBGSleepMode:
+ 706              	.LFB84:
+ 707              		.loc 1 491 1 is_stmt 1 view -0
+ 708              		.cfi_startproc
+ 709              		@ args = 0, pretend = 0, frame = 0
+ 710              		@ frame_needed = 0, uses_anonymous_args = 0
+ 711              		@ link register save eliminated.
+ 712              		.loc 1 492 3 view .LVU117
+ 713 0000 024A     		ldr	r2, .L69
+ 714 0002 5368     		ldr	r3, [r2, #4]
+ 715 0004 43F00103 		orr	r3, r3, #1
+ 716 0008 5360     		str	r3, [r2, #4]
+ 717              		.loc 1 493 1 is_stmt 0 view .LVU118
+ 718 000a 7047     		bx	lr
+ 719              	.L70:
+ 720              		.align	2
+ 721              	.L69:
+ 722 000c 002004E0 		.word	-536600576
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 13
+
+
+ 723              		.cfi_endproc
+ 724              	.LFE84:
+ 726              		.section	.text.HAL_DBGMCU_DisableDBGSleepMode,"ax",%progbits
+ 727              		.align	1
+ 728              		.global	HAL_DBGMCU_DisableDBGSleepMode
+ 729              		.syntax unified
+ 730              		.thumb
+ 731              		.thumb_func
+ 732              		.fpu softvfp
+ 734              	HAL_DBGMCU_DisableDBGSleepMode:
+ 735              	.LFB85:
+ 736              		.loc 1 507 1 is_stmt 1 view -0
+ 737              		.cfi_startproc
+ 738              		@ args = 0, pretend = 0, frame = 0
+ 739              		@ frame_needed = 0, uses_anonymous_args = 0
+ 740              		@ link register save eliminated.
+ 741              		.loc 1 508 3 view .LVU120
+ 742 0000 024A     		ldr	r2, .L72
+ 743 0002 5368     		ldr	r3, [r2, #4]
+ 744 0004 23F00103 		bic	r3, r3, #1
+ 745 0008 5360     		str	r3, [r2, #4]
+ 746              		.loc 1 509 1 is_stmt 0 view .LVU121
+ 747 000a 7047     		bx	lr
+ 748              	.L73:
+ 749              		.align	2
+ 750              	.L72:
+ 751 000c 002004E0 		.word	-536600576
+ 752              		.cfi_endproc
+ 753              	.LFE85:
+ 755              		.section	.text.HAL_DBGMCU_EnableDBGStopMode,"ax",%progbits
+ 756              		.align	1
+ 757              		.global	HAL_DBGMCU_EnableDBGStopMode
+ 758              		.syntax unified
+ 759              		.thumb
+ 760              		.thumb_func
+ 761              		.fpu softvfp
+ 763              	HAL_DBGMCU_EnableDBGStopMode:
+ 764              	.LFB86:
+ 765              		.loc 1 537 1 is_stmt 1 view -0
+ 766              		.cfi_startproc
+ 767              		@ args = 0, pretend = 0, frame = 0
+ 768              		@ frame_needed = 0, uses_anonymous_args = 0
+ 769              		@ link register save eliminated.
+ 770              		.loc 1 538 3 view .LVU123
+ 771 0000 024A     		ldr	r2, .L75
+ 772 0002 5368     		ldr	r3, [r2, #4]
+ 773 0004 43F00203 		orr	r3, r3, #2
+ 774 0008 5360     		str	r3, [r2, #4]
+ 775              		.loc 1 539 1 is_stmt 0 view .LVU124
+ 776 000a 7047     		bx	lr
+ 777              	.L76:
+ 778              		.align	2
+ 779              	.L75:
+ 780 000c 002004E0 		.word	-536600576
+ 781              		.cfi_endproc
+ 782              	.LFE86:
+ 784              		.section	.text.HAL_DBGMCU_DisableDBGStopMode,"ax",%progbits
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 14
+
+
+ 785              		.align	1
+ 786              		.global	HAL_DBGMCU_DisableDBGStopMode
+ 787              		.syntax unified
+ 788              		.thumb
+ 789              		.thumb_func
+ 790              		.fpu softvfp
+ 792              	HAL_DBGMCU_DisableDBGStopMode:
+ 793              	.LFB87:
+ 794              		.loc 1 553 1 is_stmt 1 view -0
+ 795              		.cfi_startproc
+ 796              		@ args = 0, pretend = 0, frame = 0
+ 797              		@ frame_needed = 0, uses_anonymous_args = 0
+ 798              		@ link register save eliminated.
+ 799              		.loc 1 554 3 view .LVU126
+ 800 0000 024A     		ldr	r2, .L78
+ 801 0002 5368     		ldr	r3, [r2, #4]
+ 802 0004 23F00203 		bic	r3, r3, #2
+ 803 0008 5360     		str	r3, [r2, #4]
+ 804              		.loc 1 555 1 is_stmt 0 view .LVU127
+ 805 000a 7047     		bx	lr
+ 806              	.L79:
+ 807              		.align	2
+ 808              	.L78:
+ 809 000c 002004E0 		.word	-536600576
+ 810              		.cfi_endproc
+ 811              	.LFE87:
+ 813              		.section	.text.HAL_DBGMCU_EnableDBGStandbyMode,"ax",%progbits
+ 814              		.align	1
+ 815              		.global	HAL_DBGMCU_EnableDBGStandbyMode
+ 816              		.syntax unified
+ 817              		.thumb
+ 818              		.thumb_func
+ 819              		.fpu softvfp
+ 821              	HAL_DBGMCU_EnableDBGStandbyMode:
+ 822              	.LFB88:
+ 823              		.loc 1 569 1 is_stmt 1 view -0
+ 824              		.cfi_startproc
+ 825              		@ args = 0, pretend = 0, frame = 0
+ 826              		@ frame_needed = 0, uses_anonymous_args = 0
+ 827              		@ link register save eliminated.
+ 828              		.loc 1 570 3 view .LVU129
+ 829 0000 024A     		ldr	r2, .L81
+ 830 0002 5368     		ldr	r3, [r2, #4]
+ 831 0004 43F00403 		orr	r3, r3, #4
+ 832 0008 5360     		str	r3, [r2, #4]
+ 833              		.loc 1 571 1 is_stmt 0 view .LVU130
+ 834 000a 7047     		bx	lr
+ 835              	.L82:
+ 836              		.align	2
+ 837              	.L81:
+ 838 000c 002004E0 		.word	-536600576
+ 839              		.cfi_endproc
+ 840              	.LFE88:
+ 842              		.section	.text.HAL_DBGMCU_DisableDBGStandbyMode,"ax",%progbits
+ 843              		.align	1
+ 844              		.global	HAL_DBGMCU_DisableDBGStandbyMode
+ 845              		.syntax unified
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 15
+
+
+ 846              		.thumb
+ 847              		.thumb_func
+ 848              		.fpu softvfp
+ 850              	HAL_DBGMCU_DisableDBGStandbyMode:
+ 851              	.LFB89:
+ 852              		.loc 1 585 1 is_stmt 1 view -0
+ 853              		.cfi_startproc
+ 854              		@ args = 0, pretend = 0, frame = 0
+ 855              		@ frame_needed = 0, uses_anonymous_args = 0
+ 856              		@ link register save eliminated.
+ 857              		.loc 1 586 3 view .LVU132
+ 858 0000 024A     		ldr	r2, .L84
+ 859 0002 5368     		ldr	r3, [r2, #4]
+ 860 0004 23F00403 		bic	r3, r3, #4
+ 861 0008 5360     		str	r3, [r2, #4]
+ 862              		.loc 1 587 1 is_stmt 0 view .LVU133
+ 863 000a 7047     		bx	lr
+ 864              	.L85:
+ 865              		.align	2
+ 866              	.L84:
+ 867 000c 002004E0 		.word	-536600576
+ 868              		.cfi_endproc
+ 869              	.LFE89:
+ 871              		.global	uwTickFreq
+ 872              		.global	uwTickPrio
+ 873              		.comm	uwTick,4,4
+ 874              		.section	.data.uwTickFreq,"aw"
+ 875              		.set	.LANCHOR0,. + 0
+ 878              	uwTickFreq:
+ 879 0000 01       		.byte	1
+ 880              		.section	.data.uwTickPrio,"aw"
+ 881              		.align	2
+ 882              		.set	.LANCHOR1,. + 0
+ 885              	uwTickPrio:
+ 886 0000 10000000 		.word	16
+ 887              		.text
+ 888              	.Letext0:
+ 889              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 890              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 891              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 892              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 893              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 894              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 895              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 896              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_hal.c
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:16     .text.HAL_MspInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:24     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:38     .text.HAL_MspDeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:45     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:58     .text.HAL_DeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:65     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:97     .text.HAL_DeInit:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:102    .text.HAL_InitTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:109    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:172    .text.HAL_InitTick:0000000000000040 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:179    .text.HAL_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:186    .text.HAL_Init:0000000000000000 HAL_Init
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:220    .text.HAL_Init:0000000000000020 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:225    .text.HAL_IncTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:232    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:252    .text.HAL_IncTick:0000000000000010 $d
+                            *COM*:0000000000000004 uwTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:258    .text.HAL_GetTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:265    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:281    .text.HAL_GetTick:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:286    .text.HAL_GetTickPrio:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:293    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:308    .text.HAL_GetTickPrio:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:313    .text.HAL_SetTickFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:320    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:377    .text.HAL_SetTickFreq:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:383    .text.HAL_GetTickFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:390    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:405    .text.HAL_GetTickFreq:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:410    .text.HAL_Delay:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:417    .text.HAL_Delay:0000000000000000 HAL_Delay
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:470    .text.HAL_Delay:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:475    .text.HAL_SuspendTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:482    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:499    .text.HAL_SuspendTick:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:504    .text.HAL_ResumeTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:511    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:528    .text.HAL_ResumeTick:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:533    .text.HAL_GetHalVersion:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:540    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:554    .text.HAL_GetHalVersion:0000000000000004 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:559    .text.HAL_GetREVID:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:566    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:583    .text.HAL_GetREVID:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:588    .text.HAL_GetDEVID:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:595    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:612    .text.HAL_GetDEVID:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:617    .text.HAL_GetUIDw0:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:624    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:639    .text.HAL_GetUIDw0:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:644    .text.HAL_GetUIDw1:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:651    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:666    .text.HAL_GetUIDw1:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:671    .text.HAL_GetUIDw2:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:678    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s 			page 17
+
+
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:693    .text.HAL_GetUIDw2:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:698    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:705    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:722    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:727    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:734    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:751    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:756    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:763    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:780    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:785    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:792    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:809    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:814    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:821    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:838    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:843    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:850    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:867    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:878    .data.uwTickFreq:0000000000000000 uwTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:885    .data.uwTickPrio:0000000000000000 uwTickPrio
+C:\Users\Ika\AppData\Local\Temp\ccWI4XZ1.s:881    .data.uwTickPrio:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_SYSTICK_Config
+HAL_NVIC_SetPriority
+SystemCoreClock
+HAL_NVIC_SetPriorityGrouping
