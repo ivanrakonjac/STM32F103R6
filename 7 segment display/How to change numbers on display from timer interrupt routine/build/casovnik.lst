@@ -1,0 +1,196 @@
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"casovnik.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.casovnik,"ax",%progbits
+  16              		.align	1
+  17              		.global	casovnik
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	casovnik:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/casovnik.c"
+   1:../Core/Src/casovnik.c **** 
+  27              		.loc 1 53 16 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  36              		.loc 1 56 2 view .LVU1
+  37              		.loc 1 56 24 is_stmt 0 view .LVU2
+  38 0002 044B     		ldr	r3, .L3
+  39 0004 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+  40              		.loc 1 56 13 view .LVU3
+  41 0006 044B     		ldr	r3, .L3+4
+  42 0008 DA60     		str	r2, [r3, #12]
+  43              		.loc 1 58 2 is_stmt 1 view .LVU4
+  44 000a 044B     		ldr	r3, .L3+8
+  45 000c 1868     		ldr	r0, [r3]
+  46 000e FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+  47              	.LVL0:
+  48              		.loc 1 60 1 is_stmt 0 view .LVU5
+  49 0012 08BD     		pop	{r3, pc}
+  50              	.L4:
+  51              		.align	2
+  52              	.L3:
+  53 0014 00000000 		.word	.LANCHOR0
+  54 0018 00100140 		.word	1073811456
+  55 001c 00000000 		.word	.LANCHOR1
+  56              		.cfi_endproc
+  57              	.LFE65:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s 			page 2
+
+
+  59              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+  60              		.align	1
+  61              		.global	HAL_TIM_PeriodElapsedCallback
+  62              		.syntax unified
+  63              		.thumb
+  64              		.thumb_func
+  65              		.fpu softvfp
+  67              	HAL_TIM_PeriodElapsedCallback:
+  68              	.LVL1:
+  69              	.LFB66:
+  70              		.loc 1 62 60 is_stmt 1 view -0
+  71              		.cfi_startproc
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74              		.loc 1 62 60 is_stmt 0 view .LVU7
+  75 0000 08B5     		push	{r3, lr}
+  76              	.LCFI1:
+  77              		.cfi_def_cfa_offset 8
+  78              		.cfi_offset 3, -8
+  79              		.cfi_offset 14, -4
+  80              		.loc 1 64 2 is_stmt 1 view .LVU8
+  81              		.loc 1 64 9 is_stmt 0 view .LVU9
+  82 0002 0268     		ldr	r2, [r0]
+  83              		.loc 1 64 28 view .LVU10
+  84 0004 0C4B     		ldr	r3, .L9
+  85 0006 1B68     		ldr	r3, [r3]
+  86              		.loc 1 64 4 view .LVU11
+  87 0008 9A42     		cmp	r2, r3
+  88 000a 00D0     		beq	.L8
+  89              	.LVL2:
+  90              	.L5:
+  91              		.loc 1 73 1 view .LVU12
+  92 000c 08BD     		pop	{r3, pc}
+  93              	.LVL3:
+  94              	.L8:
+  95              		.loc 1 65 3 is_stmt 1 view .LVU13
+  96 000e 0121     		movs	r1, #1
+  97 0010 0A48     		ldr	r0, .L9+4
+  98              	.LVL4:
+  99              		.loc 1 65 3 is_stmt 0 view .LVU14
+ 100 0012 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 101              	.LVL5:
+ 102              		.loc 1 67 3 is_stmt 1 view .LVU15
+ 103              		.loc 1 67 32 is_stmt 0 view .LVU16
+ 104 0016 0A49     		ldr	r1, .L9+8
+ 105 0018 0A68     		ldr	r2, [r1]
+ 106 001a 0132     		adds	r2, r2, #1
+ 107              		.loc 1 67 37 view .LVU17
+ 108 001c 094B     		ldr	r3, .L9+12
+ 109 001e A3FB0203 		umull	r0, r3, r3, r2
+ 110 0022 DB08     		lsrs	r3, r3, #3
+ 111 0024 03EB8303 		add	r3, r3, r3, lsl #2
+ 112 0028 A2EB4303 		sub	r3, r2, r3, lsl #1
+ 113              		.loc 1 67 16 view .LVU18
+ 114 002c 0B60     		str	r3, [r1]
+ 115              		.loc 1 69 3 is_stmt 1 view .LVU19
+ 116              		.loc 1 69 25 is_stmt 0 view .LVU20
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s 			page 3
+
+
+ 117 002e 064A     		ldr	r2, .L9+16
+ 118 0030 D25C     		ldrb	r2, [r2, r3]	@ zero_extendqisi2
+ 119              		.loc 1 69 14 view .LVU21
+ 120 0032 064B     		ldr	r3, .L9+20
+ 121 0034 DA60     		str	r2, [r3, #12]
+ 122              		.loc 1 73 1 view .LVU22
+ 123 0036 E9E7     		b	.L5
+ 124              	.L10:
+ 125              		.align	2
+ 126              	.L9:
+ 127 0038 00000000 		.word	htim1
+ 128 003c 000C0140 		.word	1073810432
+ 129 0040 00000000 		.word	.LANCHOR2
+ 130 0044 CDCCCCCC 		.word	-858993459
+ 131 0048 00000000 		.word	.LANCHOR0
+ 132 004c 00100140 		.word	1073811456
+ 133              		.cfi_endproc
+ 134              	.LFE66:
+ 136              		.global	stateCounter
+ 137              		.global	casovnik_tim_handle
+ 138              		.global	seven_seg
+ 139              		.section	.bss.stateCounter,"aw",%nobits
+ 140              		.align	2
+ 141              		.set	.LANCHOR2,. + 0
+ 144              	stateCounter:
+ 145 0000 00000000 		.space	4
+ 146              		.section	.data.casovnik_tim_handle,"aw"
+ 147              		.align	2
+ 148              		.set	.LANCHOR1,. + 0
+ 151              	casovnik_tim_handle:
+ 152 0000 00000000 		.word	htim1
+ 153              		.section	.data.seven_seg,"aw"
+ 154              		.align	2
+ 155              		.set	.LANCHOR0,. + 0
+ 158              	seven_seg:
+ 159 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
+ 159      CCA4A08F 
+ 159      8084
+ 160              		.text
+ 161              	.Letext0:
+ 162              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 163              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 164              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 165              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 166              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 167              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 168              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 169              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 170              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 171              		.file 11 "../Core/Inc/tim.h"
+ 172              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 casovnik.c
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:16     .text.casovnik:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:24     .text.casovnik:0000000000000000 casovnik
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:53     .text.casovnik:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:60     .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:67     .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:127    .text.HAL_TIM_PeriodElapsedCallback:0000000000000038 $d
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:144    .bss.stateCounter:0000000000000000 stateCounter
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:151    .data.casovnik_tim_handle:0000000000000000 casovnik_tim_handle
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:158    .data.seven_seg:0000000000000000 seven_seg
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:140    .bss.stateCounter:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:147    .data.casovnik_tim_handle:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccY6GaRv.s:154    .data.seven_seg:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_Base_Start_IT
+HAL_GPIO_TogglePin
+htim1
