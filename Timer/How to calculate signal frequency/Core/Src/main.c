@@ -89,9 +89,14 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
-  //Start input capture channel
+  //Startujem input capture channel
   HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
 
+  //Startujem timer u interapt modu
+  HAL_TIM_Base_Start_IT(&htim1);
+
+  //Ovo sluzi da timer ne bi ulazio u prekidnu rutinu cim se pokrene, vec tek nakon isteka counter perioda (vrednost ARR registra)
+  (&htim1)->Instance->SR = ~TIM_SR_UIF;
 
   /* USER CODE END 2 */
 

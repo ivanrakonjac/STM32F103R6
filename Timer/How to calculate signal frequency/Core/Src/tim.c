@@ -92,6 +92,8 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
     /* TIM1 interrupt Init */
+    HAL_NVIC_SetPriority(TIM1_UP_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(TIM1_UP_IRQn);
     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM1_CC_IRQn);
   /* USER CODE BEGIN TIM1_MspInit 1 */
@@ -117,6 +119,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_8);
 
     /* TIM1 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(TIM1_UP_IRQn);
     HAL_NVIC_DisableIRQ(TIM1_CC_IRQn);
   /* USER CODE BEGIN TIM1_MspDeInit 1 */
 
@@ -127,6 +130,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 /* USER CODE BEGIN 1 */
 
 #define FREQUENCY_COUNTER_CLK 8000
+#define ARR 65535
 
 typedef enum {
 	WAIT_INITIAL_RISING_EDGE,
@@ -134,6 +138,8 @@ typedef enum {
 }PeriodStateMachine;
 
 PeriodStateMachine state = WAIT_INITIAL_RISING_EDGE;
+
+uint32_t overflowCounter = 0;
 
 uint16_t volatile timeStampStart = 0; //volatile jer se koristi u prekidnoj rutini
 uint16_t volatile timeStampEnd = 0;
@@ -150,6 +156,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 			//timeStampStart = TIM1->CCR1, isto je sto i linija ispod
 			timeStampStart = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
 
+			overflowCounter = 0;
+
 			state = WAIT_PERIOD_END;
 		}
 		break;
@@ -157,13 +165,15 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 		if(htim->Instance == TIM1 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1){
 
 			timeStampEnd = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
-			ticksElapsedPeriod = timeStampEnd - timeStampStart;
+
+			ticksElapsedPeriod = (timeStampEnd + overflowCounter * (ARR + 1)) - timeStampStart;
 
 			frequency = FREQUENCY_COUNTER_CLK / ticksElapsedPeriod;
 
 			//pocetak nove periode je kraj stare
 			timeStampStart = timeStampEnd;
 
+			overflowCounter = 0;
 			state = WAIT_PERIOD_END;
 
 			/*
@@ -180,7 +190,9 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 }
 
 
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	++overflowCounter;
+}
 
 
 

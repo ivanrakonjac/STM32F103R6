@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
   57 0000 FEE7     		b	.L3
   58              		.cfi_endproc
   59              	.LFE66:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 2
 
 
   61              		.section	.text.MemManage_Handler,"ax",%progbits
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
  120              		.cfi_startproc
  121              		@ Volatile: function does not return.
  122              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 3
 
 
  123              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
  183              		.loc 1 170 1 view -0
  184              		.cfi_startproc
  185              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 4
 
 
  186              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -212,14 +212,14 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
  216 0006 08BD     		pop	{r3, pc}
  217              		.cfi_endproc
  218              	.LFE73:
- 220              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
+ 220              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
  221              		.align	1
- 222              		.global	TIM1_CC_IRQHandler
+ 222              		.global	TIM1_UP_IRQHandler
  223              		.syntax unified
  224              		.thumb
  225              		.thumb_func
  226              		.fpu softvfp
- 228              	TIM1_CC_IRQHandler:
+ 228              	TIM1_UP_IRQHandler:
  229              	.LFB74:
  230              		.loc 1 204 1 is_stmt 1 view -0
  231              		.cfi_startproc
@@ -238,50 +238,83 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 1
  244 0008 08BD     		pop	{r3, pc}
  245              	.L18:
  246 000a 00BF     		.align	2
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 5
 
 
  247              	.L17:
  248 000c 00000000 		.word	htim1
  249              		.cfi_endproc
  250              	.LFE74:
- 252              		.text
- 253              	.Letext0:
- 254              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 255              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 256              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 257              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 258              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 259              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 260              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 261              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 262              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s 			page 6
+ 252              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
+ 253              		.align	1
+ 254              		.global	TIM1_CC_IRQHandler
+ 255              		.syntax unified
+ 256              		.thumb
+ 257              		.thumb_func
+ 258              		.fpu softvfp
+ 260              	TIM1_CC_IRQHandler:
+ 261              	.LFB75:
+ 262              		.loc 1 218 1 is_stmt 1 view -0
+ 263              		.cfi_startproc
+ 264              		@ args = 0, pretend = 0, frame = 0
+ 265              		@ frame_needed = 0, uses_anonymous_args = 0
+ 266 0000 08B5     		push	{r3, lr}
+ 267              	.LCFI2:
+ 268              		.cfi_def_cfa_offset 8
+ 269              		.cfi_offset 3, -8
+ 270              		.cfi_offset 14, -4
+ 271              		.loc 1 222 3 view .LVU31
+ 272 0002 0248     		ldr	r0, .L21
+ 273 0004 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 274              	.LVL2:
+ 275              		.loc 1 226 1 is_stmt 0 view .LVU32
+ 276 0008 08BD     		pop	{r3, pc}
+ 277              	.L22:
+ 278 000a 00BF     		.align	2
+ 279              	.L21:
+ 280 000c 00000000 		.word	htim1
+ 281              		.cfi_endproc
+ 282              	.LFE75:
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 287              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 288              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 289              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 290              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 291              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 292              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 293              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 294              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_it.c
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:16     .text.NMI_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:38     .text.HardFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:62     .text.MemManage_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:86     .text.BusFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:110    .text.UsageFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:134    .text.SVC_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:154    .text.DebugMon_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:174    .text.PendSV_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:194    .text.SysTick_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:221    .text.TIM1_CC_IRQHandler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:228    .text.TIM1_CC_IRQHandler:0000000000000000 TIM1_CC_IRQHandler
-C:\Users\Ika\AppData\Local\Temp\ccuK6QjL.s:248    .text.TIM1_CC_IRQHandler:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:38     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:62     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:86     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:110    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:134    .text.SVC_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:154    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:174    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:194    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:221    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:228    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:248    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:253    .text.TIM1_CC_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:260    .text.TIM1_CC_IRQHandler:0000000000000000 TIM1_CC_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccKbVQqg.s:280    .text.TIM1_CC_IRQHandler:000000000000000c $d
 
 UNDEFINED SYMBOLS
 HAL_IncTick

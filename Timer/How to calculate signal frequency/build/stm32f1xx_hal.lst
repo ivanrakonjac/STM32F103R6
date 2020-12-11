@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
   58              		.align	1
   59              		.global	HAL_DeInit
   60              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 2
 
 
   61              		.thumb
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  118              	.LCFI1:
  119              		.cfi_def_cfa_offset 8
  120              		.cfi_offset 4, -8
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 3
 
 
  121              		.cfi_offset 14, -4
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  175              		.cfi_endproc
  176              	.LFE69:
  178              		.section	.text.HAL_Init,"ax",%progbits
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 4
 
 
  179              		.align	1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  236              		@ args = 0, pretend = 0, frame = 0
  237              		@ frame_needed = 0, uses_anonymous_args = 0
  238              		@ link register save eliminated.
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 5
 
 
  239              		.loc 1 295 3 view .LVU38
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  297              		@ args = 0, pretend = 0, frame = 0
  298              		@ frame_needed = 0, uses_anonymous_args = 0
  299              		@ link register save eliminated.
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 6
 
 
  300              		.loc 1 315 3 view .LVU46
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  356 000e 1870     		strb	r0, [r3]
  357              		.loc 1 338 5 is_stmt 1 view .LVU62
  358              		.loc 1 338 14 is_stmt 0 view .LVU63
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 7
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 7
 
 
  359 0010 054B     		ldr	r3, .L33+4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  417              	HAL_Delay:
  418              	.LVL15:
  419              	.LFB75:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 8
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 8
 
 
  420              		.loc 1 371 1 is_stmt 1 view -0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  475              		.align	1
  476              		.weak	HAL_SuspendTick
  477              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 9
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 9
 
 
  478              		.thumb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  536              		.thumb
  537              		.thumb_func
  538              		.fpu softvfp
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 10
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 10
 
 
  540              	HAL_GetHalVersion:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  598              		.cfi_startproc
  599              		@ args = 0, pretend = 0, frame = 0
  600              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 11
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 11
 
 
  601              		@ link register save eliminated.
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  659              		.loc 1 475 1 is_stmt 0 view .LVU112
  660 0000 014B     		ldr	r3, .L63
  661 0002 1868     		ldr	r0, [r3]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 12
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 12
 
 
  662 0004 7047     		bx	lr
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  720              		.align	2
  721              	.L69:
  722 000c 002004E0 		.word	-536600576
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 13
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 13
 
 
  723              		.cfi_endproc
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  781              		.cfi_endproc
  782              	.LFE86:
  784              		.section	.text.HAL_DBGMCU_DisableDBGStopMode,"ax",%progbits
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 14
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 14
 
 
  785              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  843              		.align	1
  844              		.global	HAL_DBGMCU_DisableDBGStandbyMode
  845              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 15
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 15
 
 
  846              		.thumb
@@ -886,91 +886,91 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 1
  894              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  895              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
  896              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 16
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_hal.c
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:16     .text.HAL_MspInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:24     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:38     .text.HAL_MspDeInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:45     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:58     .text.HAL_DeInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:65     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:97     .text.HAL_DeInit:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:102    .text.HAL_InitTick:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:109    .text.HAL_InitTick:0000000000000000 HAL_InitTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:172    .text.HAL_InitTick:0000000000000040 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:179    .text.HAL_Init:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:186    .text.HAL_Init:0000000000000000 HAL_Init
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:220    .text.HAL_Init:0000000000000020 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:225    .text.HAL_IncTick:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:232    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:252    .text.HAL_IncTick:0000000000000010 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:16     .text.HAL_MspInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:24     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:38     .text.HAL_MspDeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:45     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:58     .text.HAL_DeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:65     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:97     .text.HAL_DeInit:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:102    .text.HAL_InitTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:109    .text.HAL_InitTick:0000000000000000 HAL_InitTick
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:172    .text.HAL_InitTick:0000000000000040 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:179    .text.HAL_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:186    .text.HAL_Init:0000000000000000 HAL_Init
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:220    .text.HAL_Init:0000000000000020 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:225    .text.HAL_IncTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:232    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:252    .text.HAL_IncTick:0000000000000010 $d
                             *COM*:0000000000000004 uwTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:258    .text.HAL_GetTick:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:265    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:281    .text.HAL_GetTick:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:286    .text.HAL_GetTickPrio:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:293    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:308    .text.HAL_GetTickPrio:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:313    .text.HAL_SetTickFreq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:320    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:377    .text.HAL_SetTickFreq:0000000000000024 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:383    .text.HAL_GetTickFreq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:390    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:405    .text.HAL_GetTickFreq:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:410    .text.HAL_Delay:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:417    .text.HAL_Delay:0000000000000000 HAL_Delay
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:470    .text.HAL_Delay:0000000000000024 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:475    .text.HAL_SuspendTick:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:482    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:499    .text.HAL_SuspendTick:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:504    .text.HAL_ResumeTick:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:511    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:528    .text.HAL_ResumeTick:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:533    .text.HAL_GetHalVersion:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:540    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:554    .text.HAL_GetHalVersion:0000000000000004 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:559    .text.HAL_GetREVID:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:566    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:583    .text.HAL_GetREVID:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:588    .text.HAL_GetDEVID:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:595    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:612    .text.HAL_GetDEVID:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:617    .text.HAL_GetUIDw0:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:624    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:639    .text.HAL_GetUIDw0:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:644    .text.HAL_GetUIDw1:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:651    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:666    .text.HAL_GetUIDw1:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:671    .text.HAL_GetUIDw2:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:678    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s 			page 17
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:258    .text.HAL_GetTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:265    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:281    .text.HAL_GetTick:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:286    .text.HAL_GetTickPrio:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:293    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:308    .text.HAL_GetTickPrio:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:313    .text.HAL_SetTickFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:320    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:377    .text.HAL_SetTickFreq:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:383    .text.HAL_GetTickFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:390    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:405    .text.HAL_GetTickFreq:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:410    .text.HAL_Delay:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:417    .text.HAL_Delay:0000000000000000 HAL_Delay
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:470    .text.HAL_Delay:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:475    .text.HAL_SuspendTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:482    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:499    .text.HAL_SuspendTick:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:504    .text.HAL_ResumeTick:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:511    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:528    .text.HAL_ResumeTick:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:533    .text.HAL_GetHalVersion:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:540    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:554    .text.HAL_GetHalVersion:0000000000000004 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:559    .text.HAL_GetREVID:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:566    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:583    .text.HAL_GetREVID:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:588    .text.HAL_GetDEVID:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:595    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:612    .text.HAL_GetDEVID:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:617    .text.HAL_GetUIDw0:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:624    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:639    .text.HAL_GetUIDw0:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:644    .text.HAL_GetUIDw1:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:651    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:666    .text.HAL_GetUIDw1:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:671    .text.HAL_GetUIDw2:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:678    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccu22270.s 			page 17
 
 
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:693    .text.HAL_GetUIDw2:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:698    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:705    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:722    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:727    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:734    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:751    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:756    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:763    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:780    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:785    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:792    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:809    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:814    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:821    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:838    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:843    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:850    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:867    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:878    .data.uwTickFreq:0000000000000000 uwTickFreq
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:885    .data.uwTickPrio:0000000000000000 uwTickPrio
-C:\Users\Ika\AppData\Local\Temp\ccoFvU1Z.s:881    .data.uwTickPrio:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:693    .text.HAL_GetUIDw2:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:698    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:705    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:722    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:727    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:734    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:751    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:756    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:763    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:780    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:785    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:792    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:809    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:814    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:821    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:838    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:843    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:850    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:867    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:878    .data.uwTickFreq:0000000000000000 uwTickFreq
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:885    .data.uwTickPrio:0000000000000000 uwTickPrio
+C:\Users\Ika\AppData\Local\Temp\ccu22270.s:881    .data.uwTickPrio:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SYSTICK_Config

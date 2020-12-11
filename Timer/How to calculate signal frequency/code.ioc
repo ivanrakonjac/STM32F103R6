@@ -27,6 +27,7 @@ RCC.IPParameters=APB1Freq_Value,APB2Freq_Value,FamilyName,PLLCLKFreq_Value,PLLMC
 ProjectManager.DefaultFWLocation=true
 ProjectManager.AskForMigrate=true
 Mcu.Name=STM32F103R(4-6)Tx
+NVIC.TIM1_UP_IRQn=true\:0\:0\:false\:false\:true\:true\:true
 ProjectManager.HalAssertFull=false
 VP_TIM1_VS_ClockSourceINT.Mode=Internal
 ProjectManager.DeletePrevious=true
