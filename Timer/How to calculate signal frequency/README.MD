@@ -1,10 +1,10 @@
 # How to calculate signal frequency
 
-Simple way to calculate frequency of some signal using input capture functionality of STM32F103R6.
+A simple way to calculate the frequency of some signal using input capture functionality of STM32F103R6.
 
-We mesure how meny ticks elapsed between 2 rising edges of signal.
+We measure how many ticks elapsed between 2 rising edges of the signal.
 
-When we divide frequeny for counter clock with elapsed ticks, we get frequency of a signal. 
+When we divide frequency for a counter clock with elapsed ticks, we get the frequency of a signal.
 
 Handler is in Core/Src/timer.c file.
 
