@@ -98,7 +98,12 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 
 /* USER CODE BEGIN 1 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+
+	//Potrebna je provera jer se ista prekidna rutina zove za vise tajmera
+	if(htim->Instance == htim1.Instance){
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+	}
+
 }
 /* USER CODE END 1 */
 

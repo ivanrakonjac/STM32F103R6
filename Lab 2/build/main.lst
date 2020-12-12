@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -27,7 +27,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 1
   25              	.LFB66:
   26              		.file 1 "../Core/Src/main.c"
    1:../Core/Src/main.c **** 
-  27              		.loc 1 112 1 view -0
+  27              		.loc 1 114 1 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 64
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -39,70 +39,70 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 1
   36 0002 90B0     		sub	sp, sp, #64
   37              	.LCFI1:
   38              		.cfi_def_cfa_offset 72
-  39              		.loc 1 113 3 view .LVU1
-  40              		.loc 1 113 22 is_stmt 0 view .LVU2
+  39              		.loc 1 115 3 view .LVU1
+  40              		.loc 1 115 22 is_stmt 0 view .LVU2
   41 0004 2422     		movs	r2, #36
   42 0006 0021     		movs	r1, #0
   43 0008 07A8     		add	r0, sp, #28
   44 000a 0F4B     		ldr	r3, .L3
   45 000c 9847     		blx	r3
   46              	.LVL0:
-  47              		.loc 1 114 3 is_stmt 1 view .LVU3
-  48              		.loc 1 114 22 is_stmt 0 view .LVU4
+  47              		.loc 1 116 3 is_stmt 1 view .LVU3
+  48              		.loc 1 116 22 is_stmt 0 view .LVU4
   49 000e 0024     		movs	r4, #0
   50 0010 0194     		str	r4, [sp, #4]
   51 0012 0294     		str	r4, [sp, #8]
   52 0014 0394     		str	r4, [sp, #12]
   53 0016 0494     		str	r4, [sp, #16]
   54 0018 0594     		str	r4, [sp, #20]
-  55              		.loc 1 119 3 is_stmt 1 view .LVU5
-  56              		.loc 1 119 36 is_stmt 0 view .LVU6
+  55              		.loc 1 121 3 is_stmt 1 view .LVU5
+  56              		.loc 1 121 36 is_stmt 0 view .LVU6
   57 001a 0223     		movs	r3, #2
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s 			page 2
 
 
   58 001c 0693     		str	r3, [sp, #24]
-  59              		.loc 1 120 3 is_stmt 1 view .LVU7
-  60              		.loc 1 120 30 is_stmt 0 view .LVU8
+  59              		.loc 1 122 3 is_stmt 1 view .LVU7
+  60              		.loc 1 122 30 is_stmt 0 view .LVU8
   61 001e 0123     		movs	r3, #1
   62 0020 0A93     		str	r3, [sp, #40]
-  63              		.loc 1 121 3 is_stmt 1 view .LVU9
-  64              		.loc 1 121 41 is_stmt 0 view .LVU10
+  63              		.loc 1 123 3 is_stmt 1 view .LVU9
+  64              		.loc 1 123 41 is_stmt 0 view .LVU10
   65 0022 1023     		movs	r3, #16
   66 0024 0B93     		str	r3, [sp, #44]
-  67              		.loc 1 122 3 is_stmt 1 view .LVU11
-  68              		.loc 1 122 34 is_stmt 0 view .LVU12
+  67              		.loc 1 124 3 is_stmt 1 view .LVU11
+  68              		.loc 1 124 34 is_stmt 0 view .LVU12
   69 0026 0D94     		str	r4, [sp, #52]
-  70              		.loc 1 123 3 is_stmt 1 view .LVU13
-  71              		.loc 1 123 7 is_stmt 0 view .LVU14
+  70              		.loc 1 125 3 is_stmt 1 view .LVU13
+  71              		.loc 1 125 7 is_stmt 0 view .LVU14
   72 0028 06A8     		add	r0, sp, #24
   73 002a 084B     		ldr	r3, .L3+4
   74 002c 9847     		blx	r3
   75              	.LVL1:
-  76              		.loc 1 129 3 is_stmt 1 view .LVU15
-  77              		.loc 1 129 31 is_stmt 0 view .LVU16
+  76              		.loc 1 131 3 is_stmt 1 view .LVU15
+  77              		.loc 1 131 31 is_stmt 0 view .LVU16
   78 002e 0F23     		movs	r3, #15
   79 0030 0193     		str	r3, [sp, #4]
-  80              		.loc 1 131 3 is_stmt 1 view .LVU17
-  81              		.loc 1 131 34 is_stmt 0 view .LVU18
+  80              		.loc 1 133 3 is_stmt 1 view .LVU17
+  81              		.loc 1 133 34 is_stmt 0 view .LVU18
   82 0032 0294     		str	r4, [sp, #8]
-  83              		.loc 1 132 3 is_stmt 1 view .LVU19
-  84              		.loc 1 132 35 is_stmt 0 view .LVU20
+  83              		.loc 1 134 3 is_stmt 1 view .LVU19
+  84              		.loc 1 134 35 is_stmt 0 view .LVU20
   85 0034 0394     		str	r4, [sp, #12]
-  86              		.loc 1 133 3 is_stmt 1 view .LVU21
-  87              		.loc 1 133 36 is_stmt 0 view .LVU22
+  86              		.loc 1 135 3 is_stmt 1 view .LVU21
+  87              		.loc 1 135 36 is_stmt 0 view .LVU22
   88 0036 0494     		str	r4, [sp, #16]
-  89              		.loc 1 134 3 is_stmt 1 view .LVU23
-  90              		.loc 1 134 36 is_stmt 0 view .LVU24
+  89              		.loc 1 136 3 is_stmt 1 view .LVU23
+  90              		.loc 1 136 36 is_stmt 0 view .LVU24
   91 0038 0594     		str	r4, [sp, #20]
-  92              		.loc 1 136 3 is_stmt 1 view .LVU25
-  93              		.loc 1 136 7 is_stmt 0 view .LVU26
+  92              		.loc 1 138 3 is_stmt 1 view .LVU25
+  93              		.loc 1 138 7 is_stmt 0 view .LVU26
   94 003a 2146     		mov	r1, r4
   95 003c 01A8     		add	r0, sp, #4
   96 003e 044B     		ldr	r3, .L3+8
   97 0040 9847     		blx	r3
   98              	.LVL2:
-  99              		.loc 1 140 1 view .LVU27
+  99              		.loc 1 142 1 view .LVU27
  100 0042 10B0     		add	sp, sp, #64
  101              	.LCFI2:
  102              		.cfi_def_cfa_offset 8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 1
  112              	.LFE66:
  114              		.section	.text.main,"ax",%progbits
  115              		.align	1
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s 			page 3
 
 
  116              		.global	main
@@ -139,92 +139,97 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 1
  132              		.cfi_offset 3, -8
  133              		.cfi_offset 14, -4
  134              		.loc 1 74 3 view .LVU29
- 135 0002 064B     		ldr	r3, .L8
+ 135 0002 074B     		ldr	r3, .L8
  136 0004 9847     		blx	r3
  137              	.LVL3:
  138              		.loc 1 81 3 view .LVU30
- 139 0006 064B     		ldr	r3, .L8+4
+ 139 0006 074B     		ldr	r3, .L8+4
  140 0008 9847     		blx	r3
  141              	.LVL4:
  142              		.loc 1 88 3 view .LVU31
- 143 000a 064B     		ldr	r3, .L8+8
+ 143 000a 074B     		ldr	r3, .L8+8
  144 000c 9847     		blx	r3
  145              	.LVL5:
  146              		.loc 1 89 3 view .LVU32
- 147 000e 064B     		ldr	r3, .L8+12
+ 147 000e 074B     		ldr	r3, .L8+12
  148 0010 9847     		blx	r3
  149              	.LVL6:
  150              		.loc 1 92 3 view .LVU33
- 151 0012 0648     		ldr	r0, .L8+16
- 152 0014 064B     		ldr	r3, .L8+20
+ 151 0012 0748     		ldr	r0, .L8+16
+ 152 0014 074B     		ldr	r3, .L8+20
  153 0016 9847     		blx	r3
  154              	.LVL7:
- 155              	.L6:
- 156              		.loc 1 98 3 discriminator 1 view .LVU34
- 157              		.loc 1 103 3 discriminator 1 view .LVU35
- 158              		.loc 1 98 9 discriminator 1 view .LVU36
- 159 0018 FEE7     		b	.L6
- 160              	.L9:
- 161 001a 00BF     		.align	2
- 162              	.L8:
- 163 001c 00000000 		.word	HAL_Init
- 164 0020 00000000 		.word	SystemClock_Config
- 165 0024 00000000 		.word	MX_GPIO_Init
- 166 0028 00000000 		.word	MX_TIM1_Init
- 167 002c 00000000 		.word	htim1
- 168 0030 00000000 		.word	HAL_TIM_Base_Start_IT
- 169              		.cfi_endproc
- 170              	.LFE65:
- 172              		.section	.text.Error_Handler,"ax",%progbits
- 173              		.align	1
- 174              		.global	Error_Handler
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 4
+ 155              		.loc 1 94 3 view .LVU34
+ 156 0018 074B     		ldr	r3, .L8+24
+ 157 001a 9847     		blx	r3
+ 158              	.LVL8:
+ 159              	.L6:
+ 160              		.loc 1 100 3 discriminator 1 view .LVU35
+ 161              		.loc 1 105 3 discriminator 1 view .LVU36
+ 162              		.loc 1 100 9 discriminator 1 view .LVU37
+ 163 001c FEE7     		b	.L6
+ 164              	.L9:
+ 165 001e 00BF     		.align	2
+ 166              	.L8:
+ 167 0020 00000000 		.word	HAL_Init
+ 168 0024 00000000 		.word	SystemClock_Config
+ 169 0028 00000000 		.word	MX_GPIO_Init
+ 170 002c 00000000 		.word	MX_TIM1_Init
+ 171 0030 00000000 		.word	htim1
+ 172 0034 00000000 		.word	HAL_TIM_Base_Start_IT
+ 173 0038 00000000 		.word	casovnik
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s 			page 4
 
 
- 175              		.syntax unified
- 176              		.thumb
- 177              		.thumb_func
- 178              		.fpu softvfp
- 180              	Error_Handler:
- 181              	.LFB67:
- 182              		.loc 1 151 1 view -0
- 183              		.cfi_startproc
- 184              		@ args = 0, pretend = 0, frame = 0
- 185              		@ frame_needed = 0, uses_anonymous_args = 0
- 186              		@ link register save eliminated.
- 187              		.loc 1 156 1 view .LVU38
- 188 0000 7047     		bx	lr
- 189              		.cfi_endproc
- 190              	.LFE67:
- 192              		.text
- 193              	.Letext0:
- 194              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 195              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 196              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 197              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 198              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 199              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 200              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
- 201              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
- 202              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 203              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 204              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 205              		.file 13 "../Core/Inc/tim.h"
- 206              		.file 14 "../Core/Inc/gpio.h"
- 207              		.file 15 "../<built-in>"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s 			page 5
+ 174              		.cfi_endproc
+ 175              	.LFE65:
+ 177              		.section	.text.Error_Handler,"ax",%progbits
+ 178              		.align	1
+ 179              		.global	Error_Handler
+ 180              		.syntax unified
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.fpu softvfp
+ 185              	Error_Handler:
+ 186              	.LFB67:
+ 187              		.loc 1 153 1 view -0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+ 192              		.loc 1 158 1 view .LVU39
+ 193 0000 7047     		bx	lr
+ 194              		.cfi_endproc
+ 195              	.LFE67:
+ 197              		.text
+ 198              	.Letext0:
+ 199              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 200              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 201              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 202              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 203              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 204              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 205              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 206              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 207              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 208              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 209              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 210              		.file 13 "../Core/Inc/tim.h"
+ 211              		.file 14 "../Core/Inc/gpio.h"
+ 212              		.file 15 "../<built-in>"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:16     .text.SystemClock_Config:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:24     .text.SystemClock_Config:0000000000000000 SystemClock_Config
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:108    .text.SystemClock_Config:0000000000000048 $d
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:115    .text.main:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:122    .text.main:0000000000000000 main
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:163    .text.main:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:173    .text.Error_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccoShdK8.s:180    .text.Error_Handler:0000000000000000 Error_Handler
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:16     .text.SystemClock_Config:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:24     .text.SystemClock_Config:0000000000000000 SystemClock_Config
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:108    .text.SystemClock_Config:0000000000000048 $d
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:115    .text.main:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:122    .text.main:0000000000000000 main
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:167    .text.main:0000000000000020 $d
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:178    .text.Error_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccNqkDee.s:185    .text.Error_Handler:0000000000000000 Error_Handler
 
 UNDEFINED SYMBOLS
 memset
@@ -235,3 +240,4 @@ MX_GPIO_Init
 MX_TIM1_Init
 htim1
 HAL_TIM_Base_Start_IT
+casovnik

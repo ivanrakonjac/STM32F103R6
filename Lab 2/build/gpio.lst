@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -31,104 +31,147 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s 			page 1
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 24
   30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31 0000 30B5     		push	{r4, r5, lr}
+  31 0000 F0B5     		push	{r4, r5, r6, r7, lr}
   32              	.LCFI0:
-  33              		.cfi_def_cfa_offset 12
-  34              		.cfi_offset 4, -12
-  35              		.cfi_offset 5, -8
-  36              		.cfi_offset 14, -4
-  37 0002 87B0     		sub	sp, sp, #28
-  38              	.LCFI1:
-  39              		.cfi_def_cfa_offset 40
-  40              		.loc 1 38 3 view .LVU1
-  41              		.loc 1 38 20 is_stmt 0 view .LVU2
-  42 0004 0024     		movs	r4, #0
-  43 0006 0294     		str	r4, [sp, #8]
-  44 0008 0394     		str	r4, [sp, #12]
-  45 000a 0494     		str	r4, [sp, #16]
-  46 000c 0594     		str	r4, [sp, #20]
-  47              		.loc 1 41 3 is_stmt 1 view .LVU3
-  48              	.LBB2:
-  49              		.loc 1 41 3 view .LVU4
-  50              		.loc 1 41 3 view .LVU5
-  51 000e 0E4B     		ldr	r3, .L3
-  52 0010 9A69     		ldr	r2, [r3, #24]
-  53 0012 42F00802 		orr	r2, r2, #8
-  54 0016 9A61     		str	r2, [r3, #24]
-  55              		.loc 1 41 3 view .LVU6
-  56 0018 9B69     		ldr	r3, [r3, #24]
-  57 001a 03F00803 		and	r3, r3, #8
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s 			page 2
+  33              		.cfi_def_cfa_offset 20
+  34              		.cfi_offset 4, -20
+  35              		.cfi_offset 5, -16
+  36              		.cfi_offset 6, -12
+  37              		.cfi_offset 7, -8
+  38              		.cfi_offset 14, -4
+  39 0002 87B0     		sub	sp, sp, #28
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 48
+  42              		.loc 1 38 3 view .LVU1
+  43              		.loc 1 38 20 is_stmt 0 view .LVU2
+  44 0004 0024     		movs	r4, #0
+  45 0006 0294     		str	r4, [sp, #8]
+  46 0008 0394     		str	r4, [sp, #12]
+  47 000a 0494     		str	r4, [sp, #16]
+  48 000c 0594     		str	r4, [sp, #20]
+  49              		.loc 1 41 3 is_stmt 1 view .LVU3
+  50              	.LBB2:
+  51              		.loc 1 41 3 view .LVU4
+  52              		.loc 1 41 3 view .LVU5
+  53 000e 194B     		ldr	r3, .L3
+  54 0010 9A69     		ldr	r2, [r3, #24]
+  55 0012 42F01002 		orr	r2, r2, #16
+  56 0016 9A61     		str	r2, [r3, #24]
+  57              		.loc 1 41 3 view .LVU6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s 			page 2
 
 
-  58 001e 0193     		str	r3, [sp, #4]
-  59              		.loc 1 41 3 view .LVU7
-  60 0020 019B     		ldr	r3, [sp, #4]
-  61              	.LBE2:
-  62              		.loc 1 41 3 view .LVU8
-  63              		.loc 1 44 3 view .LVU9
-  64 0022 0A4D     		ldr	r5, .L3+4
-  65 0024 2246     		mov	r2, r4
-  66 0026 0121     		movs	r1, #1
-  67 0028 2846     		mov	r0, r5
-  68 002a 094B     		ldr	r3, .L3+8
-  69 002c 9847     		blx	r3
-  70              	.LVL0:
-  71              		.loc 1 47 3 view .LVU10
-  72              		.loc 1 47 23 is_stmt 0 view .LVU11
-  73 002e 0123     		movs	r3, #1
-  74 0030 0293     		str	r3, [sp, #8]
-  75              		.loc 1 48 3 is_stmt 1 view .LVU12
-  76              		.loc 1 48 24 is_stmt 0 view .LVU13
-  77 0032 0393     		str	r3, [sp, #12]
-  78              		.loc 1 49 3 is_stmt 1 view .LVU14
-  79              		.loc 1 49 24 is_stmt 0 view .LVU15
-  80 0034 0494     		str	r4, [sp, #16]
-  81              		.loc 1 50 3 is_stmt 1 view .LVU16
-  82              		.loc 1 50 25 is_stmt 0 view .LVU17
-  83 0036 0223     		movs	r3, #2
-  84 0038 0593     		str	r3, [sp, #20]
-  85              		.loc 1 51 3 is_stmt 1 view .LVU18
-  86 003a 02A9     		add	r1, sp, #8
-  87 003c 2846     		mov	r0, r5
-  88 003e 054B     		ldr	r3, .L3+12
-  89 0040 9847     		blx	r3
-  90              	.LVL1:
-  91              		.loc 1 53 1 is_stmt 0 view .LVU19
-  92 0042 07B0     		add	sp, sp, #28
-  93              	.LCFI2:
-  94              		.cfi_def_cfa_offset 12
-  95              		@ sp needed
-  96 0044 30BD     		pop	{r4, r5, pc}
-  97              	.L4:
-  98 0046 00BF     		.align	2
-  99              	.L3:
- 100 0048 00100240 		.word	1073876992
- 101 004c 000C0140 		.word	1073810432
- 102 0050 00000000 		.word	HAL_GPIO_WritePin
- 103 0054 00000000 		.word	HAL_GPIO_Init
- 104              		.cfi_endproc
- 105              	.LFE65:
- 107              		.text
- 108              	.Letext0:
- 109              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 110              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 111              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 112              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 113              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 114              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 115              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s 			page 3
+  58 0018 9A69     		ldr	r2, [r3, #24]
+  59 001a 02F01002 		and	r2, r2, #16
+  60 001e 0092     		str	r2, [sp]
+  61              		.loc 1 41 3 view .LVU7
+  62 0020 009A     		ldr	r2, [sp]
+  63              	.LBE2:
+  64              		.loc 1 41 3 view .LVU8
+  65              		.loc 1 42 3 view .LVU9
+  66              	.LBB3:
+  67              		.loc 1 42 3 view .LVU10
+  68              		.loc 1 42 3 view .LVU11
+  69 0022 9A69     		ldr	r2, [r3, #24]
+  70 0024 42F00802 		orr	r2, r2, #8
+  71 0028 9A61     		str	r2, [r3, #24]
+  72              		.loc 1 42 3 view .LVU12
+  73 002a 9B69     		ldr	r3, [r3, #24]
+  74 002c 03F00803 		and	r3, r3, #8
+  75 0030 0193     		str	r3, [sp, #4]
+  76              		.loc 1 42 3 view .LVU13
+  77 0032 019B     		ldr	r3, [sp, #4]
+  78              	.LBE3:
+  79              		.loc 1 42 3 view .LVU14
+  80              		.loc 1 45 3 view .LVU15
+  81 0034 104D     		ldr	r5, .L3+4
+  82 0036 2246     		mov	r2, r4
+  83 0038 FF21     		movs	r1, #255
+  84 003a 2846     		mov	r0, r5
+  85 003c 0F4F     		ldr	r7, .L3+8
+  86 003e B847     		blx	r7
+  87              	.LVL0:
+  88              		.loc 1 49 3 view .LVU16
+  89 0040 0F4E     		ldr	r6, .L3+12
+  90 0042 2246     		mov	r2, r4
+  91 0044 0121     		movs	r1, #1
+  92 0046 3046     		mov	r0, r6
+  93 0048 B847     		blx	r7
+  94              	.LVL1:
+  95              		.loc 1 53 3 view .LVU17
+  96              		.loc 1 53 23 is_stmt 0 view .LVU18
+  97 004a FF23     		movs	r3, #255
+  98 004c 0293     		str	r3, [sp, #8]
+  99              		.loc 1 55 3 is_stmt 1 view .LVU19
+ 100              		.loc 1 55 24 is_stmt 0 view .LVU20
+ 101 004e 0124     		movs	r4, #1
+ 102 0050 0394     		str	r4, [sp, #12]
+ 103              		.loc 1 56 3 is_stmt 1 view .LVU21
+ 104              		.loc 1 56 24 is_stmt 0 view .LVU22
+ 105 0052 0494     		str	r4, [sp, #16]
+ 106              		.loc 1 57 3 is_stmt 1 view .LVU23
+ 107              		.loc 1 57 25 is_stmt 0 view .LVU24
+ 108 0054 0227     		movs	r7, #2
+ 109 0056 0597     		str	r7, [sp, #20]
+ 110              		.loc 1 58 3 is_stmt 1 view .LVU25
+ 111 0058 02A9     		add	r1, sp, #8
+ 112 005a 2846     		mov	r0, r5
+ 113 005c 094D     		ldr	r5, .L3+16
+ 114 005e A847     		blx	r5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s 			page 3
 
 
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s 			page 4
+ 115              	.LVL2:
+ 116              		.loc 1 61 3 view .LVU26
+ 117              		.loc 1 61 23 is_stmt 0 view .LVU27
+ 118 0060 0294     		str	r4, [sp, #8]
+ 119              		.loc 1 62 3 is_stmt 1 view .LVU28
+ 120              		.loc 1 62 24 is_stmt 0 view .LVU29
+ 121 0062 0394     		str	r4, [sp, #12]
+ 122              		.loc 1 63 3 is_stmt 1 view .LVU30
+ 123              		.loc 1 63 24 is_stmt 0 view .LVU31
+ 124 0064 0494     		str	r4, [sp, #16]
+ 125              		.loc 1 64 3 is_stmt 1 view .LVU32
+ 126              		.loc 1 64 25 is_stmt 0 view .LVU33
+ 127 0066 0597     		str	r7, [sp, #20]
+ 128              		.loc 1 65 3 is_stmt 1 view .LVU34
+ 129 0068 02A9     		add	r1, sp, #8
+ 130 006a 3046     		mov	r0, r6
+ 131 006c A847     		blx	r5
+ 132              	.LVL3:
+ 133              		.loc 1 67 1 is_stmt 0 view .LVU35
+ 134 006e 07B0     		add	sp, sp, #28
+ 135              	.LCFI2:
+ 136              		.cfi_def_cfa_offset 20
+ 137              		@ sp needed
+ 138 0070 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 139              	.L4:
+ 140 0072 00BF     		.align	2
+ 141              	.L3:
+ 142 0074 00100240 		.word	1073876992
+ 143 0078 00100140 		.word	1073811456
+ 144 007c 00000000 		.word	HAL_GPIO_WritePin
+ 145 0080 000C0140 		.word	1073810432
+ 146 0084 00000000 		.word	HAL_GPIO_Init
+ 147              		.cfi_endproc
+ 148              	.LFE65:
+ 150              		.text
+ 151              	.Letext0:
+ 152              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 153              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 154              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 155              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 156              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 157              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 158              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s:16     .text.MX_GPIO_Init:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s:24     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-C:\Users\Ika\AppData\Local\Temp\ccl4lfrz.s:100    .text.MX_GPIO_Init:0000000000000048 $d
+C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s:16     .text.MX_GPIO_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s:24     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+C:\Users\Ika\AppData\Local\Temp\ccbIUS1g.s:142    .text.MX_GPIO_Init:0000000000000074 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
