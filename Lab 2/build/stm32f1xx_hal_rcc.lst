@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
   55              		.loc 1 1372 16 is_stmt 0 discriminator 1 view .LVU9
   56              		.thumb
   57              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 2
 
 
   58 0016 019B     		ldr	r3, [sp, #4]
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  114              	.L7:
  115              		.loc 1 213 9 view .LVU18
  116              		.loc 1 213 10 is_stmt 0 view .LVU19
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 3
 
 
  117 0012 354B     		ldr	r3, .L27+4
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  171              	.LVL10:
  172              		.loc 1 233 24 view .LVU37
  173 0052 001B     		subs	r0, r0, r4
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 4
 
 
  174              		.loc 1 233 8 view .LVU38
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  228              		.loc 1 257 5 is_stmt 1 view .LVU55
  229              		.loc 1 257 10 is_stmt 0 view .LVU56
  230 0090 144B     		ldr	r3, .L27
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 5
 
 
  231 0092 9847     		blx	r3
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  285 00d2 1A60     		str	r2, [r3]
  286              		.loc 1 324 3 view .LVU74
  287 00d4 5A6A     		ldr	r2, [r3, #36]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 6
 
 
  288 00d6 42F08072 		orr	r2, r2, #16777216
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  344 000c 0368     		ldr	r3, [r0]
  345              		.loc 1 362 6 view .LVU87
  346 000e 13F0010F 		tst	r3, #1
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 7
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 7
 
 
  347 0012 2CD0     		beq	.L31
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  401              		.loc 1 371 58 discriminator 1 view .LVU105
  402 0068 002B     		cmp	r3, #0
  403 006a 00F0C381 		beq	.L108
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 8
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 8
 
 
  404              	.LVL24:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  458 00ac 9847     		blx	r3
  459              	.LVL27:
  460              		.loc 1 450 30 view .LVU128
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 9
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 9
 
 
  461 00ae 401B     		subs	r0, r0, r5
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  515 00e4 B3F5A02F 		cmp	r3, #327680
  516 00e8 09D0     		beq	.L111
  517              		.loc 1 379 7 discriminator 8 view .LVU149
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 10
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 10
 
 
  518 00ea 634B     		ldr	r3, .L122
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  572              		.loc 1 422 83 discriminator 1 view .LVU165
  573 0136 504B     		ldr	r3, .L122
  574 0138 5B68     		ldr	r3, [r3, #4]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 11
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 11
 
 
  575              		.loc 1 422 79 discriminator 1 view .LVU166
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  629 017e 5B6A     		ldr	r3, [r3, #36]
  630              		.loc 1 494 13 view .LVU186
  631 0180 13F0020F 		tst	r3, #2
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 12
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 12
 
 
  632 0184 21D1     		bne	.L112
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  686 01c4 F5D9     		bls	.L50
  687              		.loc 1 472 20 view .LVU204
  688 01c6 0320     		movs	r0, #3
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 13
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 13
 
 
  689 01c8 19E1     		b	.L30
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  743              		.loc 1 511 7 view .LVU224
  744              		.loc 1 511 19 is_stmt 0 view .LVU225
  745 0202 1F4B     		ldr	r3, .L122+8
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 14
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 14
 
 
  746 0204 9847     		blx	r3
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  800 0244 1A62     		str	r2, [r3, #32]
  801              		.loc 1 557 5 discriminator 4 view .LVU243
  802 0246 1A6A     		ldr	r2, [r3, #32]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 15
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 15
 
 
  803 0248 22F00402 		bic	r2, r2, #4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  857              	.L64:
  858              		.loc 1 557 5 discriminator 10 view .LVU257
  859              		.loc 1 559 5 discriminator 10 view .LVU258
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 16
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 16
 
 
  860              		.loc 1 559 26 is_stmt 0 discriminator 10 view .LVU259
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  914 02e0 1A62     		str	r2, [r3, #32]
  915              		.loc 1 557 5 discriminator 7 view .LVU276
  916 02e2 1A6A     		ldr	r2, [r3, #32]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 17
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 17
 
 
  917 02e4 42F00102 		orr	r2, r2, #1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  971              		.loc 1 691 8 view .LVU297
  972 031e 082A     		cmp	r2, #8
  973 0320 56D0     		beq	.L73
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 18
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 18
 
 
  974              		.loc 1 693 7 is_stmt 1 view .LVU298
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1028 0358 0022     		movs	r2, #0
  1029 035a 1A60     		str	r2, [r3]
  1030              		.loc 1 703 9 view .LVU317
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 19
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 19
 
 
  1031              		.loc 1 703 21 is_stmt 0 view .LVU318
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1085 039e 0446     		mov	r4, r0
  1086              	.LVL74:
  1087              		.loc 1 741 9 is_stmt 1 view .LVU335
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 20
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 20
 
 
  1088              	.L78:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1142 03d8 03F48031 		and	r1, r3, #65536
  1143              		.loc 1 778 77 view .LVU354
  1144 03dc 226A     		ldr	r2, [r4, #32]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 21
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 21
 
 
  1145              		.loc 1 778 12 view .LVU355
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1199              		@ sp needed
  1200 0400 70BD     		pop	{r4, r5, r6, pc}
  1201              	.LVL86:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 22
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 22
 
 
  1202              	.L99:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1258              		.loc 1 1013 3 view .LVU377
  1259              		.loc 1 1016 3 view .LVU378
  1260              		.loc 1 1016 18 is_stmt 0 view .LVU379
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 23
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 23
 
 
  1261 0006 0223     		movs	r3, #2
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1315 0042 00BF     		.align	2
  1316              	.L128:
  1317 0044 00100240 		.word	1073876992
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 24
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 24
 
 
  1318 0048 00080140 		.word	1073809408
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1376              	.L134:
  1377 0008 4C004242 		.word	1111621708
  1378              		.cfi_endproc
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 25
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 25
 
 
  1379              	.LFE70:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1432              	.L136:
  1433              		.loc 1 1165 1 is_stmt 0 view .LVU420
  1434 0024 06B0     		add	sp, sp, #24
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 26
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 26
 
 
  1435              	.LCFI13:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1489 0060 00100240 		.word	1073876992
  1490 0064 00127A00 		.word	8000000
  1491 0068 00093D00 		.word	4000000
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 27
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 27
 
 
  1492              		.cfi_endproc
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1548              	.L146:
  1549              		.loc 1 848 1 is_stmt 1 view .LVU452
  1550              		.loc 1 848 24 is_stmt 0 view .LVU453
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 28
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 28
 
 
  1551 0030 2368     		ldr	r3, [r4]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1605              		.loc 1 894 7 is_stmt 1 view .LVU474
  1606              		.loc 1 894 11 is_stmt 0 view .LVU475
  1607 007a 384A     		ldr	r2, .L172+4
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 29
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 29
 
 
  1608 007c 1268     		ldr	r2, [r2]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1662              		.loc 1 878 16 view .LVU494
  1663 00c2 0120     		movs	r0, #1
  1664              	.LVL110:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 30
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 30
 
 
  1665              		.loc 1 878 16 view .LVU495
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1719              		.loc 1 937 3 view .LVU513
  1720              		.loc 1 937 26 is_stmt 0 view .LVU514
  1721 010c 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 31
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 31
 
 
  1722              		.loc 1 937 6 view .LVU515
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1776 0148 7047     		bx	lr
  1777              	.LVL117:
  1778              	.L160:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 32
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 32
 
 
  1779              	.LCFI17:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1835              	.L176:
  1836 0006 00BF     		.align	2
  1837              	.L175:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 33
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 33
 
 
  1838 0008 00000000 		.word	SystemCoreClock
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1896              		.loc 1 1200 1 is_stmt 1 view -0
  1897              		.cfi_startproc
  1898              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 34
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 34
 
 
  1899              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  1955              		.loc 1 1227 6 view .LVU559
  1956 0008 13F4802F 		tst	r3, #262144
  1957 000c 30D0     		beq	.L186
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 35
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 35
 
 
  1958              		.loc 1 1229 5 is_stmt 1 view .LVU560
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2012              		.loc 1 1279 3 is_stmt 1 view .LVU584
  2013              		.loc 1 1279 11 is_stmt 0 view .LVU585
  2014 004e 184B     		ldr	r3, .L198
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 36
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 36
 
 
  2015 0050 1B68     		ldr	r3, [r3]
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2069 008e 084B     		ldr	r3, .L198
  2070 0090 1B6A     		ldr	r3, [r3, #32]
  2071              		.loc 1 1258 11 view .LVU609
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 37
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 37
 
 
  2072 0092 13F0010F 		tst	r3, #1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2128 0004 0B4B     		ldr	r3, .L201
  2129 0006 5A68     		ldr	r2, [r3, #4]
  2130              		.loc 1 1322 37 view .LVU625
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 38
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 38
 
 
  2131 0008 02F00302 		and	r2, r2, #3
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2187              		@ frame_needed = 0, uses_anonymous_args = 0
  2188              		@ link register save eliminated.
  2189              		.loc 1 1384 1 view .LVU645
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 39
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 39
 
 
  2190 0000 7047     		bx	lr
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2247              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
  2248              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
  2249              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 40
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 40
 
 
  2250              		.file 7 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
@@ -2347,58 +2347,58 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 1
  2253              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
  2254              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
  2255              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 41
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 41
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_hal_rcc.c
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:16     .text.RCC_Delay:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:23     .text.RCC_Delay:0000000000000000 RCC_Delay
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:73     .text.RCC_Delay:0000000000000024 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:79     .text.HAL_RCC_DeInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:86     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:299    .text.HAL_RCC_DeInit:00000000000000e4 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:309    .text.HAL_RCC_OscConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:316    .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:844    .text.HAL_RCC_OscConfig:0000000000000278 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:853    .text.HAL_RCC_OscConfig:0000000000000290 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1221   .text.HAL_RCC_OscConfig:0000000000000410 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1228   .text.HAL_RCC_MCOConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1235   .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1317   .text.HAL_RCC_MCOConfig:0000000000000044 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1324   .text.HAL_RCC_EnableCSS:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1331   .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1348   .text.HAL_RCC_EnableCSS:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1353   .text.HAL_RCC_DisableCSS:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1360   .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1377   .text.HAL_RCC_DisableCSS:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1382   .rodata.HAL_RCC_GetSysClockFreq.str1.4:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1387   .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1394   .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1488   .text.HAL_RCC_GetSysClockFreq:000000000000005c $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1496   .text.HAL_RCC_ClockConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1503   .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1804   .text.HAL_RCC_ClockConfig:0000000000000158 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1816   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1823   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1838   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1843   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1850   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1880   .text.HAL_RCC_GetPCLK1Freq:0000000000000018 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1887   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1894   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 HAL_RCC_GetPCLK2Freq
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1924   .text.HAL_RCC_GetPCLK2Freq:0000000000000018 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1931   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:1938   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2100   .text.HAL_RCC_GetOscConfig:00000000000000b0 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2105   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2112   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2169   .text.HAL_RCC_GetClockConfig:0000000000000034 $d
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2175   .text.HAL_RCC_CSSCallback:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2182   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2195   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2202   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
-C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s:2237   .text.HAL_RCC_NMI_IRQHandler:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:16     .text.RCC_Delay:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:23     .text.RCC_Delay:0000000000000000 RCC_Delay
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:73     .text.RCC_Delay:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:79     .text.HAL_RCC_DeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:86     .text.HAL_RCC_DeInit:0000000000000000 HAL_RCC_DeInit
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:299    .text.HAL_RCC_DeInit:00000000000000e4 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:309    .text.HAL_RCC_OscConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:316    .text.HAL_RCC_OscConfig:0000000000000000 HAL_RCC_OscConfig
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:844    .text.HAL_RCC_OscConfig:0000000000000278 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:853    .text.HAL_RCC_OscConfig:0000000000000290 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1221   .text.HAL_RCC_OscConfig:0000000000000410 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1228   .text.HAL_RCC_MCOConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1235   .text.HAL_RCC_MCOConfig:0000000000000000 HAL_RCC_MCOConfig
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1317   .text.HAL_RCC_MCOConfig:0000000000000044 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1324   .text.HAL_RCC_EnableCSS:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1331   .text.HAL_RCC_EnableCSS:0000000000000000 HAL_RCC_EnableCSS
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1348   .text.HAL_RCC_EnableCSS:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1353   .text.HAL_RCC_DisableCSS:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1360   .text.HAL_RCC_DisableCSS:0000000000000000 HAL_RCC_DisableCSS
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1377   .text.HAL_RCC_DisableCSS:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1382   .rodata.HAL_RCC_GetSysClockFreq.str1.4:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1387   .text.HAL_RCC_GetSysClockFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1394   .text.HAL_RCC_GetSysClockFreq:0000000000000000 HAL_RCC_GetSysClockFreq
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1488   .text.HAL_RCC_GetSysClockFreq:000000000000005c $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1496   .text.HAL_RCC_ClockConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1503   .text.HAL_RCC_ClockConfig:0000000000000000 HAL_RCC_ClockConfig
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1804   .text.HAL_RCC_ClockConfig:0000000000000158 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1816   .text.HAL_RCC_GetHCLKFreq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1823   .text.HAL_RCC_GetHCLKFreq:0000000000000000 HAL_RCC_GetHCLKFreq
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1838   .text.HAL_RCC_GetHCLKFreq:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1843   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1850   .text.HAL_RCC_GetPCLK1Freq:0000000000000000 HAL_RCC_GetPCLK1Freq
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1880   .text.HAL_RCC_GetPCLK1Freq:0000000000000018 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1887   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1894   .text.HAL_RCC_GetPCLK2Freq:0000000000000000 HAL_RCC_GetPCLK2Freq
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1924   .text.HAL_RCC_GetPCLK2Freq:0000000000000018 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1931   .text.HAL_RCC_GetOscConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:1938   .text.HAL_RCC_GetOscConfig:0000000000000000 HAL_RCC_GetOscConfig
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2100   .text.HAL_RCC_GetOscConfig:00000000000000b0 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2105   .text.HAL_RCC_GetClockConfig:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2112   .text.HAL_RCC_GetClockConfig:0000000000000000 HAL_RCC_GetClockConfig
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2169   .text.HAL_RCC_GetClockConfig:0000000000000034 $d
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2175   .text.HAL_RCC_CSSCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2182   .text.HAL_RCC_CSSCallback:0000000000000000 HAL_RCC_CSSCallback
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2195   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2202   .text.HAL_RCC_NMI_IRQHandler:0000000000000000 HAL_RCC_NMI_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccToucme.s:2237   .text.HAL_RCC_NMI_IRQHandler:000000000000001c $d
 
 UNDEFINED SYMBOLS
 SystemCoreClock
@@ -2407,7 +2407,7 @@ uwTickPrio
 HAL_InitTick
 HAL_GPIO_Init
 AHBPrescTable
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccapMXCG.s 			page 42
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccToucme.s 			page 42
 
 
 APBPrescTable

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
   55              		.loc 1 36 24 is_stmt 0 view .LVU8
   56 0018 41F63F72 		movw	r2, #7999
   57 001c 4260     		str	r2, [r0, #4]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 2
 
 
   58              		.loc 1 37 3 is_stmt 1 view .LVU9
@@ -66,7 +66,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
   60 001e 8360     		str	r3, [r0, #8]
   61              		.loc 1 38 3 is_stmt 1 view .LVU11
   62              		.loc 1 38 21 is_stmt 0 view .LVU12
-  63 0020 4FF4FA62 		mov	r2, #2000
+  63 0020 4FF47A72 		mov	r2, #1000
   64 0024 C260     		str	r2, [r0, #12]
   65              		.loc 1 39 3 is_stmt 1 view .LVU13
   66              		.loc 1 39 28 is_stmt 0 view .LVU14
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  112              	.L1:
  113              		.loc 1 58 1 view .LVU34
  114 0052 07B0     		add	sp, sp, #28
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 3
 
 
  115              	.LCFI2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  171              		.loc 1 63 5 view .LVU42
  172 0002 0E4B     		ldr	r3, .L18
  173 0004 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 4
 
 
  174 0006 00D0     		beq	.L17
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  228              	.LFE66:
  230              		.section	.text.HAL_TIM_Base_MspDeInit,"ax",%progbits
  231              		.align	1
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 5
 
 
  232              		.global	HAL_TIM_Base_MspDeInit
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  288              		.align	1
  289              		.global	HAL_TIM_PeriodElapsedCallback
  290              		.syntax unified
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 6
 
 
  291              		.thumb
@@ -321,7 +321,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  309              		.loc 1 103 9 is_stmt 0 view .LVU67
  310 0002 0268     		ldr	r2, [r0]
  311              		.loc 1 103 28 view .LVU68
- 312 0004 044B     		ldr	r3, .L30
+ 312 0004 034B     		ldr	r3, .L30
  313 0006 1B68     		ldr	r3, [r3]
  314              		.loc 1 103 4 view .LVU69
  315 0008 9A42     		cmp	r2, r3
@@ -333,61 +333,56 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 1
  321              	.LVL17:
  322              	.L29:
  323              		.loc 1 104 3 is_stmt 1 view .LVU71
- 324 000e 0121     		movs	r1, #1
- 325 0010 0248     		ldr	r0, .L30+4
+ 324 000e 024B     		ldr	r3, .L30+4
+ 325 0010 9847     		blx	r3
  326              	.LVL18:
- 327              		.loc 1 104 3 is_stmt 0 view .LVU72
- 328 0012 034B     		ldr	r3, .L30+8
- 329 0014 9847     		blx	r3
- 330              	.LVL19:
- 331              		.loc 1 107 1 view .LVU73
- 332 0016 F9E7     		b	.L26
- 333              	.L31:
- 334              		.align	2
- 335              	.L30:
- 336 0018 00000000 		.word	htim1
- 337 001c 000C0140 		.word	1073810432
- 338 0020 00000000 		.word	HAL_GPIO_TogglePin
- 339              		.cfi_endproc
- 340              	.LFE68:
- 342              		.comm	htim1,72,4
- 343              		.text
- 344              	.Letext0:
- 345              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 346              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 347              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 348              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 349              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 7
+ 327              		.loc 1 107 1 is_stmt 0 view .LVU72
+ 328 0012 FBE7     		b	.L26
+ 329              	.L31:
+ 330              		.align	2
+ 331              	.L30:
+ 332 0014 00000000 		.word	htim1
+ 333 0018 00000000 		.word	promeniCifru
+ 334              		.cfi_endproc
+ 335              	.LFE68:
+ 337              		.comm	htim1,72,4
+ 338              		.text
+ 339              	.Letext0:
+ 340              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 341              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 342              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 343              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 344              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 345              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 346              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 347              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 348              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 349              		.file 11 "../Core/Inc/tim.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 7
 
 
- 350              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 351              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 352              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 353              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 354              		.file 11 "../Core/Inc/tim.h"
- 355              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 356              		.file 13 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
- 357              		.file 14 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
- 358              		.file 15 "../Core/Inc/main.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s 			page 8
+ 350              		.file 12 "../Core/Inc/casovnik.h"
+ 351              		.file 13 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ 352              		.file 14 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
+ 353              		.file 15 "../Core/Inc/main.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 tim.c
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:16     .text.MX_TIM1_Init:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:24     .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:144    .text.MX_TIM1_Init:000000000000006c $d
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:16     .text.MX_TIM1_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:24     .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:144    .text.MX_TIM1_Init:000000000000006c $d
                             *COM*:0000000000000048 htim1
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:154    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:161    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:224    .text.HAL_TIM_Base_MspInit:000000000000003c $d
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:238    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:281    .text.HAL_TIM_Base_MspDeInit:0000000000000020 $d
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:288    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:295    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-C:\Users\Ika\AppData\Local\Temp\cc0jMDZg.s:336    .text.HAL_TIM_PeriodElapsedCallback:0000000000000018 $d
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:154    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:161    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:224    .text.HAL_TIM_Base_MspInit:000000000000003c $d
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:238    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:281    .text.HAL_TIM_Base_MspDeInit:0000000000000020 $d
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:288    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:295    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Ika\AppData\Local\Temp\cczUbwO3.s:332    .text.HAL_TIM_PeriodElapsedCallback:0000000000000014 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Init
@@ -397,4 +392,4 @@ Error_Handler
 HAL_NVIC_SetPriority
 HAL_NVIC_EnableIRQ
 HAL_NVIC_DisableIRQ
-HAL_GPIO_TogglePin
+promeniCifru

@@ -13,6 +13,7 @@
 #include "gpio.h"
 
 extern void casovnik();
+extern void promeniCifru();
 
 
 #endif /* CORE_INC_CASOVNIK_H_ */

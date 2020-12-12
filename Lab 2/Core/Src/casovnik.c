@@ -58,3 +58,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	tekucaCifra = (tekucaCifra + 1) % 10;
 	GPIOC->ODR = seven_seg[tekucaCifra];
 }
+
+void promeniCifru(){
+	HAL_GPIO_EXTI_Callback(GPIO_PIN_6);
+}

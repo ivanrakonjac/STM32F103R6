@@ -21,7 +21,7 @@
 #include "tim.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "casovnik.h"
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -35,7 +35,7 @@ void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 7999;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 2000;
+  htim1.Init.Period = 1000;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -101,7 +101,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 	//Potrebna je provera jer se ista prekidna rutina zove za vise tajmera
 	if(htim->Instance == htim1.Instance){
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+		promeniCifru();
 	}
 
 }
