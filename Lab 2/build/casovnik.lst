@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -27,19 +27,19 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s 			page 1
   25              	.LFB65:
   26              		.file 1 "../Core/Src/casovnik.c"
    1:../Core/Src/casovnik.c **** 
-  27              		.loc 1 51 16 view -0
+  27              		.loc 1 53 16 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
   30              		@ frame_needed = 0, uses_anonymous_args = 0
   31              		@ link register save eliminated.
-  32              		.loc 1 52 2 view .LVU1
-  33              		.loc 1 52 24 is_stmt 0 view .LVU2
+  32              		.loc 1 54 2 view .LVU1
+  33              		.loc 1 54 24 is_stmt 0 view .LVU2
   34 0000 024B     		ldr	r3, .L2
   35 0002 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
-  36              		.loc 1 52 13 view .LVU3
+  36              		.loc 1 54 13 view .LVU3
   37 0004 024B     		ldr	r3, .L2+4
   38 0006 DA60     		str	r2, [r3, #12]
-  39              		.loc 1 53 1 view .LVU4
+  39              		.loc 1 55 1 view .LVU4
   40 0008 7047     		bx	lr
   41              	.L3:
   42 000a 00BF     		.align	2
@@ -48,38 +48,101 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s 			page 1
   45 0010 00100140 		.word	1073811456
   46              		.cfi_endproc
   47              	.LFE65:
-  49              		.global	seven_seg
-  50              		.section	.data.seven_seg,"aw"
-  51              		.align	2
-  52              		.set	.LANCHOR0,. + 0
-  55              	seven_seg:
-  56 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
-  56      CCA4A08F 
-  56      8084
-  57              		.text
-  58              	.Letext0:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s 			page 2
+  49              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+  50              		.align	1
+  51              		.global	HAL_GPIO_EXTI_Callback
+  52              		.syntax unified
+  53              		.thumb
+  54              		.thumb_func
+  55              		.fpu softvfp
+  57              	HAL_GPIO_EXTI_Callback:
+  58              	.LVL0:
+  59              	.LFB66:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s 			page 2
 
 
-  59              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
-  60              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
-  61              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
-  62              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
-  63              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
-  64              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
-  65              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
-  66              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
-  67              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-  68              		.file 11 "../Core/Inc/tim.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s 			page 3
+  60              		.loc 1 57 47 is_stmt 1 view -0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64              		@ link register save eliminated.
+  65              		.loc 1 58 2 view .LVU6
+  66              		.loc 1 58 29 is_stmt 0 view .LVU7
+  67 0000 0849     		ldr	r1, .L5
+  68 0002 0A68     		ldr	r2, [r1]
+  69 0004 0132     		adds	r2, r2, #1
+  70              		.loc 1 58 34 view .LVU8
+  71 0006 084B     		ldr	r3, .L5+4
+  72 0008 A3FB0203 		umull	r0, r3, r3, r2
+  73              	.LVL1:
+  74              		.loc 1 58 34 view .LVU9
+  75 000c DB08     		lsrs	r3, r3, #3
+  76 000e 03EB8303 		add	r3, r3, r3, lsl #2
+  77 0012 5800     		lsls	r0, r3, #1
+  78 0014 131A     		subs	r3, r2, r0
+  79              		.loc 1 58 14 view .LVU10
+  80 0016 0B60     		str	r3, [r1]
+  81              		.loc 1 59 2 is_stmt 1 view .LVU11
+  82              		.loc 1 59 24 is_stmt 0 view .LVU12
+  83 0018 044A     		ldr	r2, .L5+8
+  84 001a D25C     		ldrb	r2, [r2, r3]	@ zero_extendqisi2
+  85              		.loc 1 59 13 view .LVU13
+  86 001c 044B     		ldr	r3, .L5+12
+  87 001e DA60     		str	r2, [r3, #12]
+  88              		.loc 1 60 1 view .LVU14
+  89 0020 7047     		bx	lr
+  90              	.L6:
+  91 0022 00BF     		.align	2
+  92              	.L5:
+  93 0024 00000000 		.word	.LANCHOR1
+  94 0028 CDCCCCCC 		.word	-858993459
+  95 002c 00000000 		.word	.LANCHOR0
+  96 0030 00100140 		.word	1073811456
+  97              		.cfi_endproc
+  98              	.LFE66:
+ 100              		.global	tekucaCifra
+ 101              		.global	seven_seg
+ 102              		.section	.bss.tekucaCifra,"aw",%nobits
+ 103              		.align	2
+ 104              		.set	.LANCHOR1,. + 0
+ 107              	tekucaCifra:
+ 108 0000 00000000 		.space	4
+ 109              		.section	.data.seven_seg,"aw"
+ 110              		.align	2
+ 111              		.set	.LANCHOR0,. + 0
+ 114              	seven_seg:
+ 115 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
+ 115      CCA4A08F 
+ 115      8084
+ 116              		.text
+ 117              	.Letext0:
+ 118              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 119              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s 			page 3
+
+
+ 120              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 121              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 122              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 123              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 124              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 125              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 126              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 127              		.file 11 "../Core/Inc/tim.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 casovnik.c
-C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s:16     .text.casovnik:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s:24     .text.casovnik:0000000000000000 casovnik
-C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s:44     .text.casovnik:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s:55     .data.seven_seg:0000000000000000 seven_seg
-C:\Users\Ika\AppData\Local\Temp\ccI1g73t.s:51     .data.seven_seg:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:16     .text.casovnik:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:24     .text.casovnik:0000000000000000 casovnik
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:44     .text.casovnik:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:50     .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:57     .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:93     .text.HAL_GPIO_EXTI_Callback:0000000000000024 $d
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:107    .bss.tekucaCifra:0000000000000000 tekucaCifra
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:114    .data.seven_seg:0000000000000000 seven_seg
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:103    .bss.tekucaCifra:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\cccdpJdg.s:110    .data.seven_seg:0000000000000000 $d
 
 NO UNDEFINED SYMBOLS
