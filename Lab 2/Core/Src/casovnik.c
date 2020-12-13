@@ -79,3 +79,50 @@ void promeniCifru(){
 	}
 
 }
+
+uint32_t cifre[4] = {0, 0, 0, 0};
+
+uint32_t counter = 0;
+uint32_t sekunde = 0;
+uint32_t minuti = 0;
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+
+	//Potrebna je provera jer se ista prekidna rutina zove za vise tajmera
+	if(htim->Instance == htim1.Instance){
+
+		if(++counter == 100){ //znak da je protekla 1 sekunda
+
+			counter = 0;
+
+			if(++sekunde == 60){
+				sekunde = 0;
+
+				if(++minuti == 60){
+					minuti = 0;
+				}
+			}
+
+			cifre[0] = minuti / 10;
+			cifre[1] = minuti % 10;
+			cifre[2] = sekunde / 10;
+			cifre[3] = sekunde % 10;
+
+		}
+
+		tekucaCifra = (tekucaCifra + 1) % 4;
+
+		//stavljam sve 0 u ODR
+		GPIOC->ODR = ~0xFFF;
+
+		//orujem ODR sa vrednoscu cifre koja treba da se upise
+		GPIOC->ODR |= seven_seg[cifre[tekucaCifra]];
+
+		//aktiviram da li se upisuje u 0, 1, 2, 3 cifru displeja
+		GPIOC->ODR |= 0x1 << (8 + tekucaCifra);
+
+	}
+
+}

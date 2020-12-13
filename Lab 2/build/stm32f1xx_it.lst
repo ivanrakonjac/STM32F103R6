@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
   57 0000 FEE7     		b	.L3
   58              		.cfi_endproc
   59              	.LFE66:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 2
 
 
   61              		.section	.text.MemManage_Handler,"ax",%progbits
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
  120              		.cfi_startproc
  121              		@ Volatile: function does not return.
  122              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 3
 
 
  123              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
  183              		.loc 1 170 1 view -0
  184              		.cfi_startproc
  185              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 4
 
 
  186              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
  244              		.loc 1 208 3 view .LVU28
  245 0002 4020     		movs	r0, #64
  246 0004 024C     		ldr	r4, .L19
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 5
 
 
  247 0006 A047     		blx	r4
@@ -287,51 +287,86 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 1
  292 0010 00000000 		.word	HAL_TIM_IRQHandler
  293              		.cfi_endproc
  294              	.LFE75:
- 296              		.text
- 297              	.Letext0:
- 298              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 299              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 300              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 301              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 302              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 303              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 304              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 305              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 306              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 6
+ 296              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
+ 297              		.align	1
+ 298              		.global	TIM1_CC_IRQHandler
+ 299              		.syntax unified
+ 300              		.thumb
+ 301              		.thumb_func
+ 302              		.fpu softvfp
+ 304              	TIM1_CC_IRQHandler:
+ 305              	.LFB76:
+ 306              		.loc 1 233 1 is_stmt 1 view -0
+ 307              		.cfi_startproc
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 6
 
 
- 307              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s 			page 7
+ 308              		@ args = 0, pretend = 0, frame = 0
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310 0000 08B5     		push	{r3, lr}
+ 311              	.LCFI3:
+ 312              		.cfi_def_cfa_offset 8
+ 313              		.cfi_offset 3, -8
+ 314              		.cfi_offset 14, -4
+ 315              		.loc 1 237 3 view .LVU35
+ 316 0002 0248     		ldr	r0, .L27
+ 317 0004 024B     		ldr	r3, .L27+4
+ 318 0006 9847     		blx	r3
+ 319              	.LVL4:
+ 320              		.loc 1 241 1 is_stmt 0 view .LVU36
+ 321 0008 08BD     		pop	{r3, pc}
+ 322              	.L28:
+ 323 000a 00BF     		.align	2
+ 324              	.L27:
+ 325 000c 00000000 		.word	htim1
+ 326 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 327              		.cfi_endproc
+ 328              	.LFE76:
+ 330              		.text
+ 331              	.Letext0:
+ 332              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 333              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 334              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 335              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 336              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 337              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 338              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 339              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 340              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 341              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_it.c
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:16     .text.NMI_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:38     .text.HardFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:62     .text.MemManage_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:86     .text.BusFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:110    .text.UsageFault_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:134    .text.SVC_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:154    .text.DebugMon_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:174    .text.PendSV_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:194    .text.SysTick_Handler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:221    .text.SysTick_Handler:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:226    .text.EXTI9_5_IRQHandler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:233    .text.EXTI9_5_IRQHandler:0000000000000000 EXTI9_5_IRQHandler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:258    .text.EXTI9_5_IRQHandler:0000000000000010 $d
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:263    .text.TIM1_UP_IRQHandler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:270    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
-C:\Users\Ika\AppData\Local\Temp\cc5kEcs9.s:291    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:38     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:62     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:86     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:110    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:134    .text.SVC_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:141    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:154    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:161    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:174    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:181    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:194    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:201    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:221    .text.SysTick_Handler:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:226    .text.EXTI9_5_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:233    .text.EXTI9_5_IRQHandler:0000000000000000 EXTI9_5_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:258    .text.EXTI9_5_IRQHandler:0000000000000010 $d
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:263    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:270    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:291    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:297    .text.TIM1_CC_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:304    .text.TIM1_CC_IRQHandler:0000000000000000 TIM1_CC_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccJDXRqs.s:325    .text.TIM1_CC_IRQHandler:000000000000000c $d
 
 UNDEFINED SYMBOLS
 HAL_IncTick
