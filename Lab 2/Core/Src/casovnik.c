@@ -52,7 +52,7 @@ uint8_t fleg = 0;
 
 
 void casovnik(){
-	GPIOC->ODR = seven_seg[1];
+	GPIOC->ODR = seven_seg[0];
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
@@ -63,6 +63,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 			break;
 		case GPIO_PIN_7:
 			fleg = 0;
+			break;
+		case GPIO_PIN_12:
+			reset();
 			break;
 		default:
 			break;
@@ -83,8 +86,30 @@ void promeniCifru(){
 uint32_t cifre[4] = {0, 0, 0, 0};
 
 uint32_t counter = 0;
-uint32_t sekunde = 0;
-uint32_t minuti = 0;
+uint32_t sekunde = 5;
+int32_t minuti = 0;
+
+uint8_t resetPrikaz = 0;
+
+
+void reset(){
+	sekunde = 60;
+	minuti = 0;
+
+	cifre[0] = 0;
+	cifre[1] = 1;
+	cifre[2] = 0;
+	cifre[3] = 0;
+
+	for(int i=0; i<4; i++){
+		tekucaCifra = (tekucaCifra + 1) % 4;
+		GPIOC->ODR = ~0xFFF;
+		GPIOC->ODR |= seven_seg[cifre[tekucaCifra]];
+		GPIOC->ODR |= 0x1 << (8 + tekucaCifra);
+	}
+
+	resetPrikaz = 0;
+}
 
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
@@ -93,7 +118,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	//Potrebna je provera jer se ista prekidna rutina zove za vise tajmera
 	if(htim->Instance == htim1.Instance){
 
-		if(++counter == 100){ //znak da je protekla 1 sekunda
+		/*if(++counter == 100){ //znak da je protekla 1 sekunda
 
 			counter = 0;
 
@@ -110,18 +135,44 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			cifre[2] = sekunde / 10;
 			cifre[3] = sekunde % 10;
 
+		}*/
+
+		if(++counter == 100){ //znak da je protekla 1 sekunda
+
+			counter = 0;
+
+			if(--sekunde == 0){
+				sekunde = 60;
+
+				if(--minuti < 0){
+					minuti = 0;
+					resetPrikaz = 1;
+				}
+			}
+
+			cifre[0] = minuti / 10;
+			cifre[1] = minuti % 10;
+			cifre[2] = sekunde / 10;
+			cifre[3] = sekunde % 10;
+
 		}
 
-		tekucaCifra = (tekucaCifra + 1) % 4;
+		if(resetPrikaz == 0){
+			tekucaCifra = (tekucaCifra + 1) % 4;
 
-		//stavljam sve 0 u ODR
-		GPIOC->ODR = ~0xFFF;
+			//stavljam sve 0 u ODR
+			GPIOC->ODR = ~0xFFF;
 
-		//orujem ODR sa vrednoscu cifre koja treba da se upise
-		GPIOC->ODR |= seven_seg[cifre[tekucaCifra]];
+			//orujem ODR sa vrednoscu cifre koja treba da se upise
+			GPIOC->ODR |= seven_seg[cifre[tekucaCifra]];
 
-		//aktiviram da li se upisuje u 0, 1, 2, 3 cifru displeja
-		GPIOC->ODR |= 0x1 << (8 + tekucaCifra);
+			//aktiviram da li se upisuje u 0, 1, 2, 3 cifru displeja
+			GPIOC->ODR |= 0x1 << (8 + tekucaCifra);
+		}else{
+			reset();
+			resetPrikaz = 0;
+		}
+
 
 	}
 

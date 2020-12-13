@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -35,7 +35,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 1
   32              		.loc 1 55 2 view .LVU1
   33              		.loc 1 55 24 is_stmt 0 view .LVU2
   34 0000 024B     		ldr	r3, .L2
-  35 0002 5A78     		ldrb	r2, [r3, #1]	@ zero_extendqisi2
+  35 0002 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
   36              		.loc 1 55 13 view .LVU3
   37 0004 024B     		ldr	r3, .L2+4
   38 0006 DA60     		str	r2, [r3, #12]
@@ -48,399 +48,596 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 1
   45 0010 00100140 		.word	1073811456
   46              		.cfi_endproc
   47              	.LFE65:
-  49              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+  49              		.section	.text.promeniCifru,"ax",%progbits
   50              		.align	1
-  51              		.global	HAL_GPIO_EXTI_Callback
+  51              		.global	promeniCifru
   52              		.syntax unified
   53              		.thumb
   54              		.thumb_func
   55              		.fpu softvfp
-  57              	HAL_GPIO_EXTI_Callback:
-  58              	.LVL0:
-  59              	.LFB66:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 2
+  57              	promeniCifru:
+  58              	.LFB67:
+  59              		.loc 1 75 20 is_stmt 1 view -0
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 2
 
 
-  60              		.loc 1 58 47 is_stmt 1 view -0
-  61              		.cfi_startproc
-  62              		@ args = 0, pretend = 0, frame = 0
-  63              		@ frame_needed = 0, uses_anonymous_args = 0
-  64              		@ link register save eliminated.
-  65              		.loc 1 60 2 view .LVU6
-  66 0000 4028     		cmp	r0, #64
-  67 0002 02D0     		beq	.L5
-  68 0004 8028     		cmp	r0, #128
-  69 0006 04D0     		beq	.L6
-  70 0008 7047     		bx	lr
-  71              	.L5:
-  72              		.loc 1 62 4 view .LVU7
-  73              		.loc 1 62 9 is_stmt 0 view .LVU8
-  74 000a 044B     		ldr	r3, .L8
-  75 000c 0122     		movs	r2, #1
-  76 000e 1A70     		strb	r2, [r3]
-  77              		.loc 1 63 4 is_stmt 1 view .LVU9
-  78 0010 7047     		bx	lr
-  79              	.L6:
-  80              		.loc 1 65 4 view .LVU10
-  81              		.loc 1 65 9 is_stmt 0 view .LVU11
-  82 0012 024B     		ldr	r3, .L8
-  83 0014 0022     		movs	r2, #0
-  84 0016 1A70     		strb	r2, [r3]
-  85              		.loc 1 66 4 is_stmt 1 view .LVU12
-  86              		.loc 1 70 1 is_stmt 0 view .LVU13
-  87 0018 7047     		bx	lr
-  88              	.L9:
-  89 001a 00BF     		.align	2
-  90              	.L8:
-  91 001c 00000000 		.word	.LANCHOR1
-  92              		.cfi_endproc
-  93              	.LFE66:
-  95              		.section	.text.promeniCifru,"ax",%progbits
-  96              		.align	1
-  97              		.global	promeniCifru
-  98              		.syntax unified
-  99              		.thumb
- 100              		.thumb_func
- 101              		.fpu softvfp
- 103              	promeniCifru:
- 104              	.LFB67:
- 105              		.loc 1 72 20 is_stmt 1 view -0
- 106              		.cfi_startproc
- 107              		@ args = 0, pretend = 0, frame = 0
- 108              		@ frame_needed = 0, uses_anonymous_args = 0
- 109              		@ link register save eliminated.
- 110              		.loc 1 73 2 view .LVU15
- 111              		.loc 1 73 10 is_stmt 0 view .LVU16
- 112 0000 0D4B     		ldr	r3, .L14
- 113 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 114              		.loc 1 73 4 view .LVU17
- 115 0004 8BB9     		cbnz	r3, .L11
- 116              		.loc 1 74 3 is_stmt 1 view .LVU18
- 117              		.loc 1 74 30 is_stmt 0 view .LVU19
- 118 0006 0D49     		ldr	r1, .L14+4
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 3
+  60              		.cfi_startproc
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 0, uses_anonymous_args = 0
+  63              		@ link register save eliminated.
+  64              		.loc 1 76 2 view .LVU6
+  65              		.loc 1 76 10 is_stmt 0 view .LVU7
+  66 0000 0D4B     		ldr	r3, .L8
+  67 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  68              		.loc 1 76 4 view .LVU8
+  69 0004 8BB9     		cbnz	r3, .L5
+  70              		.loc 1 77 3 is_stmt 1 view .LVU9
+  71              		.loc 1 77 30 is_stmt 0 view .LVU10
+  72 0006 0D49     		ldr	r1, .L8+4
+  73 0008 0A68     		ldr	r2, [r1]
+  74 000a 0132     		adds	r2, r2, #1
+  75              		.loc 1 77 35 view .LVU11
+  76 000c A3F13333 		sub	r3, r3, #858993459
+  77 0010 A3FB0203 		umull	r0, r3, r3, r2
+  78 0014 DB08     		lsrs	r3, r3, #3
+  79 0016 03EB8303 		add	r3, r3, r3, lsl #2
+  80 001a 5800     		lsls	r0, r3, #1
+  81 001c 131A     		subs	r3, r2, r0
+  82              		.loc 1 77 15 view .LVU12
+  83 001e 0B60     		str	r3, [r1]
+  84              		.loc 1 78 3 is_stmt 1 view .LVU13
+  85              		.loc 1 78 25 is_stmt 0 view .LVU14
+  86 0020 074A     		ldr	r2, .L8+8
+  87 0022 D25C     		ldrb	r2, [r2, r3]	@ zero_extendqisi2
+  88              		.loc 1 78 14 view .LVU15
+  89 0024 074B     		ldr	r3, .L8+12
+  90 0026 DA60     		str	r2, [r3, #12]
+  91 0028 7047     		bx	lr
+  92              	.L5:
+  93              		.loc 1 80 7 is_stmt 1 view .LVU16
+  94              		.loc 1 80 9 is_stmt 0 view .LVU17
+  95 002a 012B     		cmp	r3, #1
+  96 002c 00D0     		beq	.L7
+  97              	.L4:
+  98              		.loc 1 84 1 view .LVU18
+  99 002e 7047     		bx	lr
+ 100              	.L7:
+ 101              		.loc 1 81 3 is_stmt 1 view .LVU19
+ 102              		.loc 1 81 14 is_stmt 0 view .LVU20
+ 103 0030 044B     		ldr	r3, .L8+12
+ 104 0032 B722     		movs	r2, #183
+ 105 0034 DA60     		str	r2, [r3, #12]
+ 106              		.loc 1 84 1 view .LVU21
+ 107 0036 FAE7     		b	.L4
+ 108              	.L9:
+ 109              		.align	2
+ 110              	.L8:
+ 111 0038 00000000 		.word	.LANCHOR1
+ 112 003c 00000000 		.word	.LANCHOR2
+ 113 0040 00000000 		.word	.LANCHOR0
+ 114 0044 00100140 		.word	1073811456
+ 115              		.cfi_endproc
+ 116              	.LFE67:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 3
 
 
- 119 0008 0A68     		ldr	r2, [r1]
- 120 000a 0132     		adds	r2, r2, #1
- 121              		.loc 1 74 35 view .LVU20
- 122 000c A3F13333 		sub	r3, r3, #858993459
- 123 0010 A3FB0203 		umull	r0, r3, r3, r2
- 124 0014 DB08     		lsrs	r3, r3, #3
- 125 0016 03EB8303 		add	r3, r3, r3, lsl #2
- 126 001a 5800     		lsls	r0, r3, #1
- 127 001c 131A     		subs	r3, r2, r0
- 128              		.loc 1 74 15 view .LVU21
- 129 001e 0B60     		str	r3, [r1]
- 130              		.loc 1 75 3 is_stmt 1 view .LVU22
- 131              		.loc 1 75 25 is_stmt 0 view .LVU23
- 132 0020 074A     		ldr	r2, .L14+8
- 133 0022 D25C     		ldrb	r2, [r2, r3]	@ zero_extendqisi2
- 134              		.loc 1 75 14 view .LVU24
- 135 0024 074B     		ldr	r3, .L14+12
- 136 0026 DA60     		str	r2, [r3, #12]
- 137 0028 7047     		bx	lr
- 138              	.L11:
- 139              		.loc 1 77 7 is_stmt 1 view .LVU25
- 140              		.loc 1 77 9 is_stmt 0 view .LVU26
- 141 002a 012B     		cmp	r3, #1
- 142 002c 00D0     		beq	.L13
- 143              	.L10:
- 144              		.loc 1 81 1 view .LVU27
- 145 002e 7047     		bx	lr
- 146              	.L13:
- 147              		.loc 1 78 3 is_stmt 1 view .LVU28
- 148              		.loc 1 78 14 is_stmt 0 view .LVU29
- 149 0030 044B     		ldr	r3, .L14+12
- 150 0032 B722     		movs	r2, #183
- 151 0034 DA60     		str	r2, [r3, #12]
- 152              		.loc 1 81 1 view .LVU30
- 153 0036 FAE7     		b	.L10
- 154              	.L15:
- 155              		.align	2
- 156              	.L14:
- 157 0038 00000000 		.word	.LANCHOR1
- 158 003c 00000000 		.word	.LANCHOR2
- 159 0040 00000000 		.word	.LANCHOR0
- 160 0044 00100140 		.word	1073811456
- 161              		.cfi_endproc
- 162              	.LFE67:
- 164              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
- 165              		.align	1
- 166              		.global	HAL_TIM_PeriodElapsedCallback
- 167              		.syntax unified
- 168              		.thumb
- 169              		.thumb_func
- 170              		.fpu softvfp
- 172              	HAL_TIM_PeriodElapsedCallback:
- 173              	.LVL1:
- 174              	.LFB68:
- 175              		.loc 1 90 60 is_stmt 1 view -0
- 176              		.cfi_startproc
- 177              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 4
+ 118              		.section	.text.reset,"ax",%progbits
+ 119              		.align	1
+ 120              		.global	reset
+ 121              		.syntax unified
+ 122              		.thumb
+ 123              		.thumb_func
+ 124              		.fpu softvfp
+ 126              	reset:
+ 127              	.LFB68:
+ 128              		.loc 1 95 13 is_stmt 1 view -0
+ 129              		.cfi_startproc
+ 130              		@ args = 0, pretend = 0, frame = 0
+ 131              		@ frame_needed = 0, uses_anonymous_args = 0
+ 132              		@ link register save eliminated.
+ 133              		.loc 1 96 2 view .LVU23
+ 134              		.loc 1 96 10 is_stmt 0 view .LVU24
+ 135 0000 194B     		ldr	r3, .L18
+ 136 0002 3C22     		movs	r2, #60
+ 137 0004 1A60     		str	r2, [r3]
+ 138              		.loc 1 97 2 is_stmt 1 view .LVU25
+ 139              		.loc 1 97 9 is_stmt 0 view .LVU26
+ 140 0006 0021     		movs	r1, #0
+ 141 0008 184B     		ldr	r3, .L18+4
+ 142 000a 1960     		str	r1, [r3]
+ 143              		.loc 1 99 2 is_stmt 1 view .LVU27
+ 144              		.loc 1 99 11 is_stmt 0 view .LVU28
+ 145 000c 184B     		ldr	r3, .L18+8
+ 146 000e 1960     		str	r1, [r3]
+ 147              		.loc 1 100 2 is_stmt 1 view .LVU29
+ 148              		.loc 1 100 11 is_stmt 0 view .LVU30
+ 149 0010 0122     		movs	r2, #1
+ 150 0012 5A60     		str	r2, [r3, #4]
+ 151              		.loc 1 101 2 is_stmt 1 view .LVU31
+ 152              		.loc 1 101 11 is_stmt 0 view .LVU32
+ 153 0014 9960     		str	r1, [r3, #8]
+ 154              		.loc 1 102 2 is_stmt 1 view .LVU33
+ 155              		.loc 1 102 11 is_stmt 0 view .LVU34
+ 156 0016 D960     		str	r1, [r3, #12]
+ 157              		.loc 1 104 2 is_stmt 1 view .LVU35
+ 158              	.LBB2:
+ 159              		.loc 1 104 6 view .LVU36
+ 160              	.LVL0:
+ 161              		.loc 1 104 15 view .LVU37
+ 162              		.loc 1 104 2 is_stmt 0 view .LVU38
+ 163 0018 0329     		cmp	r1, #3
+ 164 001a 20DC     		bgt	.L17
+ 165              	.LBE2:
+ 166              		.loc 1 95 13 view .LVU39
+ 167 001c 30B4     		push	{r4, r5}
+ 168              	.LCFI0:
+ 169              		.cfi_def_cfa_offset 8
+ 170              		.cfi_offset 4, -8
+ 171              		.cfi_offset 5, -4
+ 172              	.L12:
+ 173              	.LBB3:
+ 174              		.loc 1 105 3 is_stmt 1 discriminator 3 view .LVU40
+ 175              		.loc 1 105 30 is_stmt 0 discriminator 3 view .LVU41
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 4
 
 
- 178              		@ frame_needed = 0, uses_anonymous_args = 0
- 179              		@ link register save eliminated.
- 180              		.loc 1 94 2 view .LVU32
- 181              		.loc 1 94 9 is_stmt 0 view .LVU33
- 182 0000 0268     		ldr	r2, [r0]
- 183              		.loc 1 94 28 view .LVU34
- 184 0002 2A4B     		ldr	r3, .L27
- 185 0004 1B68     		ldr	r3, [r3]
- 186              		.loc 1 94 4 view .LVU35
- 187 0006 9A42     		cmp	r2, r3
- 188 0008 00D0     		beq	.L24
- 189 000a 7047     		bx	lr
- 190              	.L24:
- 191              		.loc 1 90 60 view .LVU36
- 192 000c 10B4     		push	{r4}
- 193              	.LCFI0:
- 194              		.cfi_def_cfa_offset 4
- 195              		.cfi_offset 4, -4
- 196              		.loc 1 96 3 is_stmt 1 view .LVU37
- 197              		.loc 1 96 6 is_stmt 0 view .LVU38
- 198 000e 284A     		ldr	r2, .L27+4
- 199 0010 1368     		ldr	r3, [r2]
- 200 0012 0133     		adds	r3, r3, #1
- 201              		.loc 1 96 5 view .LVU39
- 202 0014 1360     		str	r3, [r2]
- 203 0016 642B     		cmp	r3, #100
- 204 0018 19D0     		beq	.L25
- 205              	.LVL2:
- 206              	.L18:
- 207              		.loc 1 115 3 is_stmt 1 view .LVU40
- 208              		.loc 1 115 30 is_stmt 0 view .LVU41
- 209 001a 264A     		ldr	r2, .L27+8
- 210 001c 1368     		ldr	r3, [r2]
- 211 001e 0133     		adds	r3, r3, #1
- 212              		.loc 1 115 35 view .LVU42
- 213 0020 03F00303 		and	r3, r3, #3
- 214              		.loc 1 115 15 view .LVU43
- 215 0024 1360     		str	r3, [r2]
- 216              		.loc 1 118 3 is_stmt 1 view .LVU44
- 217              		.loc 1 118 14 is_stmt 0 view .LVU45
- 218 0026 244A     		ldr	r2, .L27+12
- 219 0028 2449     		ldr	r1, .L27+16
- 220 002a D160     		str	r1, [r2, #12]
- 221              		.loc 1 121 3 is_stmt 1 view .LVU46
- 222              		.loc 1 121 14 is_stmt 0 view .LVU47
- 223 002c D168     		ldr	r1, [r2, #12]
- 224              		.loc 1 121 32 view .LVU48
- 225 002e 2448     		ldr	r0, .L27+20
- 226 0030 50F82300 		ldr	r0, [r0, r3, lsl #2]
- 227              		.loc 1 121 26 view .LVU49
- 228 0034 234C     		ldr	r4, .L27+24
- 229 0036 205C     		ldrb	r0, [r4, r0]	@ zero_extendqisi2
- 230              		.loc 1 121 14 view .LVU50
- 231 0038 0143     		orrs	r1, r1, r0
- 232 003a D160     		str	r1, [r2, #12]
- 233              		.loc 1 124 3 is_stmt 1 view .LVU51
- 234              		.loc 1 124 14 is_stmt 0 view .LVU52
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 5
+ 176 001e 154A     		ldr	r2, .L18+12
+ 177 0020 1368     		ldr	r3, [r2]
+ 178 0022 0133     		adds	r3, r3, #1
+ 179              		.loc 1 105 35 discriminator 3 view .LVU42
+ 180 0024 03F00303 		and	r3, r3, #3
+ 181              		.loc 1 105 15 discriminator 3 view .LVU43
+ 182 0028 1360     		str	r3, [r2]
+ 183              		.loc 1 106 3 is_stmt 1 discriminator 3 view .LVU44
+ 184              		.loc 1 106 14 is_stmt 0 discriminator 3 view .LVU45
+ 185 002a 134A     		ldr	r2, .L18+16
+ 186 002c 1348     		ldr	r0, .L18+20
+ 187 002e D060     		str	r0, [r2, #12]
+ 188              		.loc 1 107 3 is_stmt 1 discriminator 3 view .LVU46
+ 189              		.loc 1 107 14 is_stmt 0 discriminator 3 view .LVU47
+ 190 0030 D068     		ldr	r0, [r2, #12]
+ 191              		.loc 1 107 32 discriminator 3 view .LVU48
+ 192 0032 0F4C     		ldr	r4, .L18+8
+ 193 0034 54F82340 		ldr	r4, [r4, r3, lsl #2]
+ 194              		.loc 1 107 26 discriminator 3 view .LVU49
+ 195 0038 114D     		ldr	r5, .L18+24
+ 196 003a 2C5D     		ldrb	r4, [r5, r4]	@ zero_extendqisi2
+ 197              		.loc 1 107 14 discriminator 3 view .LVU50
+ 198 003c 2043     		orrs	r0, r0, r4
+ 199 003e D060     		str	r0, [r2, #12]
+ 200              		.loc 1 108 3 is_stmt 1 discriminator 3 view .LVU51
+ 201              		.loc 1 108 14 is_stmt 0 discriminator 3 view .LVU52
+ 202 0040 D068     		ldr	r0, [r2, #12]
+ 203              		.loc 1 108 27 discriminator 3 view .LVU53
+ 204 0042 0833     		adds	r3, r3, #8
+ 205              		.loc 1 108 21 discriminator 3 view .LVU54
+ 206 0044 0124     		movs	r4, #1
+ 207 0046 04FA03F3 		lsl	r3, r4, r3
+ 208              		.loc 1 108 14 discriminator 3 view .LVU55
+ 209 004a 0343     		orrs	r3, r3, r0
+ 210 004c D360     		str	r3, [r2, #12]
+ 211              		.loc 1 104 20 is_stmt 1 discriminator 3 view .LVU56
+ 212              		.loc 1 104 21 is_stmt 0 discriminator 3 view .LVU57
+ 213 004e 2144     		add	r1, r1, r4
+ 214              	.LVL1:
+ 215              		.loc 1 104 15 is_stmt 1 discriminator 3 view .LVU58
+ 216              		.loc 1 104 2 is_stmt 0 discriminator 3 view .LVU59
+ 217 0050 0329     		cmp	r1, #3
+ 218 0052 E4DD     		ble	.L12
+ 219              	.LBE3:
+ 220              		.loc 1 111 2 is_stmt 1 view .LVU60
+ 221              		.loc 1 111 14 is_stmt 0 view .LVU61
+ 222 0054 0B4B     		ldr	r3, .L18+28
+ 223 0056 0022     		movs	r2, #0
+ 224 0058 1A70     		strb	r2, [r3]
+ 225              		.loc 1 112 1 view .LVU62
+ 226 005a 30BC     		pop	{r4, r5}
+ 227              	.LCFI1:
+ 228              		.cfi_restore 5
+ 229              		.cfi_restore 4
+ 230              		.cfi_def_cfa_offset 0
+ 231 005c 7047     		bx	lr
+ 232              	.L17:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 5
 
 
- 235 003c D168     		ldr	r1, [r2, #12]
- 236              		.loc 1 124 27 view .LVU53
- 237 003e 0833     		adds	r3, r3, #8
- 238              		.loc 1 124 21 view .LVU54
- 239 0040 0120     		movs	r0, #1
- 240 0042 00FA03F3 		lsl	r3, r0, r3
- 241              		.loc 1 124 14 view .LVU55
- 242 0046 0B43     		orrs	r3, r3, r1
- 243 0048 D360     		str	r3, [r2, #12]
- 244              		.loc 1 128 1 view .LVU56
- 245 004a 10BC     		pop	{r4}
- 246              	.LCFI1:
- 247              		.cfi_remember_state
- 248              		.cfi_restore 4
- 249              		.cfi_def_cfa_offset 0
- 250 004c 7047     		bx	lr
- 251              	.LVL3:
- 252              	.L25:
- 253              	.LCFI2:
- 254              		.cfi_restore_state
- 255              		.loc 1 98 4 is_stmt 1 view .LVU57
- 256              		.loc 1 98 12 is_stmt 0 view .LVU58
- 257 004e 1346     		mov	r3, r2
- 258 0050 0022     		movs	r2, #0
- 259 0052 1A60     		str	r2, [r3]
- 260              		.loc 1 100 4 is_stmt 1 view .LVU59
- 261              		.loc 1 100 7 is_stmt 0 view .LVU60
- 262 0054 1C4A     		ldr	r2, .L27+28
- 263 0056 1368     		ldr	r3, [r2]
- 264 0058 0133     		adds	r3, r3, #1
- 265              		.loc 1 100 6 view .LVU61
- 266 005a 1360     		str	r3, [r2]
- 267 005c 3C2B     		cmp	r3, #60
- 268 005e 18D0     		beq	.L26
- 269              	.L19:
- 270              		.loc 1 108 4 is_stmt 1 view .LVU62
- 271              		.loc 1 108 22 is_stmt 0 view .LVU63
- 272 0060 1A4B     		ldr	r3, .L27+32
- 273 0062 1868     		ldr	r0, [r3]
- 274              	.LVL4:
- 275              		.loc 1 108 22 view .LVU64
- 276 0064 1A4B     		ldr	r3, .L27+36
- 277 0066 A3FB0012 		umull	r1, r2, r3, r0
- 278 006a D208     		lsrs	r2, r2, #3
- 279              		.loc 1 108 13 view .LVU65
- 280 006c 1449     		ldr	r1, .L27+20
- 281 006e 0A60     		str	r2, [r1]
- 282              		.loc 1 109 4 is_stmt 1 view .LVU66
- 283              		.loc 1 109 22 is_stmt 0 view .LVU67
- 284 0070 02EB8202 		add	r2, r2, r2, lsl #2
- 285 0074 A0EB4202 		sub	r2, r0, r2, lsl #1
- 286              		.loc 1 109 13 view .LVU68
- 287 0078 4A60     		str	r2, [r1, #4]
- 288              		.loc 1 110 4 is_stmt 1 view .LVU69
- 289              		.loc 1 110 23 is_stmt 0 view .LVU70
- 290 007a 134A     		ldr	r2, .L27+28
- 291 007c 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 6
+ 233              		.loc 1 111 2 is_stmt 1 view .LVU63
+ 234              		.loc 1 111 14 is_stmt 0 view .LVU64
+ 235 005e 094B     		ldr	r3, .L18+28
+ 236 0060 0022     		movs	r2, #0
+ 237 0062 1A70     		strb	r2, [r3]
+ 238 0064 7047     		bx	lr
+ 239              	.L19:
+ 240 0066 00BF     		.align	2
+ 241              	.L18:
+ 242 0068 00000000 		.word	.LANCHOR3
+ 243 006c 00000000 		.word	.LANCHOR4
+ 244 0070 00000000 		.word	.LANCHOR5
+ 245 0074 00000000 		.word	.LANCHOR2
+ 246 0078 00100140 		.word	1073811456
+ 247 007c 00F0FFFF 		.word	-4096
+ 248 0080 00000000 		.word	.LANCHOR0
+ 249 0084 00000000 		.word	.LANCHOR6
+ 250              		.cfi_endproc
+ 251              	.LFE68:
+ 253              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+ 254              		.align	1
+ 255              		.global	HAL_GPIO_EXTI_Callback
+ 256              		.syntax unified
+ 257              		.thumb
+ 258              		.thumb_func
+ 259              		.fpu softvfp
+ 261              	HAL_GPIO_EXTI_Callback:
+ 262              	.LVL2:
+ 263              	.LFB66:
+ 264              		.loc 1 58 47 is_stmt 1 view -0
+ 265              		.cfi_startproc
+ 266              		@ args = 0, pretend = 0, frame = 0
+ 267              		@ frame_needed = 0, uses_anonymous_args = 0
+ 268              		.loc 1 58 47 is_stmt 0 view .LVU66
+ 269 0000 08B5     		push	{r3, lr}
+ 270              	.LCFI2:
+ 271              		.cfi_def_cfa_offset 8
+ 272              		.cfi_offset 3, -8
+ 273              		.cfi_offset 14, -4
+ 274              		.loc 1 60 2 is_stmt 1 view .LVU67
+ 275 0002 8028     		cmp	r0, #128
+ 276 0004 09D0     		beq	.L21
+ 277 0006 B0F5805F 		cmp	r0, #4096
+ 278 000a 0AD0     		beq	.L22
+ 279 000c 4028     		cmp	r0, #64
+ 280 000e 00D0     		beq	.L25
+ 281              	.LVL3:
+ 282              	.L20:
+ 283              		.loc 1 73 1 is_stmt 0 view .LVU68
+ 284 0010 08BD     		pop	{r3, pc}
+ 285              	.LVL4:
+ 286              	.L25:
+ 287              		.loc 1 62 4 is_stmt 1 view .LVU69
+ 288              		.loc 1 62 9 is_stmt 0 view .LVU70
+ 289 0012 054B     		ldr	r3, .L26
+ 290 0014 0122     		movs	r2, #1
+ 291 0016 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 6
 
 
- 292 007e A3FB0203 		umull	r0, r3, r3, r2
- 293 0082 DB08     		lsrs	r3, r3, #3
- 294              		.loc 1 110 13 view .LVU71
- 295 0084 8B60     		str	r3, [r1, #8]
- 296              		.loc 1 111 4 is_stmt 1 view .LVU72
- 297              		.loc 1 111 23 is_stmt 0 view .LVU73
- 298 0086 03EB8303 		add	r3, r3, r3, lsl #2
- 299 008a A2EB4303 		sub	r3, r2, r3, lsl #1
- 300              		.loc 1 111 13 view .LVU74
- 301 008e CB60     		str	r3, [r1, #12]
- 302 0090 C3E7     		b	.L18
- 303              	.LVL5:
- 304              	.L26:
- 305              		.loc 1 101 5 is_stmt 1 view .LVU75
- 306              		.loc 1 101 13 is_stmt 0 view .LVU76
- 307 0092 1346     		mov	r3, r2
- 308 0094 0022     		movs	r2, #0
- 309 0096 1A60     		str	r2, [r3]
- 310              		.loc 1 103 5 is_stmt 1 view .LVU77
- 311              		.loc 1 103 8 is_stmt 0 view .LVU78
- 312 0098 0C4A     		ldr	r2, .L27+32
- 313 009a 1368     		ldr	r3, [r2]
- 314 009c 0133     		adds	r3, r3, #1
- 315              		.loc 1 103 7 view .LVU79
- 316 009e 1360     		str	r3, [r2]
- 317 00a0 3C2B     		cmp	r3, #60
- 318 00a2 DDD1     		bne	.L19
- 319              		.loc 1 104 6 is_stmt 1 view .LVU80
- 320              		.loc 1 104 13 is_stmt 0 view .LVU81
- 321 00a4 1346     		mov	r3, r2
- 322 00a6 0022     		movs	r2, #0
- 323 00a8 1A60     		str	r2, [r3]
- 324 00aa D9E7     		b	.L19
- 325              	.L28:
- 326              		.align	2
- 327              	.L27:
- 328 00ac 00000000 		.word	htim1
- 329 00b0 00000000 		.word	.LANCHOR3
- 330 00b4 00000000 		.word	.LANCHOR2
- 331 00b8 00100140 		.word	1073811456
- 332 00bc 00F0FFFF 		.word	-4096
- 333 00c0 00000000 		.word	.LANCHOR6
- 334 00c4 00000000 		.word	.LANCHOR0
- 335 00c8 00000000 		.word	.LANCHOR4
- 336 00cc 00000000 		.word	.LANCHOR5
- 337 00d0 CDCCCCCC 		.word	-858993459
- 338              		.cfi_endproc
- 339              	.LFE68:
- 341              		.global	minuti
- 342              		.global	sekunde
- 343              		.global	counter
- 344              		.global	cifre
- 345              		.global	fleg
- 346              		.global	tekucaCifra
- 347              		.global	seven_seg
- 348              		.section	.bss.cifre,"aw",%nobits
- 349              		.align	2
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 7
+ 292              		.loc 1 63 4 is_stmt 1 view .LVU71
+ 293 0018 FAE7     		b	.L20
+ 294              	.L21:
+ 295              		.loc 1 65 4 view .LVU72
+ 296              		.loc 1 65 9 is_stmt 0 view .LVU73
+ 297 001a 034B     		ldr	r3, .L26
+ 298 001c 0022     		movs	r2, #0
+ 299 001e 1A70     		strb	r2, [r3]
+ 300              		.loc 1 66 4 is_stmt 1 view .LVU74
+ 301 0020 F6E7     		b	.L20
+ 302              	.L22:
+ 303              		.loc 1 68 4 view .LVU75
+ 304 0022 024B     		ldr	r3, .L26+4
+ 305 0024 9847     		blx	r3
+ 306              	.LVL5:
+ 307              		.loc 1 69 4 view .LVU76
+ 308              		.loc 1 73 1 is_stmt 0 view .LVU77
+ 309 0026 F3E7     		b	.L20
+ 310              	.L27:
+ 311              		.align	2
+ 312              	.L26:
+ 313 0028 00000000 		.word	.LANCHOR1
+ 314 002c 00000000 		.word	reset
+ 315              		.cfi_endproc
+ 316              	.LFE66:
+ 318              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+ 319              		.align	1
+ 320              		.global	HAL_TIM_PeriodElapsedCallback
+ 321              		.syntax unified
+ 322              		.thumb
+ 323              		.thumb_func
+ 324              		.fpu softvfp
+ 326              	HAL_TIM_PeriodElapsedCallback:
+ 327              	.LVL6:
+ 328              	.LFB69:
+ 329              		.loc 1 115 60 is_stmt 1 view -0
+ 330              		.cfi_startproc
+ 331              		@ args = 0, pretend = 0, frame = 0
+ 332              		@ frame_needed = 0, uses_anonymous_args = 0
+ 333              		.loc 1 119 2 view .LVU79
+ 334              		.loc 1 119 9 is_stmt 0 view .LVU80
+ 335 0000 0268     		ldr	r2, [r0]
+ 336              		.loc 1 119 28 view .LVU81
+ 337 0002 314B     		ldr	r3, .L40
+ 338 0004 1B68     		ldr	r3, [r3]
+ 339              		.loc 1 119 4 view .LVU82
+ 340 0006 9A42     		cmp	r2, r3
+ 341 0008 00D0     		beq	.L37
+ 342 000a 7047     		bx	lr
+ 343              	.L37:
+ 344              		.loc 1 115 60 view .LVU83
+ 345 000c 10B5     		push	{r4, lr}
+ 346              	.LCFI3:
+ 347              		.cfi_def_cfa_offset 8
+ 348              		.cfi_offset 4, -8
+ 349              		.cfi_offset 14, -4
+ 350              		.loc 1 140 3 is_stmt 1 view .LVU84
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 7
 
 
- 350              		.set	.LANCHOR6,. + 0
- 353              	cifre:
- 354 0000 00000000 		.space	16
- 354      00000000 
- 354      00000000 
- 354      00000000 
- 355              		.section	.bss.counter,"aw",%nobits
- 356              		.align	2
- 357              		.set	.LANCHOR3,. + 0
- 360              	counter:
- 361 0000 00000000 		.space	4
- 362              		.section	.bss.fleg,"aw",%nobits
- 363              		.set	.LANCHOR1,. + 0
- 366              	fleg:
- 367 0000 00       		.space	1
- 368              		.section	.bss.minuti,"aw",%nobits
- 369              		.align	2
- 370              		.set	.LANCHOR5,. + 0
- 373              	minuti:
- 374 0000 00000000 		.space	4
- 375              		.section	.bss.sekunde,"aw",%nobits
- 376              		.align	2
- 377              		.set	.LANCHOR4,. + 0
- 380              	sekunde:
- 381 0000 00000000 		.space	4
- 382              		.section	.bss.tekucaCifra,"aw",%nobits
- 383              		.align	2
- 384              		.set	.LANCHOR2,. + 0
- 387              	tekucaCifra:
- 388 0000 00000000 		.space	4
- 389              		.section	.data.seven_seg,"aw"
- 390              		.align	2
- 391              		.set	.LANCHOR0,. + 0
- 394              	seven_seg:
- 395 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
- 395      CCA4A08F 
- 395      8084
- 396              		.text
- 397              	.Letext0:
- 398              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 399              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 400              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
- 401              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 402              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 403              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 404              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 405              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
- 406              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 407              		.file 11 "../Core/Inc/tim.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s 			page 8
+ 351              		.loc 1 140 6 is_stmt 0 view .LVU85
+ 352 000e 2F4A     		ldr	r2, .L40+4
+ 353 0010 1368     		ldr	r3, [r2]
+ 354 0012 0133     		adds	r3, r3, #1
+ 355              		.loc 1 140 5 view .LVU86
+ 356 0014 1360     		str	r3, [r2]
+ 357 0016 642B     		cmp	r3, #100
+ 358 0018 1CD0     		beq	.L38
+ 359              	.LVL7:
+ 360              	.L30:
+ 361              		.loc 1 160 3 is_stmt 1 view .LVU87
+ 362              		.loc 1 160 18 is_stmt 0 view .LVU88
+ 363 001a 2D4B     		ldr	r3, .L40+8
+ 364 001c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 365              		.loc 1 160 5 view .LVU89
+ 366 001e 002B     		cmp	r3, #0
+ 367 0020 4CD1     		bne	.L32
+ 368              		.loc 1 161 4 is_stmt 1 view .LVU90
+ 369              		.loc 1 161 31 is_stmt 0 view .LVU91
+ 370 0022 2C4A     		ldr	r2, .L40+12
+ 371 0024 1368     		ldr	r3, [r2]
+ 372 0026 0133     		adds	r3, r3, #1
+ 373              		.loc 1 161 36 view .LVU92
+ 374 0028 03F00303 		and	r3, r3, #3
+ 375              		.loc 1 161 16 view .LVU93
+ 376 002c 1360     		str	r3, [r2]
+ 377              		.loc 1 164 4 is_stmt 1 view .LVU94
+ 378              		.loc 1 164 15 is_stmt 0 view .LVU95
+ 379 002e 2A4A     		ldr	r2, .L40+16
+ 380 0030 2A49     		ldr	r1, .L40+20
+ 381 0032 D160     		str	r1, [r2, #12]
+ 382              		.loc 1 167 4 is_stmt 1 view .LVU96
+ 383              		.loc 1 167 15 is_stmt 0 view .LVU97
+ 384 0034 D168     		ldr	r1, [r2, #12]
+ 385              		.loc 1 167 33 view .LVU98
+ 386 0036 2A48     		ldr	r0, .L40+24
+ 387 0038 50F82300 		ldr	r0, [r0, r3, lsl #2]
+ 388              		.loc 1 167 27 view .LVU99
+ 389 003c 294C     		ldr	r4, .L40+28
+ 390 003e 205C     		ldrb	r0, [r4, r0]	@ zero_extendqisi2
+ 391              		.loc 1 167 15 view .LVU100
+ 392 0040 0143     		orrs	r1, r1, r0
+ 393 0042 D160     		str	r1, [r2, #12]
+ 394              		.loc 1 170 4 is_stmt 1 view .LVU101
+ 395              		.loc 1 170 15 is_stmt 0 view .LVU102
+ 396 0044 D168     		ldr	r1, [r2, #12]
+ 397              		.loc 1 170 28 view .LVU103
+ 398 0046 0833     		adds	r3, r3, #8
+ 399              		.loc 1 170 22 view .LVU104
+ 400 0048 0120     		movs	r0, #1
+ 401 004a 00FA03F3 		lsl	r3, r0, r3
+ 402              		.loc 1 170 15 view .LVU105
+ 403 004e 0B43     		orrs	r3, r3, r1
+ 404 0050 D360     		str	r3, [r2, #12]
+ 405              	.L28:
+ 406              		.loc 1 179 1 view .LVU106
+ 407 0052 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 8
+
+
+ 408              	.LVL8:
+ 409              	.L38:
+ 410              		.loc 1 142 4 is_stmt 1 view .LVU107
+ 411              		.loc 1 142 12 is_stmt 0 view .LVU108
+ 412 0054 1346     		mov	r3, r2
+ 413 0056 0022     		movs	r2, #0
+ 414 0058 1A60     		str	r2, [r3]
+ 415              		.loc 1 144 4 is_stmt 1 view .LVU109
+ 416              		.loc 1 144 7 is_stmt 0 view .LVU110
+ 417 005a 234A     		ldr	r2, .L40+32
+ 418 005c 1368     		ldr	r3, [r2]
+ 419 005e 013B     		subs	r3, r3, #1
+ 420              		.loc 1 144 6 view .LVU111
+ 421 0060 1360     		str	r3, [r2]
+ 422 0062 43B9     		cbnz	r3, .L31
+ 423              		.loc 1 145 5 is_stmt 1 view .LVU112
+ 424              		.loc 1 145 13 is_stmt 0 view .LVU113
+ 425 0064 1346     		mov	r3, r2
+ 426 0066 3C22     		movs	r2, #60
+ 427 0068 1A60     		str	r2, [r3]
+ 428              		.loc 1 147 5 is_stmt 1 view .LVU114
+ 429              		.loc 1 147 8 is_stmt 0 view .LVU115
+ 430 006a 204A     		ldr	r2, .L40+36
+ 431 006c 1368     		ldr	r3, [r2]
+ 432 006e 013B     		subs	r3, r3, #1
+ 433              		.loc 1 147 7 view .LVU116
+ 434 0070 1360     		str	r3, [r2]
+ 435 0072 002B     		cmp	r3, #0
+ 436 0074 1BDB     		blt	.L39
+ 437              	.L31:
+ 438              		.loc 1 153 4 is_stmt 1 view .LVU117
+ 439              		.loc 1 153 22 is_stmt 0 view .LVU118
+ 440 0076 1D4B     		ldr	r3, .L40+36
+ 441 0078 1A68     		ldr	r2, [r3]
+ 442 007a 1D49     		ldr	r1, .L40+40
+ 443 007c 81FB0231 		smull	r3, r1, r1, r2
+ 444 0080 D317     		asrs	r3, r2, #31
+ 445 0082 C3EBA103 		rsb	r3, r3, r1, asr #2
+ 446              		.loc 1 153 13 view .LVU119
+ 447 0086 1649     		ldr	r1, .L40+24
+ 448 0088 0B60     		str	r3, [r1]
+ 449              		.loc 1 154 4 is_stmt 1 view .LVU120
+ 450              		.loc 1 154 22 is_stmt 0 view .LVU121
+ 451 008a 03EB8303 		add	r3, r3, r3, lsl #2
+ 452 008e A2EB4303 		sub	r3, r2, r3, lsl #1
+ 453              		.loc 1 154 13 view .LVU122
+ 454 0092 4B60     		str	r3, [r1, #4]
+ 455              		.loc 1 155 4 is_stmt 1 view .LVU123
+ 456              		.loc 1 155 23 is_stmt 0 view .LVU124
+ 457 0094 144B     		ldr	r3, .L40+32
+ 458 0096 1A68     		ldr	r2, [r3]
+ 459 0098 164B     		ldr	r3, .L40+44
+ 460 009a A3FB0203 		umull	r0, r3, r3, r2
+ 461              	.LVL9:
+ 462              		.loc 1 155 23 view .LVU125
+ 463 009e DB08     		lsrs	r3, r3, #3
+ 464              		.loc 1 155 13 view .LVU126
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 9
+
+
+ 465 00a0 8B60     		str	r3, [r1, #8]
+ 466              		.loc 1 156 4 is_stmt 1 view .LVU127
+ 467              		.loc 1 156 23 is_stmt 0 view .LVU128
+ 468 00a2 03EB8303 		add	r3, r3, r3, lsl #2
+ 469 00a6 A2EB4303 		sub	r3, r2, r3, lsl #1
+ 470              		.loc 1 156 13 view .LVU129
+ 471 00aa CB60     		str	r3, [r1, #12]
+ 472 00ac B5E7     		b	.L30
+ 473              	.LVL10:
+ 474              	.L39:
+ 475              		.loc 1 148 6 is_stmt 1 view .LVU130
+ 476              		.loc 1 148 13 is_stmt 0 view .LVU131
+ 477 00ae 1346     		mov	r3, r2
+ 478 00b0 0022     		movs	r2, #0
+ 479 00b2 1A60     		str	r2, [r3]
+ 480              		.loc 1 149 6 is_stmt 1 view .LVU132
+ 481              		.loc 1 149 18 is_stmt 0 view .LVU133
+ 482 00b4 064B     		ldr	r3, .L40+8
+ 483 00b6 0122     		movs	r2, #1
+ 484 00b8 1A70     		strb	r2, [r3]
+ 485 00ba DCE7     		b	.L31
+ 486              	.LVL11:
+ 487              	.L32:
+ 488              		.loc 1 172 4 is_stmt 1 view .LVU134
+ 489 00bc 0E4B     		ldr	r3, .L40+48
+ 490 00be 9847     		blx	r3
+ 491              	.LVL12:
+ 492              		.loc 1 173 4 view .LVU135
+ 493              		.loc 1 173 16 is_stmt 0 view .LVU136
+ 494 00c0 034B     		ldr	r3, .L40+8
+ 495 00c2 0022     		movs	r2, #0
+ 496 00c4 1A70     		strb	r2, [r3]
+ 497              		.loc 1 179 1 view .LVU137
+ 498 00c6 C4E7     		b	.L28
+ 499              	.L41:
+ 500              		.align	2
+ 501              	.L40:
+ 502 00c8 00000000 		.word	htim1
+ 503 00cc 00000000 		.word	.LANCHOR7
+ 504 00d0 00000000 		.word	.LANCHOR6
+ 505 00d4 00000000 		.word	.LANCHOR2
+ 506 00d8 00100140 		.word	1073811456
+ 507 00dc 00F0FFFF 		.word	-4096
+ 508 00e0 00000000 		.word	.LANCHOR5
+ 509 00e4 00000000 		.word	.LANCHOR0
+ 510 00e8 00000000 		.word	.LANCHOR3
+ 511 00ec 00000000 		.word	.LANCHOR4
+ 512 00f0 67666666 		.word	1717986919
+ 513 00f4 CDCCCCCC 		.word	-858993459
+ 514 00f8 00000000 		.word	reset
+ 515              		.cfi_endproc
+ 516              	.LFE69:
+ 518              		.global	resetPrikaz
+ 519              		.global	minuti
+ 520              		.global	sekunde
+ 521              		.global	counter
+ 522              		.global	cifre
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 10
+
+
+ 523              		.global	fleg
+ 524              		.global	tekucaCifra
+ 525              		.global	seven_seg
+ 526              		.section	.bss.cifre,"aw",%nobits
+ 527              		.align	2
+ 528              		.set	.LANCHOR5,. + 0
+ 531              	cifre:
+ 532 0000 00000000 		.space	16
+ 532      00000000 
+ 532      00000000 
+ 532      00000000 
+ 533              		.section	.bss.counter,"aw",%nobits
+ 534              		.align	2
+ 535              		.set	.LANCHOR7,. + 0
+ 538              	counter:
+ 539 0000 00000000 		.space	4
+ 540              		.section	.bss.fleg,"aw",%nobits
+ 541              		.set	.LANCHOR1,. + 0
+ 544              	fleg:
+ 545 0000 00       		.space	1
+ 546              		.section	.bss.minuti,"aw",%nobits
+ 547              		.align	2
+ 548              		.set	.LANCHOR4,. + 0
+ 551              	minuti:
+ 552 0000 00000000 		.space	4
+ 553              		.section	.bss.resetPrikaz,"aw",%nobits
+ 554              		.set	.LANCHOR6,. + 0
+ 557              	resetPrikaz:
+ 558 0000 00       		.space	1
+ 559              		.section	.bss.tekucaCifra,"aw",%nobits
+ 560              		.align	2
+ 561              		.set	.LANCHOR2,. + 0
+ 564              	tekucaCifra:
+ 565 0000 00000000 		.space	4
+ 566              		.section	.data.sekunde,"aw"
+ 567              		.align	2
+ 568              		.set	.LANCHOR3,. + 0
+ 571              	sekunde:
+ 572 0000 05000000 		.word	5
+ 573              		.section	.data.seven_seg,"aw"
+ 574              		.align	2
+ 575              		.set	.LANCHOR0,. + 0
+ 578              	seven_seg:
+ 579 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
+ 579      CCA4A08F 
+ 579      8084
+ 580              		.text
+ 581              	.Letext0:
+ 582              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 583              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 584              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 585              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 586              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 587              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 588              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 589              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 590              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 11
+
+
+ 591              		.file 11 "../Core/Inc/tim.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 casovnik.c
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:16     .text.casovnik:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:24     .text.casovnik:0000000000000000 casovnik
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:44     .text.casovnik:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:50     .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:57     .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:91     .text.HAL_GPIO_EXTI_Callback:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:96     .text.promeniCifru:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:103    .text.promeniCifru:0000000000000000 promeniCifru
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:157    .text.promeniCifru:0000000000000038 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:165    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:172    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:328    .text.HAL_TIM_PeriodElapsedCallback:00000000000000ac $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:373    .bss.minuti:0000000000000000 minuti
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:380    .bss.sekunde:0000000000000000 sekunde
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:360    .bss.counter:0000000000000000 counter
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:353    .bss.cifre:0000000000000000 cifre
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:366    .bss.fleg:0000000000000000 fleg
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:387    .bss.tekucaCifra:0000000000000000 tekucaCifra
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:394    .data.seven_seg:0000000000000000 seven_seg
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:349    .bss.cifre:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:356    .bss.counter:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:367    .bss.fleg:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:369    .bss.minuti:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:376    .bss.sekunde:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:383    .bss.tekucaCifra:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccPNwcbO.s:390    .data.seven_seg:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:16     .text.casovnik:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:24     .text.casovnik:0000000000000000 casovnik
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:44     .text.casovnik:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:50     .text.promeniCifru:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:57     .text.promeniCifru:0000000000000000 promeniCifru
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:111    .text.promeniCifru:0000000000000038 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:119    .text.reset:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:126    .text.reset:0000000000000000 reset
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:242    .text.reset:0000000000000068 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:254    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:261    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:313    .text.HAL_GPIO_EXTI_Callback:0000000000000028 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:319    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:326    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:502    .text.HAL_TIM_PeriodElapsedCallback:00000000000000c8 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:557    .bss.resetPrikaz:0000000000000000 resetPrikaz
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:551    .bss.minuti:0000000000000000 minuti
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:571    .data.sekunde:0000000000000000 sekunde
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:538    .bss.counter:0000000000000000 counter
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:531    .bss.cifre:0000000000000000 cifre
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:544    .bss.fleg:0000000000000000 fleg
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:564    .bss.tekucaCifra:0000000000000000 tekucaCifra
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:578    .data.seven_seg:0000000000000000 seven_seg
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:527    .bss.cifre:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:534    .bss.counter:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:545    .bss.fleg:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:547    .bss.minuti:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:558    .bss.resetPrikaz:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:560    .bss.tekucaCifra:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:567    .data.sekunde:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\ccXSRIHS.s:574    .data.seven_seg:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 htim1

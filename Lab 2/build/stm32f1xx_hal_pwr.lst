@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
   57              		.loc 1 157 1 is_stmt 1 view -0
   58              		.cfi_startproc
   59              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 2
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 2
 
 
   60              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  118              	.LFB68:
  119              		.loc 1 183 1 is_stmt 1 view -0
  120              		.cfi_startproc
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 3
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 3
 
 
  121              		@ args = 0, pretend = 0, frame = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  177 0028 9A68     		ldr	r2, [r3, #8]
  178 002a 22F48032 		bic	r2, r2, #65536
  179 002e 9A60     		str	r2, [r3, #8]
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 4
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 4
 
 
  180              		.loc 1 332 3 view .LVU24
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  234 0080 00040140 		.word	1073808384
  235              		.cfi_endproc
  236              	.LFE69:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 5
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 5
 
 
  238              		.section	.text.HAL_PWR_EnablePVD,"ax",%progbits
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  296              		.section	.text.HAL_PWR_EnableWakeUpPin,"ax",%progbits
  297              		.align	1
  298              		.global	HAL_PWR_EnableWakeUpPin
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 6
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 6
 
 
  299              		.syntax unified
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  354              		.thumb_func
  355              		.fpu softvfp
  357              	HAL_PWR_DisableWakeUpPin:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 7
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 7
 
 
  358              	.LVL3:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  414              		@ args = 0, pretend = 0, frame = 0
  415              		@ frame_needed = 0, uses_anonymous_args = 0
  416              		@ link register save eliminated.
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 8
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 8
 
 
  417              		.loc 1 422 3 view .LVU72
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  473              		.cfi_startproc
  474              		@ args = 0, pretend = 0, frame = 0
  475              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 9
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 9
 
 
  476              		.loc 1 464 1 is_stmt 0 view .LVU83
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  530 0036 A047     		blx	r4
  531              	.LVL9:
  532              		.loc 1 489 5 view .LVU96
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 10
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 10
 
 
  533 0038 A047     		blx	r4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  590              		.syntax unified
  591              		.thumb
  592              		.thumb_func
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 11
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 11
 
 
  593              		.fpu softvfp
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  651              		.fpu softvfp
  653              	HAL_PWR_EnableSEVOnPend:
  654              	.LFB79:
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 12
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 12
 
 
  655              		.loc 1 555 1 is_stmt 1 view -0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  713              		.loc 1 598 1 is_stmt 1 view -0
  714              		.cfi_startproc
  715              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 13
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 13
 
 
  716              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  773              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
  774              		.file 4 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
  775              		.file 5 "../Drivers/CMSIS/Include/core_cm3.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 14
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 14
 
 
  776              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
@@ -786,62 +786,62 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 1
  778              		.file 8 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
  779              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h"
  780              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s 			page 15
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f1xx_hal_pwr.c
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:16     .text.PWR_OverloadWfe:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:23     .text.PWR_OverloadWfe:0000000000000000 PWR_OverloadWfe
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:48     .text.HAL_PWR_DeInit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:55     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:76     .text.HAL_PWR_DeInit:0000000000000014 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:81     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:88     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:105    .text.HAL_PWR_EnableBkUpAccess:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:110    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:117    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:134    .text.HAL_PWR_DisableBkUpAccess:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:139    .text.HAL_PWR_ConfigPVD:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:146    .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:233    .text.HAL_PWR_ConfigPVD:000000000000007c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:239    .text.HAL_PWR_EnablePVD:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:246    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:263    .text.HAL_PWR_EnablePVD:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:268    .text.HAL_PWR_DisablePVD:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:275    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:292    .text.HAL_PWR_DisablePVD:0000000000000008 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:297    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:304    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:345    .text.HAL_PWR_EnableWakeUpPin:0000000000000014 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:350    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:357    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:397    .text.HAL_PWR_DisableWakeUpPin:0000000000000014 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:402    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:409    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:457    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:462    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:469    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:539    .text.HAL_PWR_EnterSTOPMode:000000000000003c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:546    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:553    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:582    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:588    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:595    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:612    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:617    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:624    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:641    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:646    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:653    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:670    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:675    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:682    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:699    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:704    .text.HAL_PWR_PVDCallback:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:711    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:724    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:731    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
-C:\Users\Ika\AppData\Local\Temp\cceZ5EHf.s:766    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:16     .text.PWR_OverloadWfe:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:23     .text.PWR_OverloadWfe:0000000000000000 PWR_OverloadWfe
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:48     .text.HAL_PWR_DeInit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:55     .text.HAL_PWR_DeInit:0000000000000000 HAL_PWR_DeInit
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:76     .text.HAL_PWR_DeInit:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:81     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:88     .text.HAL_PWR_EnableBkUpAccess:0000000000000000 HAL_PWR_EnableBkUpAccess
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:105    .text.HAL_PWR_EnableBkUpAccess:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:110    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:117    .text.HAL_PWR_DisableBkUpAccess:0000000000000000 HAL_PWR_DisableBkUpAccess
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:134    .text.HAL_PWR_DisableBkUpAccess:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:139    .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:146    .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:233    .text.HAL_PWR_ConfigPVD:000000000000007c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:239    .text.HAL_PWR_EnablePVD:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:246    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:263    .text.HAL_PWR_EnablePVD:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:268    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:275    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:292    .text.HAL_PWR_DisablePVD:0000000000000008 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:297    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:304    .text.HAL_PWR_EnableWakeUpPin:0000000000000000 HAL_PWR_EnableWakeUpPin
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:345    .text.HAL_PWR_EnableWakeUpPin:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:350    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:357    .text.HAL_PWR_DisableWakeUpPin:0000000000000000 HAL_PWR_DisableWakeUpPin
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:397    .text.HAL_PWR_DisableWakeUpPin:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:402    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:409    .text.HAL_PWR_EnterSLEEPMode:0000000000000000 HAL_PWR_EnterSLEEPMode
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:457    .text.HAL_PWR_EnterSLEEPMode:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:462    .text.HAL_PWR_EnterSTOPMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:469    .text.HAL_PWR_EnterSTOPMode:0000000000000000 HAL_PWR_EnterSTOPMode
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:539    .text.HAL_PWR_EnterSTOPMode:000000000000003c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:546    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:553    .text.HAL_PWR_EnterSTANDBYMode:0000000000000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:582    .text.HAL_PWR_EnterSTANDBYMode:0000000000000018 $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:588    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:595    .text.HAL_PWR_EnableSleepOnExit:0000000000000000 HAL_PWR_EnableSleepOnExit
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:612    .text.HAL_PWR_EnableSleepOnExit:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:617    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:624    .text.HAL_PWR_DisableSleepOnExit:0000000000000000 HAL_PWR_DisableSleepOnExit
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:641    .text.HAL_PWR_DisableSleepOnExit:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:646    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:653    .text.HAL_PWR_EnableSEVOnPend:0000000000000000 HAL_PWR_EnableSEVOnPend
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:670    .text.HAL_PWR_EnableSEVOnPend:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:675    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:682    .text.HAL_PWR_DisableSEVOnPend:0000000000000000 HAL_PWR_DisableSEVOnPend
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:699    .text.HAL_PWR_DisableSEVOnPend:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:704    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:711    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:724    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:731    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+C:\Users\Ika\AppData\Local\Temp\ccHLhIPY.s:766    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
 
 NO UNDEFINED SYMBOLS

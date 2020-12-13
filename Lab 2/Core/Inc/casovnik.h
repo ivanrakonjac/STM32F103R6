@@ -14,6 +14,7 @@
 
 extern void casovnik();
 extern void promeniCifru();
+extern void reset();
 
 
 #endif /* CORE_INC_CASOVNIK_H_ */
