@@ -1,9 +1,14 @@
+MEMORY
+{
+	REGION_PRVI (rwx) : ORIGIN = 0x0000EE00, LENGTH = 32k
+}
+
 SECTIONS
 {
-	izlazna_sekcija_prva 0x0000FF00 : 
+	izlazna_sekcija_prva :
 	{
 		*(.text)
-	}
+	} > REGION_PRVI
 	
 	izlazna_sekcija_druga 0x66660000 : 
 	{
