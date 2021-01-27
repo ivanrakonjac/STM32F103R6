@@ -9,6 +9,7 @@ SECTIONS
 	{
 		. = . + 5;
 		BYTE(0xFF)
+		. = ALIGN(16);
 		*(.text)
 	} > REGION_PRVI
 	
