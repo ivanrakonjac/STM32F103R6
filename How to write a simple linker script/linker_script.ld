@@ -35,4 +35,7 @@ SECTIONS
 		*(.comment)
 		*(.ARM.attribures)
 	}
+	
+	podaci_start_vma_1 = ADDR(izlazna_sekcija_treca);
+	podaci_start_lma = LOADADDR(izlazna_sekcija_treca);
 }
