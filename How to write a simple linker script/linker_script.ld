@@ -1,6 +1,8 @@
 MEMORY
 {
 	REGION_PRVI (rwx) : ORIGIN = 0x0000EE00, LENGTH = 32k
+	
+	REGION_LMA (rx)   : ORIGIN = 0x99999999, LENGTH = 32k
 }
 
 SECTIONS
@@ -18,10 +20,10 @@ SECTIONS
 		*(.rodata)
 	}
 	
-	izlazna_sekcija_treca 0x77770000 : 
+	izlazna_sekcija_treca : 
 	{
 		*(.data)
-	}
+	} > REGION_PRVI AT> REGION_LMA 
 	
 	izlazna_sekcija_cetvrta 0x88880000 : 
 	{
