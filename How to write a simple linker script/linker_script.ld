@@ -7,6 +7,7 @@ SECTIONS
 {
 	izlazna_sekcija_prva :
 	{
+		BYTE(0xFF)
 		*(.text)
 	} > REGION_PRVI
 	
