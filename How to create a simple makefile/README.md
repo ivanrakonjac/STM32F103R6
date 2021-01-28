@@ -43,8 +43,14 @@ Kako ukljuciti dependency fajove:
 
 * GNU MAKE (4.4.3 The Function wildcard)
 	https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html
+
 * GNU MAKE (3.3 Including Other Makefiles)
 	https://www.gnu.org/software/make/manual/html_node/Include.html
 
 * GNU MAKE (6.3.1 Substitution References)
 	https://www.gnu.org/software/make/manual/html_node/Substitution-Refs.html
+
+* GNU MAKE (8.3 Functions for File Names)
+	https://www.gnu.org/software/make/manual/html_node/File-Name-Functions.html
+
+* | $(BUILD_DIR) - ovaj preduslov je drugacijeg tipa => nije bitno kada je napravljen vec da postoji (order only preduslov)
