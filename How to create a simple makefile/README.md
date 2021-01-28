@@ -45,3 +45,6 @@ Kako ukljuciti dependency fajove:
 	https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html
 * GNU MAKE (3.3 Including Other Makefiles)
 	https://www.gnu.org/software/make/manual/html_node/Include.html
+
+* GNU MAKE (6.3.1 Substitution References)
+	https://www.gnu.org/software/make/manual/html_node/Substitution-Refs.html
