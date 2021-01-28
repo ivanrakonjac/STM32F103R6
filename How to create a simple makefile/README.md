@@ -26,3 +26,22 @@ Dokumentacija make alata: https://www.gnu.org/software/make/manual/make.html
 	* $(@) - cilj pravila
 	* $(<) - prvi preduslov
 	* $(^) - svi preduslovi
+
+* GNU MAKE (10.5 Defining and Redefining Pattern Rules)
+	https://www.gnu.org/software/make/manual/html_node/Pattern-Rules.html
+
+Kako znati od kojih .h fajlova neki fajl zavisi:
+
+* dodati opciju -MMD u flegove za kompajler koji ce nam to reci, i izgenerisace male makefileove koji sadrze samo pravilo za te zavisnosti
+* opcija -MP (phony) generise lazna pravila => ako systick.o zavisi od systick.c i systick.h, izgenerisace se i pravilo za systick.h iako ne zavisi ni od jednog fajla
+
+* GNU GCC (3.13 Options Controlling the Preprocessor)
+	https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html
+
+Kako ukljuciti dependency fajove: 
+	-include $(wildcard ./*.d) - zelimo da ukljucimo sve iz tekuceg direktorijuma sto ima ekstenziju .d
+
+* GNU MAKE (4.4.3 The Function wildcard)
+	https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html
+* GNU MAKE (3.3 Including Other Makefiles)
+	https://www.gnu.org/software/make/manual/html_node/Include.html
