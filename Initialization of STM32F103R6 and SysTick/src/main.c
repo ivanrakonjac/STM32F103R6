@@ -48,7 +48,7 @@ uint32_t main(){
 	// Set pendig bits
 	NVIC->ISPR[0] |= 0x0F;
 
-	// Set priority group-pregroup bits
+	// Set priority group-prigroup bits
 	SCB_AIRCR_PRIGROUP(3);
 
 	// Set interrupts priority
@@ -74,6 +74,15 @@ uint32_t main(){
 	SCB_AIRCR_PRIGROUP(3);
 
 	NVIC->ISPR[0] |= 0x0F;
+
+	// Moving to user mode
+	__asm__(
+		"mov r0, 0x01\n"
+		"msr control, r0"
+	);
+
+	// Moving to privileged mode
+	__asm__("svc 0");
 
 	systick_init();
 

@@ -1,4 +1,4 @@
-# Initialization of STM32F103R6 and SysTick
+# Initialization of STM32F103R6 and SysTick and using of SCB & NVIC
 
 1) Create startup_code.c
 2) Create makefile
