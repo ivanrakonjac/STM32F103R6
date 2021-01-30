@@ -20,4 +20,14 @@ typedef struct
 
 #define NVIC ((NVIC_RegisterMapType *) 0xE000E100)
 
+
+/*
+ * irqNumber - interrupt number not exception!
+ * */
+#define NVIC_ENABLE_IRQ(irqNumber) \
+	NVIC->ISER[(irqNumber) / 32] = 1 << ((irqNumber) % 32)
+
+#define NVIC_DISABLE_IRQ(irqNumber) \
+	NVIC->ICER[(irqNumber) / 32] = 1 << ((irqNumber) % 32)
+
 #endif

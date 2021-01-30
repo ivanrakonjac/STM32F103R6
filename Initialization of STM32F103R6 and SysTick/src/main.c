@@ -37,6 +37,15 @@ uint32_t main(){
 	// Trigger svc (The supervisor call)
 	__asm__("svc 0");
 
+	// Enable interrupts
+	NVIC_ENABLE_IRQ(0);
+	NVIC_ENABLE_IRQ(1);
+	NVIC_ENABLE_IRQ(2);
+	NVIC_ENABLE_IRQ(3);
+
+	// Set pendig bits
+	NVIC->ISPR[0] |= 0x0F;
+
 	systick_init();
 
 	while (1){
