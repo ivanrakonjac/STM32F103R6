@@ -18,6 +18,23 @@ uint32_t main(){
 	SCB->ICSR |= (1 << 31); // Set pend bit for non maskable interrupt
 	SCB->ICSR |= (1 << 28); // Set pend bit for PendSV interrupt
 
+
+	// Disable all interrupts except NMI - put 1 i Fault mask register
+	__asm__(
+		"mov r0, 1\n"
+		"msr faultmask, r0"
+	);
+
+	// Pend NMI & PENDSV at same time
+	SCB->ICSR |= SCB_ISCR_NMIPENDSET | SCB_ISCR_PENDSVSET;
+
+	// Enable all interrupts again
+	__asm__(
+		"mov r0, 0\n"
+		"msr faultmask, r0"
+	);
+
+
 	systick_init();
 
 	while (1){

@@ -23,4 +23,7 @@ typedef struct {
 
 #define SCB ((SCB_RegisterMapType*) 0xE000ED00)
 
+#define SCB_ISCR_NMIPENDSET	(1<<31)
+#define SCB_ISCR_PENDSVSET	(1<<28)
+
 #endif
