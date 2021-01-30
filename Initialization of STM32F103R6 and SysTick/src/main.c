@@ -12,9 +12,11 @@ uint32_t main(){
 	SCB->CCR |= (1 << 4); // Catch dividing by 0 as an error
 	SCB->SHCSR |= (1 << 18); //Enable usage fault
 
-
 	uint32_t dummy = 1, zero = 0;
-	uint32_t dummy2 = dummy / zero;
+//	uint32_t dummy2 = dummy / zero;
+
+	SCB->ICSR |= (1 << 31); // Set pend bit for non maskable interrupt
+	SCB->ICSR |= (1 << 28); // Set pend bit for PendSV interrupt
 
 	systick_init();
 
