@@ -1,4 +1,4 @@
-
+#include "systick.h"
 
 void nmi_handler () {
 
@@ -21,7 +21,7 @@ void pend_sv_handler () {
 }
 
 void systick_handler () {
-	systick_callback();
+
 }
 
 

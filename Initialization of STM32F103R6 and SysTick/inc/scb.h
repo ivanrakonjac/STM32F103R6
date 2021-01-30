@@ -13,7 +13,7 @@ typedef struct {
 	uint32_t SHPR1;
 	uint32_t SHPR2;
 	uint32_t SHPR3;
-	uint32_t SHPR4;
+	uint32_t SHCSR;
 	uint32_t CFSR;
 	uint32_t HFSR;
 	uint32_t dummy0[1];
