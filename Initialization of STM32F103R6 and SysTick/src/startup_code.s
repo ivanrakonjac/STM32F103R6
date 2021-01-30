@@ -5,17 +5,64 @@
 
 .extern _main_stack_pointer_value
 
+.weak nmi_handler
+.thumb_set nmi_handler, default_handler
+
+.weak hard_fault_handler
+.thumb_set hard_fault_handler, default_handler
+
+.weak mem_fault_handler
+.thumb_set mem_fault_handler, default_handler
+
+.weak bus_fault_handler
+.thumb_set bus_fault_handler, default_handler
+
+.weak uasge_fault_handler
+.thumb_set uasge_fault_handler, default_handler
+
+.weak sv_call_handler
+.thumb_set sv_call_handler, default_handler
+
+.weak pend_sv_handler
+.thumb_set pend_sv_handler, default_handler
+
 .weak systick_handler
 .thumb_set systick_handler, default_handler
+
+.weak irq0_WWDG
+.thumb_set irq0_WWDG, default_handler
+
+.weak irq1_PVD
+.thumb_set irq1_PVD, default_handler
+
+.weak irq2_TAMPER
+.thumb_set irq2_TAMPER, default_handler
+
+.weak irq3_RTC
+.thumb_set irq3_RTC, default_handler
 
 .section .vector_table, "a"
 .word _main_stack_pointer_value
 .word reset_handler
-.rept 13
+.word nmi_handler
+.word hard_fault_handler
+.word mem_fault_handler
+.word bus_fault_handler
+.word uasge_fault_handler
+.rept 4
 	.word default_handler
 .endr
+.word sv_call_handler
+.rept 2
+	.word default_handler
+.endr
+.word pend_sv_handler
 .word systick_handler
-.rept 68
+.word irq0_WWDG
+.word irq1_PVD
+.word irq2_TAMPER
+.word irq3_RTC
+.rept 64
 	.word default_handler
 .endr
 

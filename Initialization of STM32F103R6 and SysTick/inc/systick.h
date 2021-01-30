@@ -1,9 +1,23 @@
 #ifndef _SYSTICK_H_
 #define _SYSTICK_H_
 
-#define STK_CTRL (*((uint32_t*) ( 0xE000E010 + 0x00 )))
-#define STK_LOAD (*((uint32_t*) ( 0xE000E010 + 0x04 )))
-#define STK_VAL (*((uint32_t*) ( 0xE000E010 + 0x08 )))
-#define STK_CALIB (*((uint32_t*) ( 0xE000E010 + 0x0C )))
+#include <stdint.h>
+
+typedef struct {
+	uint32_t CTRL;
+	uint32_t LOAD;
+	uint32_t VAL;
+	uint32_t CALIB;
+} STK_RegisterMapType;
+
+#define STK ((STK_RegisterMapType*) 0xE000E010)
+
+#define STK_CTRL_ENABLE		(1<<0)
+#define STK_CTRL_TICKINT	(1<<1)
+#define STK_CTRL_CLKSOURCE	(1<<2)
+#define STK_CTRL_COUNTFLAG	(1<<16)
+
+extern void systick_init();
+extern void systick_handler();
 
 #endif
