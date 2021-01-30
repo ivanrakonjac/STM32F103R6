@@ -34,6 +34,8 @@ uint32_t main(){
 		"msr faultmask, r0"
 	);
 
+	// Trigger svc (The supervisor call)
+	__asm__("svc 0");
 
 	systick_init();
 
