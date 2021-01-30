@@ -38,6 +38,7 @@ uint32_t main(){
 	// Trigger svc (The supervisor call)
 	__asm__("svc 0");
 
+
 	// Enable interrupts
 	NVIC_ENABLE_IRQ(0);
 	NVIC_ENABLE_IRQ(1);
@@ -47,11 +48,30 @@ uint32_t main(){
 	// Set pendig bits
 	NVIC->ISPR[0] |= 0x0F;
 
+	// Set priority group-pregroup bits
+	SCB_AIRCR_PRIGROUP(3);
+
 	// Set interrupts priority
-	NVIC_SET_PRIORITY(0, 0x70);
-	NVIC_SET_PRIORITY(1, 0x60);
-	NVIC_SET_PRIORITY(2, 0x50);
-	NVIC_SET_PRIORITY(3, 0x40);
+	NVIC_SET_PRIORITY(0, 0x70);	//01.11
+	NVIC_SET_PRIORITY(1, 0x60);	//01.10
+	NVIC_SET_PRIORITY(2, 0x50); //01.01
+	NVIC_SET_PRIORITY(3, 0x40); //01.00
+						//60  ==  01.00 - a za izvrsavanje se gleda samo grupa
+
+	NVIC->ISPR[0] |= 0x0F;
+
+	// Setting of base priority (minimum priority which interrupt should have to be executed)
+	__asm__(
+		"mov r0, 0x30\n"
+		"msr basepri, r0"
+	);
+
+	NVIC->ISPR[0] |= 0x0F;
+
+	// Clear pending bits
+	NVIC->ISPR[0] |= 0x00;
+
+	SCB_AIRCR_PRIGROUP(3);
 
 	NVIC->ISPR[0] |= 0x0F;
 

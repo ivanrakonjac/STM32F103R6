@@ -3,6 +3,8 @@
 
 #include <stdint.h>
 
+#include "utility.h"
+
 typedef struct {
 	uint32_t CPUID;
 	uint32_t ICSR;
@@ -22,6 +24,8 @@ typedef struct {
 }SCB_RegisterMapType;
 
 #define SCB ((SCB_RegisterMapType*) 0xE000ED00)
+
+#define SCB_AIRCR_PRIGROUP(prigroup) SET_VALUE(SCB->AIRCR, 8, 10, (prigroup))
 
 #define SCB_ISCR_NMIPENDSET	(1<<31)
 #define SCB_ISCR_PENDSVSET	(1<<28)
