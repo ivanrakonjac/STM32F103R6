@@ -3,6 +3,7 @@
 #include "systick.h"
 #include "scb.h"
 #include "nvic.h"
+#include "utility.h"
 
 uint8_t const rodata[] = "VMA:FLASH, LMA:FLASH";
 uint8_t data[] = "VMA:SRAM, LMA:FLASH";
@@ -44,6 +45,14 @@ uint32_t main(){
 	NVIC_ENABLE_IRQ(3);
 
 	// Set pendig bits
+	NVIC->ISPR[0] |= 0x0F;
+
+	// Set interrupts priority
+	NVIC_SET_PRIORITY(0, 0x70);
+	NVIC_SET_PRIORITY(1, 0x60);
+	NVIC_SET_PRIORITY(2, 0x50);
+	NVIC_SET_PRIORITY(3, 0x40);
+
 	NVIC->ISPR[0] |= 0x0F;
 
 	systick_init();
