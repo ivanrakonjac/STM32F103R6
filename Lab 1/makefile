@@ -5,7 +5,8 @@ SRC_S_LIST = \
 src/startup_code.s
 
 SRC_C_LIST = \
-src/main.c
+src/main.c \
+src/systick.c
 
 INCLUDE_C_LIST = \
 -Iinc
@@ -47,7 +48,7 @@ $(BUILD_DIR)/%.o : %.s makefile | $(BUILD_DIR)
 	$(AS) $(FLAGS_AS) -o $(@) $(<)
 	
 $(BUILD_DIR)/%.o : %.c makefile | $(BUILD_DIR)
-	$(CC) $(FLAGS_AS) -o $(@) $(<)
+	$(CC) $(FLAGS_CC) -o $(@) $(<)
 	
 $(BUILD_DIR) :
 	mkdir $(@)
