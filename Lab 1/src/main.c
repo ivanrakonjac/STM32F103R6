@@ -28,6 +28,16 @@ uint32_t main ( ) {
 
 	NVIC->ISPR[0] |= 0b111;
 
+	// USG_FLT_PRI = 0b01.000000; 40|00; GroupPri: 1 SubPri: 0
+	// BUS_FLT_PRI = 0b01.000000; 40|00; GroupPri: 1 SubPri: 0
+	// MEM_FLT_PRI = 0b01.000000; 40|00; GroupPri: 1 SubPri: 0
+	SCB->SHPR1 = (0x40 << 16) | (0x40 << 8) | (0x40 << 0);
+	// SVC_EXC_PRI = 0b01.000000; 40|00; GroupPri: 1 SubPri: 0
+	SCB->SHPR2 = (0x40 << 24);
+	// SYSTICK_PRI = 0b00.000000; 00|00; GroupPri: 0 SubPri: 0
+	// PEND_SV_PRI = 0b01.000000; 40|00; GroupPri: 1 SubPri: 0
+	SCB->SHPR3 = (0x00 << 24) | (0x40 << 16);
+
 	systick_init();
 
 	while (1) {
