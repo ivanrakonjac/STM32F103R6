@@ -8,7 +8,3 @@ void systick_init()
 	STK->VAL = 0;
 	STK->CTRL |= 0x07;
 }
-
-void systick_handler () {
-	int test = 0;
-}

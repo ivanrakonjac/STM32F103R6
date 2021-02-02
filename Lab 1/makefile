@@ -6,7 +6,8 @@ src/startup_code.s
 
 SRC_C_LIST = \
 src/main.c \
-src/systick.c
+src/systick.c \
+src/handlers.c
 
 INCLUDE_C_LIST = \
 -Iinc

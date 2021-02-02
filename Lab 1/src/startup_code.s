@@ -8,6 +8,18 @@
 .weak systick_handler
 .thumb_set systick_handler, default_handler
 
+.weak irq0_WWDG
+.thumb_set irq0_WWDG, default_handler
+
+.weak irq1_PVD
+.thumb_set irq1_PVD, default_handler
+
+.weak irq2_TAMPER
+.thumb_set irq2_TAMPER, default_handler
+
+.weak irq3_RTC
+.thumb_set irq3_RTC, default_handler
+
 .section .vector_table, "a"
 .word _main_stack_pointer_value
 .word reset_handler
@@ -15,7 +27,11 @@
 	.word default_handler
 .endr
 .word systick_handler
-.rept 68
+.word irq0_WWDG
+.word irq1_PVD
+.word irq2_TAMPER
+.word irq3_RTC
+.rept 64
 	.word default_handler
 .endr
 
