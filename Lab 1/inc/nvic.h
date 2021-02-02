@@ -9,6 +9,7 @@
 #define INC_NVIC_H_
 
 #include <stdint.h>
+#include "utility.h"
 
 typedef struct
 {
@@ -30,6 +31,12 @@ typedef struct
 #define NVIC_ENABLE_IRQ(irqNumber) \
 	NVIC->ISER[(irqNumber) / 32] = 1 << ((irqNumber) % 32)
 
-
+#define NVIC_SET_PRIORITY(irqNum, priority) \
+	SET_VALUE( \
+		NVIC->IPR[(irqNum) / 4], \
+		((irqNum) % 4) * 8, \
+		((irqNum) % 4) * 8 + 7, \
+		((priority)) \
+	)
 
 #endif /* INC_NVIC_H_ */
