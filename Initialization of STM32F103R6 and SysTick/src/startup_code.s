@@ -83,8 +83,8 @@ reset_handler:
 	beq branch_to_main
 
 copy_loop:
-	ldr r3, [r0]
-	str r3, [r1], 4
+	ldr r3, [r0], #4
+	str r3, [r1], #4
 	cmp r1, r2
 	blo copy_loop
 
