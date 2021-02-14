@@ -1,0 +1,6 @@
+.cproject
+.mxprject
+.project
+.ioc
+*.settings/*
+*build/*
