@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s 			page 1
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -43,110 +43,125 @@ ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s 			page 1
   40              	.L2:
   41              		.loc 1 119 3 is_stmt 1 discriminator 1 view .LVU2
   42              		.loc 1 121 5 discriminator 1 view .LVU3
-  43 0002 0120     		movs	r0, #1
-  44 0004 014B     		ldr	r3, .L4
-  45 0006 9847     		blx	r3
+  43 0002 4FF47A70 		mov	r0, #1000
+  44 0006 014B     		ldr	r3, .L4
+  45 0008 9847     		blx	r3
   46              	.LVL2:
   47              		.loc 1 119 8 discriminator 1 view .LVU4
-  48 0008 FBE7     		b	.L2
+  48 000a FAE7     		b	.L2
   49              	.L5:
-  50 000a 00BF     		.align	2
+  50              		.align	2
   51              	.L4:
-  52 000c 00000000 		.word	osDelay
+  52 000c 00000000 		.word	vTaskDelay
   53              		.cfi_endproc
   54              	.LFE70:
-  56              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
-  57              		.align	1
-  58              		.global	MX_FREERTOS_Init
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s 			page 2
+  56              		.section	.rodata.MX_FREERTOS_Init.str1.4,"aMS",%progbits,1
+  57              		.align	2
+  58              	.LC0:
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s 			page 2
 
 
-  59              		.syntax unified
-  60              		.thumb
-  61              		.thumb_func
-  62              		.fpu softvfp
-  64              	MX_FREERTOS_Init:
-  65              	.LFB69:
-  66              		.loc 1 73 29 view -0
-  67              		.cfi_startproc
-  68              		@ args = 0, pretend = 0, frame = 0
-  69              		@ frame_needed = 0, uses_anonymous_args = 0
-  70 0000 08B5     		push	{r3, lr}
-  71              	.LCFI1:
-  72              		.cfi_def_cfa_offset 8
-  73              		.cfi_offset 3, -8
-  74              		.cfi_offset 14, -4
-  75              		.loc 1 96 3 view .LVU6
-  76              		.loc 1 96 23 is_stmt 0 view .LVU7
-  77 0002 044A     		ldr	r2, .L8
-  78 0004 0021     		movs	r1, #0
-  79 0006 0448     		ldr	r0, .L8+4
-  80 0008 044B     		ldr	r3, .L8+8
-  81 000a 9847     		blx	r3
-  82              	.LVL3:
-  83              		.loc 1 96 21 view .LVU8
-  84 000c 044B     		ldr	r3, .L8+12
-  85 000e 1860     		str	r0, [r3]
-  86              		.loc 1 106 1 view .LVU9
-  87 0010 08BD     		pop	{r3, pc}
-  88              	.L9:
-  89 0012 00BF     		.align	2
-  90              	.L8:
-  91 0014 00000000 		.word	.LANCHOR0
-  92 0018 00000000 		.word	StartDefaultTask
-  93 001c 00000000 		.word	osThreadNew
-  94 0020 00000000 		.word	defaultTaskHandle
-  95              		.cfi_endproc
-  96              	.LFE69:
-  98              		.global	defaultTask_attributes
-  99              		.section	.rodata.str1.4,"aMS",%progbits,1
- 100              		.align	2
- 101              	.LC0:
- 102 0000 64656661 		.ascii	"defaultTask\000"
- 102      756C7454 
- 102      61736B00 
- 103              		.comm	defaultTaskHandle,4,4
- 104              		.section	.rodata.defaultTask_attributes,"a"
- 105              		.align	2
- 106              		.set	.LANCHOR0,. + 0
- 109              	defaultTask_attributes:
- 110 0000 00000000 		.word	.LC0
- 111 0004 00000000 		.space	16
- 111      00000000 
- 111      00000000 
- 111      00000000 
- 112 0014 00020000 		.word	512
- 113 0018 18000000 		.word	24
- 114 001c 00000000 		.space	8
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s 			page 3
+  59 0000 53746172 		.ascii	"StartDefaultTask\000"
+  59      74446566 
+  59      61756C74 
+  59      5461736B 
+  59      00
+  60              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+  61              		.align	1
+  62              		.global	MX_FREERTOS_Init
+  63              		.syntax unified
+  64              		.thumb
+  65              		.thumb_func
+  66              		.fpu softvfp
+  68              	MX_FREERTOS_Init:
+  69              	.LFB69:
+  70              		.loc 1 73 29 view -0
+  71              		.cfi_startproc
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74 0000 10B5     		push	{r4, lr}
+  75              	.LCFI1:
+  76              		.cfi_def_cfa_offset 8
+  77              		.cfi_offset 4, -8
+  78              		.cfi_offset 14, -4
+  79 0002 82B0     		sub	sp, sp, #8
+  80              	.LCFI2:
+  81              		.cfi_def_cfa_offset 16
+  82              		.loc 1 96 3 view .LVU6
+  83 0004 0023     		movs	r3, #0
+  84 0006 0193     		str	r3, [sp, #4]
+  85 0008 0122     		movs	r2, #1
+  86 000a 0092     		str	r2, [sp]
+  87 000c 8022     		movs	r2, #128
+  88 000e 0349     		ldr	r1, .L8
+  89 0010 0348     		ldr	r0, .L8+4
+  90 0012 044C     		ldr	r4, .L8+8
+  91 0014 A047     		blx	r4
+  92              	.LVL3:
+  93              		.loc 1 106 1 is_stmt 0 view .LVU7
+  94 0016 02B0     		add	sp, sp, #8
+  95              	.LCFI3:
+  96              		.cfi_def_cfa_offset 8
+  97              		@ sp needed
+  98 0018 10BD     		pop	{r4, pc}
+  99              	.L9:
+ 100 001a 00BF     		.align	2
+ 101              	.L8:
+ 102 001c 00000000 		.word	.LC0
+ 103 0020 00000000 		.word	StartDefaultTask
+ 104 0024 00000000 		.word	xTaskCreate
+ 105              		.cfi_endproc
+ 106              	.LFE69:
+ 108              		.global	defaultTask_attributes
+ 109              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 110              		.align	2
+ 111              	.LC1:
+ 112 0000 64656661 		.ascii	"defaultTask\000"
+ 112      756C7454 
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s 			page 3
 
 
- 114      00000000 
- 115              		.text
- 116              	.Letext0:
- 117              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 118              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
- 119              		.file 4 "../Core/Inc/FreeRTOSConfig.h"
- 120              		.file 5 "../Drivers/CMSIS/Include/core_cm3.h"
- 121              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 122              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 123              		.file 8 "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
-ARM GAS  C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s 			page 4
+ 112      61736B00 
+ 113              		.comm	defaultTaskHandle,4,4
+ 114              		.section	.rodata.defaultTask_attributes,"a"
+ 115              		.align	2
+ 118              	defaultTask_attributes:
+ 119 0000 00000000 		.word	.LC1
+ 120 0004 00000000 		.space	16
+ 120      00000000 
+ 120      00000000 
+ 120      00000000 
+ 121 0014 00020000 		.word	512
+ 122 0018 18000000 		.word	24
+ 123 001c 00000000 		.space	8
+ 123      00000000 
+ 124              		.text
+ 125              	.Letext0:
+ 126              		.file 2 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 127              		.file 3 "../c:\\users\\ika\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi\\include\
+ 128              		.file 4 "../Core/Inc/FreeRTOSConfig.h"
+ 129              		.file 5 "../Drivers/CMSIS/Include/core_cm3.h"
+ 130              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 131              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 132              		.file 8 "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+ 133              		.file 9 "../Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ARM GAS  C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 freertos.c
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:16     .text.StartDefaultTask:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:24     .text.StartDefaultTask:0000000000000000 StartDefaultTask
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:52     .text.StartDefaultTask:000000000000000c $d
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:57     .text.MX_FREERTOS_Init:0000000000000000 $t
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:64     .text.MX_FREERTOS_Init:0000000000000000 MX_FREERTOS_Init
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:91     .text.MX_FREERTOS_Init:0000000000000014 $d
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:16     .text.StartDefaultTask:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:24     .text.StartDefaultTask:0000000000000000 StartDefaultTask
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:52     .text.StartDefaultTask:000000000000000c $d
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:57     .rodata.MX_FREERTOS_Init.str1.4:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:61     .text.MX_FREERTOS_Init:0000000000000000 $t
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:68     .text.MX_FREERTOS_Init:0000000000000000 MX_FREERTOS_Init
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:102    .text.MX_FREERTOS_Init:000000000000001c $d
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:118    .rodata.defaultTask_attributes:0000000000000000 defaultTask_attributes
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:110    .rodata.str1.4:0000000000000000 $d
                             *COM*:0000000000000004 defaultTaskHandle
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:109    .rodata.defaultTask_attributes:0000000000000000 defaultTask_attributes
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:100    .rodata.str1.4:0000000000000000 $d
-C:\Users\Ika\AppData\Local\Temp\ccqT3Ea1.s:105    .rodata.defaultTask_attributes:0000000000000000 $d
+C:\Users\Ika\AppData\Local\Temp\cc2lx2Wp.s:115    .rodata.defaultTask_attributes:0000000000000000 $d
 
 UNDEFINED SYMBOLS
-osDelay
-osThreadNew
+vTaskDelay
+xTaskCreate
