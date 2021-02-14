@@ -6,7 +6,7 @@
 void exampleTaskFunction (void* parameters);
 
 void exampleInit() {
-	xTaskCreate(exampleTaskFunction, "exampleTaskFunction0", 128, (void*) GPIO_PIN_0, 1, NULL);
+	xTaskCreate(exampleTaskFunction, "exampleTaskFunction0", 128, (void*) GPIO_PIN_0, 2, NULL);
 	xTaskCreate(exampleTaskFunction, "exampleTaskFunction1", 128, (void*) GPIO_PIN_1, 1, NULL);
 
 }
@@ -16,6 +16,8 @@ void exampleTaskFunction (void* parameters) {
 
 	while(1) {
 		HAL_GPIO_TogglePin(GPIOC, (uint32_t) parameters);
-		vTaskDelay(1000);
+		for (int i = 0; i < 1000000; ++i) {
+
+		}
 	}
 }
