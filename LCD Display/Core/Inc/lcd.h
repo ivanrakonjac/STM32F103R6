@@ -45,17 +45,25 @@
 #define LCD_SET_CG_RAM_ADDRESS_INSTRUCTION	0x40
 #define LCD_SET_DD_RAM_ADDRESS_INSTRUCTION	0x80
 
+// Govori nam da li je DATA ili INSTRUKCTION registar
 typedef enum {
 	LCD_INSTRUCTION = 0,
 	LCD_DATA
 } LCD_CommandReg;
 
+// Za prosledjivanje koda funkcije LCD kontroleru
 typedef uint8_t LCD_CommandVal;
 
+// Struktura koja se nalazi u redu, iz koga Task uzima zahteve za izvrsavanje
 typedef struct {
 	LCD_CommandReg reg;
 	LCD_CommandVal val;
 }LCD_Command;
 
+extern void LCD_Init();
+
+extern void LCD_CommandEnqueue(LCD_CommandReg reg, LCD_CommandVal val);
+
+extern void LCD_CommandEnqueueFromISR(LCD_CommandReg reg, LCD_CommandVal val, BaseType_t* pxHigherPriorityTaskWoken);
 
 #endif /* CORE_INC_LCD_H_ */
