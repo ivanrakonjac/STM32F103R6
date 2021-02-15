@@ -18,6 +18,21 @@ static void exampleTask (void* parameters) {
 		vTaskDelay(pdMS_TO_TICKS(100));
 	}
 
+	// Turn on Cursor
+	LCD_CommandEnqueue(LCD_INSTRUCTION,
+	LCD_CONTROL_INSTRUCTION |
+	LCD_CONTROL_DISPLAY_ON |
+	LCD_CONTROL_CURSOR_ON |
+	LCD_CONTROL_BLINK_ON);
+
+	char line2[16] = "sistemi";
+	LCD_CommandEnqueue(LCD_INSTRUCTION, LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x40);
+
+	for (uint32_t i = 0; i < 8; i++) {
+		LCD_CommandEnqueue(LCD_DATA, line2[i]);
+		vTaskDelay(pdMS_TO_TICKS(100));
+	}
+
 	while(1){
 
 	}
