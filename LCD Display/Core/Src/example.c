@@ -33,6 +33,17 @@ static void exampleTask (void* parameters) {
 		vTaskDelay(pdMS_TO_TICKS(100));
 	}
 
+	// Shift display
+	for (uint32_t i = 0; i < 10; i++){
+		LCD_CommandEnqueue(LCD_INSTRUCTION,
+		LCD_SHIFT_INSTRUCTION |
+		LCD_SHIFT_DISPLAY |
+		LCD_SHIFT_DIRECTION_RIGHT);
+		vTaskDelay(pdMS_TO_TICKS(100));
+	}
+
+
+
 	while(1){
 
 	}
