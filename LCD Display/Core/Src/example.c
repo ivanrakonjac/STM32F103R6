@@ -5,6 +5,7 @@
 #include "gpio.h"
 #include "task.h"
 #include "lcd.h"
+#include "keypad.h"
 
 
 static void exampleTask (void* parameters) {
@@ -61,6 +62,10 @@ static void exampleTask (void* parameters) {
 	// Stavljamo adresu u red sa koje treba iscitati karakter
 	LCD_CommandEnqueue(LCD_DATA, 0x01);
 
+	LCD_CommandEnqueue(LCD_INSTRUCTION,
+	LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x00);
+
+	KeyInit();
 
 
 	while(1){
