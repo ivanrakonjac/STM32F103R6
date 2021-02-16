@@ -22,24 +22,27 @@
  */
 static void exampleTask(void* parameters){
 
+	/*char character = UART_BlockReceiveCharacter();
+	UART_AsyncTransmitChar(character);
+
+	char* string = UART_BlockReceiveString();
+	UART_AsyncTransmitString(string);
+	vPortFree(string);
+
+	UART_AsyncTransmitChar('M');
+	UART_AsyncTransmitString("IPS_");
+	UART_AsyncTransmitDecimal(2020);
+	UART_AsyncTransmitChar('\r');*/
+
+
 	while(1){
 
-		char character = UART_BlockReceiveCharacter();
-		UART_AsyncTransmitChar(character);
+		UART_AsyncTransmitString("Uneti redni broj diode [1-4] \r");
+		uint32_t index = UART_BlockReceiveDecimal();
 
-		char* string = UART_BlockReceiveString();
-		UART_AsyncTransmitString(string);
-		vPortFree(string);
-
-		UART_AsyncTransmitChar('M');
-		UART_AsyncTransmitString("IPS_");
-		UART_AsyncTransmitDecimal(2020);
-		UART_AsyncTransmitChar('\r');
-
-
-
-
-
+		if(index >= 1 && index <= 4) {
+			HAL_GPIO_TogglePin(GPIOC, 0x01 << (index - 1));
+		}
 	}
 }
 
