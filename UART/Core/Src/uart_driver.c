@@ -175,4 +175,22 @@ char UART_BlockReceiveCharacter(){
 	return character;
 }
 
+char* UART_BlockReceiveString(){
+	xSemaphoreTake(UART_ReceiveMutexHandle, portMAX_DELAY);
 
+	char* string = pvPortMalloc(64);
+
+	if(string != NULL){
+		char character = '\0';
+		uint32_t index = 0;
+		while (character != '\r' && index < 64 ){
+			xQueueReceive(UART_ReceiveQueueHandle, &character, portMAX_DELAY);
+			string[index++] = character;
+		}
+		string[--index] = character;
+	}
+
+	xSemaphoreGive(UART_ReceiveMutexHandle);
+
+	return string;
+}

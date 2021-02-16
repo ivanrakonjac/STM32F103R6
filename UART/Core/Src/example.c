@@ -25,6 +25,9 @@ static void exampleTask(void* parameters){
 		char character = UART_BlockReceiveCharacter();
 		UART_AsyncTransmitChar(character);
 
+		char* string = UART_BlockReceiveString();
+		UART_AsyncTransmitString(string);
+		vPortFree(string);
 
 		UART_AsyncTransmitChar('M');
 		UART_AsyncTransmitString("IPS_");
