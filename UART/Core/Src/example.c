@@ -8,6 +8,7 @@
 #include "task.h"
 #include "example.h"
 #include "uart_driver.h"
+#include "gpio.h"
 
 /*
  * TOK:
@@ -20,6 +21,7 @@
  * Task koji nam radi sa UARTom
  */
 static void exampleTask(void* parameters){
+
 	while(1){
 
 		char character = UART_BlockReceiveCharacter();
@@ -34,7 +36,9 @@ static void exampleTask(void* parameters){
 		UART_AsyncTransmitDecimal(2020);
 		UART_AsyncTransmitChar('\r');
 
-		//vTaskDelay(pdMS_TO_TICKS(1000));
+
+
+
 
 	}
 }

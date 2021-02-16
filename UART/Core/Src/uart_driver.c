@@ -194,3 +194,21 @@ char* UART_BlockReceiveString(){
 
 	return string;
 }
+
+uint32_t UART_BlockReceiveDecimal(){
+	xSemaphoreTake(UART_ReceiveMutexHandle, portMAX_DELAY);
+
+	char character = '\0';
+	uint32_t decimal = 0;
+
+	while (character != '\r'){
+		xQueueReceive(UART_ReceiveQueueHandle, &character, portMAX_DELAY);
+		if(character >= '0' && character < '9'){
+			decimal = decimal*10 + (character - '0');
+		}
+	}
+
+	xSemaphoreGive(UART_ReceiveMutexHandle);
+
+	return decimal;
+}

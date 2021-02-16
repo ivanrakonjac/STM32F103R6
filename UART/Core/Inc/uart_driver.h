@@ -18,5 +18,6 @@ extern void UART_AsyncTransmitDecimal(uint32_t decimal);
 
 extern char UART_BlockReceiveCharacter();
 extern char* UART_BlockReceiveString();
+extern uint32_t UART_BlockReceiveDecimal();
 
 #endif /* CORE_INC_UART_DRIVER_H_ */
