@@ -21,11 +21,18 @@
  */
 static void exampleTask(void* parameters){
 	while(1){
+
+		char character = UART_BlockReceiveCharacter();
+		UART_AsyncTransmitChar(character);
+
+
 		UART_AsyncTransmitChar('M');
 		UART_AsyncTransmitString("IPS_");
 		UART_AsyncTransmitDecimal(2020);
 		UART_AsyncTransmitChar('\r');
-		vTaskDelay(pdMS_TO_TICKS(1000));
+
+		//vTaskDelay(pdMS_TO_TICKS(1000));
+
 	}
 }
 

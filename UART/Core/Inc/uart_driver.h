@@ -16,5 +16,7 @@ extern void UART_AsyncTransmitChar(char character);
 extern void UART_AsyncTransmitString(char const* string);
 extern void UART_AsyncTransmitDecimal(uint32_t decimal);
 
+extern char UART_BlockReceiveCharacter();
+extern char* UART_BlockReceiveString();
 
 #endif /* CORE_INC_UART_DRIVER_H_ */
