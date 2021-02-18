@@ -81,7 +81,7 @@ Izbacuje se neka vrednost na izlaz, a ta vrednost zavisi od poredjenja COUNTERA 
 * Startovati OC kanal
 
 		HAL_TIM_OC_Start(&htim1, TIM_CHANNEL_1);
-		
+
 * Startovati Timer
 	
 		HAL_TIM_Base_Start_IT(&htim1);
