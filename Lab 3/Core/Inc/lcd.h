@@ -1,7 +1,7 @@
 /*
  * lcd.h
  *
- *  Created on: 18.02.2021.
+ *  Created on: 19.02.2021.
  *      Author: Ika
  */
 
@@ -47,22 +47,19 @@
 #define LCD_SET_CG_RAM_ADDRESS_INSTRUCTION	0x40
 #define LCD_SET_DD_RAM_ADDRESS_INSTRUCTION	0x80
 
-
-typedef enum {
+typedef enum
+{
 	LCD_INSTRUCTION = 0,
 	LCD_DATA
 } LCD_CommandReg;
 
-typedef uint8_t LCD_CommandVal;
-
 typedef struct
 {
 	LCD_CommandReg reg;
-	LCD_CommandVal val;
+	uint8_t val;
 } LCD_Command;
 
 extern void LCD_Init();
-extern void LCD_CommandQueue_Put(LCD_CommandReg reg, LCD_CommandVal val);
-extern void LCD_CommandQueue_Put_FromISR(LCD_CommandReg reg, LCD_CommandVal val, BaseType_t *pxHigherPriorityTaskWoken);
+extern void LCD_PutInQueue(LCD_CommandReg reg, uint8_t val);
 
 #endif /* CORE_INC_LCD_H_ */
