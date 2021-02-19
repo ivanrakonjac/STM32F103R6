@@ -14,14 +14,18 @@ static TaskHandle_t WorkTaskHandle;
 
 static void WORK_Task(void* params){
 
-	//char c;
+	char c='a';
 	uint32_t counter = 0;
 
 	LCD_PutInQueue(LCD_INSTRUCTION, LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x00);
 
 	while(1){
 
-		LCD_PutInQueue(LCD_DATA, 'a');
+		c = UART_Receive();
+		UART_Transmit(c);
+		UART_Transmit('\r');
+
+		LCD_PutInQueue(LCD_DATA, c);
 
 		if(counter == 16){
 			LCD_PutInQueue(LCD_INSTRUCTION, LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x40);
@@ -38,16 +42,14 @@ static void WORK_Task(void* params){
 
 
 
-		/*c = UART_Receive();
-		UART_Transmit(c);
-		UART_Transmit('\r');*/
+
 
 		vTaskDelay(pdMS_TO_TICKS(100));
 	}
 }
 
 void WORK_Init(){
+	UART_Init();
 	LCD_Init();
-	//UART_Init();
-	xTaskCreate(WORK_Task, "WORK_Task", 128, NULL, 5, &WorkTaskHandle);
+	xTaskCreate(WORK_Task, "WORK_Task", 64, NULL, 5, &WorkTaskHandle);
 }
