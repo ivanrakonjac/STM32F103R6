@@ -8,7 +8,9 @@
 #include <stdint.h>
 
 extern void UART_Init();
+
 extern void UART_Transmit(uint8_t character);
 
+extern uint8_t UART_Receive();
 
 

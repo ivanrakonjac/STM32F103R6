@@ -12,9 +12,15 @@
 static TaskHandle_t WorkTaskHandle;
 
 static void WORK_Task(void* params){
+
+	char c;
+
 	while(1){
-		UART_Transmit('a');
-		vTaskDelay(pdMS_TO_TICKS(1000));
+
+		c = UART_Receive();
+		UART_Transmit(c);
+		UART_Transmit('\r');
+		vTaskDelay(pdMS_TO_TICKS(10));
 	}
 }
 
