@@ -1,50 +1,24 @@
 /*
  * work.c
  *
- *  Created on: 18.02.2021.
+ *  Created on: 19.02.2021.
  *      Author: Ika
  */
 #include "FreeRTOS.h"
 #include "work.h"
+#include "uart.h"
 #include "task.h"
-#include "lcd.h"
 
-static void workTask(void *parameters)
-{
-	LCD_CommandQueue_Put(LCD_INSTRUCTION, LCD_SET_CG_RAM_ADDRESS_INSTRUCTION | 0x08);
+static TaskHandle_t WorkTaskHandle;
 
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-	LCD_CommandQueue_Put(LCD_DATA, 0x1F);
-
-	while (1)
-	{
-
-		LCD_CommandQueue_Put(LCD_INSTRUCTION, LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x00);
-
-		for (int i= 0; i < 16; i++) {
-			LCD_CommandQueue_Put(LCD_DATA, 0x01);
-			vTaskDelay(pdMS_TO_TICKS(100));
-		}
-
-		LCD_CommandQueue_Put(LCD_INSTRUCTION, LCD_SET_DD_RAM_ADDRESS_INSTRUCTION | 0x40);
-		for (int i= 0; i < 16; i++) {
-			LCD_CommandQueue_Put(LCD_DATA, 0x01);
-			vTaskDelay(pdMS_TO_TICKS(100));
-		}
-
+static void WORK_Task(void* params){
+	while(1){
+		UART_Transmit('a');
 		vTaskDelay(pdMS_TO_TICKS(1000));
-
-		LCD_CommandQueue_Put(LCD_INSTRUCTION, LCD_CLEAR_DISPLAY_INSTRUCTION);
 	}
 }
 
-void workInit()
-{
-	LCD_Init();
-	xTaskCreate(workTask, "workTask", 128, NULL, 5, NULL);
+void WORK_Init(){
+	UART_Init();
+	xTaskCreate(WORK_Task, "WORK_Task", 128, NULL, 5, &WorkTaskHandle);
 }
