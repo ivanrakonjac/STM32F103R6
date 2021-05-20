@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\Ika\Desktop\HexaToFloat\HexaToFloatConverter\HexaToFloatConverter\main.c(30,36): warning C4013: 'strtol' undefined; assuming extern returning int
+  HexaToFloatConverter.vcxproj -> C:\Users\Ika\Desktop\HexaToFloat\HexaToFloatConverter\Debug\HexaToFloatConverter.exe
